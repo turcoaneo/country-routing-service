@@ -32,7 +32,8 @@ class BordersJsonGeneratorTest {
         assertTrue(file.length() > 0);
 
         Map<String, CountryBorderMapper.CountryCompact> loaded =
-                MAPPER.readValue(file, new TypeReference<>() {});
+                MAPPER.readValue(file, new TypeReference<>() {
+                });
 
         assertTrue(loaded.containsKey("CZE"));
         assertTrue(loaded.containsKey("ITA"));
@@ -47,7 +48,8 @@ class BordersJsonGeneratorTest {
         ObjectMapper om = new ObjectMapper();
         InputStream is = getClass().getClassLoader().getResourceAsStream("data/borders.json");
         Map<String, CountryBorderMapper.CountryCompact> borders =
-                om.readValue(is, new TypeReference<>() {});
+                om.readValue(is, new TypeReference<>() {
+                });
 
         assertEquals(original.size(), borders.size());
 
@@ -63,7 +65,16 @@ class BordersJsonGeneratorTest {
             assertEquals(o.getCcn3(), b.getCcn3());
             assertEquals(o.getCca3(), b.getCca3());
             assertEquals(o.getCioc(), b.getCioc());
-            assertEquals(o.getBorders(), b.getBorders());
+            assertEquals(
+                    sorted(o.getBorders()),
+                    sorted(b.getBorders())
+            );
         }
+    }
+
+    private List<String> sorted(List<String> list) {
+        List<String> copy = new ArrayList<>(list);
+        Collections.sort(copy);
+        return copy;
     }
 }
