@@ -1,0 +1,1752 @@
+{
+  "NZL" : {
+    "cca2" : "NZ",
+    "ccn3" : "554",
+    "cca3" : "NZL",
+    "cioc" : "NZL",
+    "borders" : [ ]
+  },
+  "FJI" : {
+    "cca2" : "FJ",
+    "ccn3" : "242",
+    "cca3" : "FJI",
+    "cioc" : "FIJ",
+    "borders" : [ ]
+  },
+  "PNG" : {
+    "cca2" : "PG",
+    "ccn3" : "598",
+    "cca3" : "PNG",
+    "cioc" : "PNG",
+    "borders" : [ "IDN" ]
+  },
+  "GLP" : {
+    "cca2" : "GP",
+    "ccn3" : "312",
+    "cca3" : "GLP",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "STP" : {
+    "cca2" : "ST",
+    "ccn3" : "678",
+    "cca3" : "STP",
+    "cioc" : "STP",
+    "borders" : [ ]
+  },
+  "MHL" : {
+    "cca2" : "MH",
+    "ccn3" : "584",
+    "cca3" : "MHL",
+    "cioc" : "MHL",
+    "borders" : [ ]
+  },
+  "WLF" : {
+    "cca2" : "WF",
+    "ccn3" : "876",
+    "cca3" : "WLF",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "CUB" : {
+    "cca2" : "CU",
+    "ccn3" : "192",
+    "cca3" : "CUB",
+    "cioc" : "CUB",
+    "borders" : [ ]
+  },
+  "SDN" : {
+    "cca2" : "SD",
+    "ccn3" : "729",
+    "cca3" : "SDN",
+    "cioc" : "SUD",
+    "borders" : [ "CAF", "TCD", "EGY", "ERI", "ETH", "LBY", "SSD" ]
+  },
+  "GMB" : {
+    "cca2" : "GM",
+    "ccn3" : "270",
+    "cca3" : "GMB",
+    "cioc" : "GAM",
+    "borders" : [ "SEN" ]
+  },
+  "CUW" : {
+    "cca2" : "CW",
+    "ccn3" : "531",
+    "cca3" : "CUW",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "MYS" : {
+    "cca2" : "MY",
+    "ccn3" : "458",
+    "cca3" : "MYS",
+    "cioc" : "MAS",
+    "borders" : [ "BRN", "IDN", "THA" ]
+  },
+  "MYT" : {
+    "cca2" : "YT",
+    "ccn3" : "175",
+    "cca3" : "MYT",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "TWN" : {
+    "cca2" : "TW",
+    "ccn3" : "158",
+    "cca3" : "TWN",
+    "cioc" : "TPE",
+    "borders" : [ ]
+  },
+  "POL" : {
+    "cca2" : "PL",
+    "ccn3" : "616",
+    "cca3" : "POL",
+    "cioc" : "POL",
+    "borders" : [ "BLR", "CZE", "DEU", "LTU", "RUS", "SVK", "UKR" ]
+  },
+  "OMN" : {
+    "cca2" : "OM",
+    "ccn3" : "512",
+    "cca3" : "OMN",
+    "cioc" : "OMA",
+    "borders" : [ "SAU", "ARE", "YEM" ]
+  },
+  "SUR" : {
+    "cca2" : "SR",
+    "ccn3" : "740",
+    "cca3" : "SUR",
+    "cioc" : "SUR",
+    "borders" : [ "BRA", "GUF", "GUY" ]
+  },
+  "ARE" : {
+    "cca2" : "AE",
+    "ccn3" : "784",
+    "cca3" : "ARE",
+    "cioc" : "UAE",
+    "borders" : [ "OMN", "SAU" ]
+  },
+  "KEN" : {
+    "cca2" : "KE",
+    "ccn3" : "404",
+    "cca3" : "KEN",
+    "cioc" : "KEN",
+    "borders" : [ "ETH", "SOM", "SSD", "TZA", "UGA" ]
+  },
+  "ARG" : {
+    "cca2" : "AR",
+    "ccn3" : "032",
+    "cca3" : "ARG",
+    "cioc" : "ARG",
+    "borders" : [ "BOL", "BRA", "CHL", "PRY", "URY" ]
+  },
+  "GNB" : {
+    "cca2" : "GW",
+    "ccn3" : "624",
+    "cca3" : "GNB",
+    "cioc" : "GBS",
+    "borders" : [ "GIN", "SEN" ]
+  },
+  "ARM" : {
+    "cca2" : "AM",
+    "ccn3" : "051",
+    "cca3" : "ARM",
+    "cioc" : "ARM",
+    "borders" : [ "AZE", "GEO", "IRN", "TUR" ]
+  },
+  "UZB" : {
+    "cca2" : "UZ",
+    "ccn3" : "860",
+    "cca3" : "UZB",
+    "cioc" : "UZB",
+    "borders" : [ "AFG", "KAZ", "KGZ", "TJK", "TKM" ]
+  },
+  "BTN" : {
+    "cca2" : "BT",
+    "ccn3" : "064",
+    "cca3" : "BTN",
+    "cioc" : "BHU",
+    "borders" : [ "CHN", "IND" ]
+  },
+  "SEN" : {
+    "cca2" : "SN",
+    "ccn3" : "686",
+    "cca3" : "SEN",
+    "cioc" : "SEN",
+    "borders" : [ "GMB", "GIN", "GNB", "MLI", "MRT" ]
+  },
+  "TGO" : {
+    "cca2" : "TG",
+    "ccn3" : "768",
+    "cca3" : "TGO",
+    "cioc" : "TOG",
+    "borders" : [ "BEN", "BFA", "GHA" ]
+  },
+  "IRL" : {
+    "cca2" : "IE",
+    "ccn3" : "372",
+    "cca3" : "IRL",
+    "cioc" : "IRL",
+    "borders" : [ "GBR" ]
+  },
+  "FLK" : {
+    "cca2" : "FK",
+    "ccn3" : "238",
+    "cca3" : "FLK",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "IRN" : {
+    "cca2" : "IR",
+    "ccn3" : "364",
+    "cca3" : "IRN",
+    "cioc" : "IRI",
+    "borders" : [ "AFG", "ARM", "AZE", "IRQ", "PAK", "TUR", "TKM" ]
+  },
+  "QAT" : {
+    "cca2" : "QA",
+    "ccn3" : "634",
+    "cca3" : "QAT",
+    "cioc" : "QAT",
+    "borders" : [ "SAU" ]
+  },
+  "BDI" : {
+    "cca2" : "BI",
+    "ccn3" : "108",
+    "cca3" : "BDI",
+    "cioc" : "BDI",
+    "borders" : [ "COD", "RWA", "TZA" ]
+  },
+  "NLD" : {
+    "cca2" : "NL",
+    "ccn3" : "528",
+    "cca3" : "NLD",
+    "cioc" : "NED",
+    "borders" : [ "BEL", "DEU" ]
+  },
+  "IRQ" : {
+    "cca2" : "IQ",
+    "ccn3" : "368",
+    "cca3" : "IRQ",
+    "cioc" : "IRQ",
+    "borders" : [ "IRN", "JOR", "KWT", "SAU", "SYR", "TUR" ]
+  },
+  "SVK" : {
+    "cca2" : "SK",
+    "ccn3" : "703",
+    "cca3" : "SVK",
+    "cioc" : "SVK",
+    "borders" : [ "AUT", "CZE", "HUN", "POL", "UKR" ]
+  },
+  "SVN" : {
+    "cca2" : "SI",
+    "ccn3" : "705",
+    "cca3" : "SVN",
+    "cioc" : "SLO",
+    "borders" : [ "AUT", "HRV", "ITA", "HUN" ]
+  },
+  "GNQ" : {
+    "cca2" : "GQ",
+    "ccn3" : "226",
+    "cca3" : "GNQ",
+    "cioc" : "GEQ",
+    "borders" : [ "CMR", "GAB" ]
+  },
+  "THA" : {
+    "cca2" : "TH",
+    "ccn3" : "764",
+    "cca3" : "THA",
+    "cioc" : "THA",
+    "borders" : [ "MMR", "KHM", "LAO", "MYS" ]
+  },
+  "ABW" : {
+    "cca2" : "AW",
+    "ccn3" : "533",
+    "cca3" : "ABW",
+    "cioc" : "ARU",
+    "borders" : [ ]
+  },
+  "ASM" : {
+    "cca2" : "AS",
+    "ccn3" : "016",
+    "cca3" : "ASM",
+    "cioc" : "ASA",
+    "borders" : [ ]
+  },
+  "SWE" : {
+    "cca2" : "SE",
+    "ccn3" : "752",
+    "cca3" : "SWE",
+    "cioc" : "SWE",
+    "borders" : [ "FIN", "NOR" ]
+  },
+  "ISL" : {
+    "cca2" : "IS",
+    "ccn3" : "352",
+    "cca3" : "ISL",
+    "cioc" : "ISL",
+    "borders" : [ ]
+  },
+  "MKD" : {
+    "cca2" : "MK",
+    "ccn3" : "807",
+    "cca3" : "MKD",
+    "cioc" : "MKD",
+    "borders" : [ "ALB", "BGR", "GRC", "UNK", "SRB" ]
+  },
+  "BEL" : {
+    "cca2" : "BE",
+    "ccn3" : "056",
+    "cca3" : "BEL",
+    "cioc" : "BEL",
+    "borders" : [ "FRA", "DEU", "LUX", "NLD" ]
+  },
+  "ISR" : {
+    "cca2" : "IL",
+    "ccn3" : "376",
+    "cca3" : "ISR",
+    "cioc" : "ISR",
+    "borders" : [ "EGY", "JOR", "LBN", "PSE", "SYR" ]
+  },
+  "KWT" : {
+    "cca2" : "KW",
+    "ccn3" : "414",
+    "cca3" : "KWT",
+    "cioc" : "KUW",
+    "borders" : [ "IRQ", "SAU" ]
+  },
+  "LIE" : {
+    "cca2" : "LI",
+    "ccn3" : "438",
+    "cca3" : "LIE",
+    "cioc" : "LIE",
+    "borders" : [ "AUT", "CHE" ]
+  },
+  "BEN" : {
+    "cca2" : "BJ",
+    "ccn3" : "204",
+    "cca3" : "BEN",
+    "cioc" : "BEN",
+    "borders" : [ "BFA", "NER", "NGA", "TGO" ]
+  },
+  "DZA" : {
+    "cca2" : "DZ",
+    "ccn3" : "012",
+    "cca3" : "DZA",
+    "cioc" : "ALG",
+    "borders" : [ "TUN", "LBY", "NER", "ESH", "MRT", "MLI", "MAR" ]
+  },
+  "ATA" : {
+    "cca2" : "AQ",
+    "ccn3" : "010",
+    "cca3" : "ATA",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "BES" : {
+    "cca2" : "BQ",
+    "ccn3" : "535",
+    "cca3" : "BES",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "RUS" : {
+    "cca2" : "RU",
+    "ccn3" : "643",
+    "cca3" : "RUS",
+    "cioc" : "RUS",
+    "borders" : [ "AZE", "BLR", "CHN", "EST", "FIN", "GEO", "KAZ", "PRK", "LVA", "LTU", "MNG", "NOR", "POL", "UKR" ]
+  },
+  "ATF" : {
+    "cca2" : "TF",
+    "ccn3" : "260",
+    "cca3" : "ATF",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "ATG" : {
+    "cca2" : "AG",
+    "ccn3" : "028",
+    "cca3" : "ATG",
+    "cioc" : "ANT",
+    "borders" : [ ]
+  },
+  "ITA" : {
+    "cca2" : "IT",
+    "ccn3" : "380",
+    "cca3" : "ITA",
+    "cioc" : "ITA",
+    "borders" : [ "AUT", "FRA", "SMR", "SVN", "CHE", "VAT" ]
+  },
+  "SWZ" : {
+    "cca2" : "SZ",
+    "ccn3" : "748",
+    "cca3" : "SWZ",
+    "cioc" : "SWZ",
+    "borders" : [ "MOZ", "ZAF" ]
+  },
+  "TZA" : {
+    "cca2" : "TZ",
+    "ccn3" : "834",
+    "cca3" : "TZA",
+    "cioc" : "TAN",
+    "borders" : [ "BDI", "COD", "KEN", "MWI", "MOZ", "RWA", "UGA", "ZMB" ]
+  },
+  "PAK" : {
+    "cca2" : "PK",
+    "ccn3" : "586",
+    "cca3" : "PAK",
+    "cioc" : "PAK",
+    "borders" : [ "AFG", "CHN", "IND", "IRN" ]
+  },
+  "BFA" : {
+    "cca2" : "BF",
+    "ccn3" : "854",
+    "cca3" : "BFA",
+    "cioc" : "BUR",
+    "borders" : [ "BEN", "CIV", "GHA", "MLI", "NER", "TGO" ]
+  },
+  "CXR" : {
+    "cca2" : "CX",
+    "ccn3" : "162",
+    "cca3" : "CXR",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "PAN" : {
+    "cca2" : "PA",
+    "ccn3" : "591",
+    "cca3" : "PAN",
+    "cioc" : "PAN",
+    "borders" : [ "COL", "CRI" ]
+  },
+  "SGP" : {
+    "cca2" : "SG",
+    "ccn3" : "702",
+    "cca3" : "SGP",
+    "cioc" : "SGP",
+    "borders" : [ ]
+  },
+  "UKR" : {
+    "cca2" : "UA",
+    "ccn3" : "804",
+    "cca3" : "UKR",
+    "cioc" : "UKR",
+    "borders" : [ "BLR", "HUN", "MDA", "POL", "ROU", "RUS", "SVK" ]
+  },
+  "SGS" : {
+    "cca2" : "GS",
+    "ccn3" : "239",
+    "cca3" : "SGS",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "JEY" : {
+    "cca2" : "JE",
+    "ccn3" : "832",
+    "cca3" : "JEY",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "KGZ" : {
+    "cca2" : "KG",
+    "ccn3" : "417",
+    "cca3" : "KGZ",
+    "cioc" : "KGZ",
+    "borders" : [ "CHN", "KAZ", "TJK", "UZB" ]
+  },
+  "BVT" : {
+    "cca2" : "BV",
+    "ccn3" : "074",
+    "cca3" : "BVT",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "CHE" : {
+    "cca2" : "CH",
+    "ccn3" : "756",
+    "cca3" : "CHE",
+    "cioc" : "SUI",
+    "borders" : [ "AUT", "FRA", "ITA", "LIE", "DEU" ]
+  },
+  "DJI" : {
+    "cca2" : "DJ",
+    "ccn3" : "262",
+    "cca3" : "DJI",
+    "cioc" : "DJI",
+    "borders" : [ "ERI", "ETH", "SOM" ]
+  },
+  "REU" : {
+    "cca2" : "RE",
+    "ccn3" : "638",
+    "cca3" : "REU",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "CHL" : {
+    "cca2" : "CL",
+    "ccn3" : "152",
+    "cca3" : "CHL",
+    "cioc" : "CHI",
+    "borders" : [ "ARG", "BOL", "PER" ]
+  },
+  "PRI" : {
+    "cca2" : "PR",
+    "ccn3" : "630",
+    "cca3" : "PRI",
+    "cioc" : "PUR",
+    "borders" : [ ]
+  },
+  "CHN" : {
+    "cca2" : "CN",
+    "ccn3" : "156",
+    "cca3" : "CHN",
+    "cioc" : "CHN",
+    "borders" : [ "AFG", "BTN", "MMR", "HKG", "IND", "KAZ", "NPL", "PRK", "KGZ", "LAO", "MAC", "MNG", "PAK", "RUS", "TJK", "VNM" ]
+  },
+  "PRK" : {
+    "cca2" : "KP",
+    "ccn3" : "408",
+    "cca3" : "PRK",
+    "cioc" : "PRK",
+    "borders" : [ "CHN", "KOR", "RUS" ]
+  },
+  "SXM" : {
+    "cca2" : "SX",
+    "ccn3" : "534",
+    "cca3" : "SXM",
+    "cioc" : "",
+    "borders" : [ "MAF" ]
+  },
+  "MLI" : {
+    "cca2" : "ML",
+    "ccn3" : "466",
+    "cca3" : "MLI",
+    "cioc" : "MLI",
+    "borders" : [ "DZA", "BFA", "GIN", "CIV", "MRT", "NER", "SEN" ]
+  },
+  "BWA" : {
+    "cca2" : "BW",
+    "ccn3" : "072",
+    "cca3" : "BWA",
+    "cioc" : "BOT",
+    "borders" : [ "NAM", "ZAF", "ZMB", "ZWE" ]
+  },
+  "HRV" : {
+    "cca2" : "HR",
+    "ccn3" : "191",
+    "cca3" : "HRV",
+    "cioc" : "CRO",
+    "borders" : [ "BIH", "HUN", "MNE", "SRB", "SVN" ]
+  },
+  "KHM" : {
+    "cca2" : "KH",
+    "ccn3" : "116",
+    "cca3" : "KHM",
+    "cioc" : "CAM",
+    "borders" : [ "LAO", "THA", "VNM" ]
+  },
+  "IDN" : {
+    "cca2" : "ID",
+    "ccn3" : "360",
+    "cca3" : "IDN",
+    "cioc" : "INA",
+    "borders" : [ "TLS", "MYS", "PNG" ]
+  },
+  "PRT" : {
+    "cca2" : "PT",
+    "ccn3" : "620",
+    "cca3" : "PRT",
+    "cioc" : "POR",
+    "borders" : [ "ESP" ]
+  },
+  "MLT" : {
+    "cca2" : "MT",
+    "ccn3" : "470",
+    "cca3" : "MLT",
+    "cioc" : "MLT",
+    "borders" : [ ]
+  },
+  "TJK" : {
+    "cca2" : "TJ",
+    "ccn3" : "762",
+    "cca3" : "TJK",
+    "cioc" : "TJK",
+    "borders" : [ "AFG", "CHN", "KGZ", "UZB" ]
+  },
+  "VNM" : {
+    "cca2" : "VN",
+    "ccn3" : "704",
+    "cca3" : "VNM",
+    "cioc" : "VIE",
+    "borders" : [ "KHM", "CHN", "LAO" ]
+  },
+  "CYM" : {
+    "cca2" : "KY",
+    "ccn3" : "136",
+    "cca3" : "CYM",
+    "cioc" : "CAY",
+    "borders" : [ ]
+  },
+  "PRY" : {
+    "cca2" : "PY",
+    "ccn3" : "600",
+    "cca3" : "PRY",
+    "cioc" : "PAR",
+    "borders" : [ "ARG", "BOL", "BRA" ]
+  },
+  "SHN" : {
+    "cca2" : "SH",
+    "ccn3" : "654",
+    "cca3" : "SHN",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "CYP" : {
+    "cca2" : "CY",
+    "ccn3" : "196",
+    "cca3" : "CYP",
+    "cioc" : "CYP",
+    "borders" : [ ]
+  },
+  "SYC" : {
+    "cca2" : "SC",
+    "ccn3" : "690",
+    "cca3" : "SYC",
+    "cioc" : "SEY",
+    "borders" : [ ]
+  },
+  "RWA" : {
+    "cca2" : "RW",
+    "ccn3" : "646",
+    "cca3" : "RWA",
+    "cioc" : "RWA",
+    "borders" : [ "BDI", "COD", "TZA", "UGA" ]
+  },
+  "BGD" : {
+    "cca2" : "BD",
+    "ccn3" : "050",
+    "cca3" : "BGD",
+    "cioc" : "BAN",
+    "borders" : [ "MMR", "IND" ]
+  },
+  "AUS" : {
+    "cca2" : "AU",
+    "ccn3" : "036",
+    "cca3" : "AUS",
+    "cioc" : "AUS",
+    "borders" : [ ]
+  },
+  "AUT" : {
+    "cca2" : "AT",
+    "ccn3" : "040",
+    "cca3" : "AUT",
+    "cioc" : "AUT",
+    "borders" : [ "CZE", "DEU", "HUN", "ITA", "LIE", "SVK", "SVN", "CHE" ]
+  },
+  "LKA" : {
+    "cca2" : "LK",
+    "ccn3" : "144",
+    "cca3" : "LKA",
+    "cioc" : "SRI",
+    "borders" : [ "IND" ]
+  },
+  "PSE" : {
+    "cca2" : "PS",
+    "ccn3" : "275",
+    "cca3" : "PSE",
+    "cioc" : "PLE",
+    "borders" : [ "ISR", "EGY", "JOR" ]
+  },
+  "GAB" : {
+    "cca2" : "GA",
+    "ccn3" : "266",
+    "cca3" : "GAB",
+    "cioc" : "GAB",
+    "borders" : [ "CMR", "COG", "GNQ" ]
+  },
+  "ZWE" : {
+    "cca2" : "ZW",
+    "ccn3" : "716",
+    "cca3" : "ZWE",
+    "cioc" : "ZIM",
+    "borders" : [ "BWA", "MOZ", "ZAF", "ZMB" ]
+  },
+  "BGR" : {
+    "cca2" : "BG",
+    "ccn3" : "100",
+    "cca3" : "BGR",
+    "cioc" : "BUL",
+    "borders" : [ "GRC", "MKD", "ROU", "SRB", "TUR" ]
+  },
+  "SYR" : {
+    "cca2" : "SY",
+    "ccn3" : "760",
+    "cca3" : "SYR",
+    "cioc" : "SYR",
+    "borders" : [ "IRQ", "ISR", "JOR", "LBN", "TUR" ]
+  },
+  "CZE" : {
+    "cca2" : "CZ",
+    "ccn3" : "203",
+    "cca3" : "CZE",
+    "cioc" : "CZE",
+    "borders" : [ "AUT", "DEU", "POL", "SVK" ]
+  },
+  "NOR" : {
+    "cca2" : "NO",
+    "ccn3" : "578",
+    "cca3" : "NOR",
+    "cioc" : "NOR",
+    "borders" : [ "FIN", "SWE", "RUS" ]
+  },
+  "UMI" : {
+    "cca2" : "UM",
+    "ccn3" : "581",
+    "cca3" : "UMI",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "CIV" : {
+    "cca2" : "CI",
+    "ccn3" : "384",
+    "cca3" : "CIV",
+    "cioc" : "CIV",
+    "borders" : [ "BFA", "GHA", "GIN", "LBR", "MLI" ]
+  },
+  "MMR" : {
+    "cca2" : "MM",
+    "ccn3" : "104",
+    "cca3" : "MMR",
+    "cioc" : "MYA",
+    "borders" : [ "BGD", "CHN", "IND", "LAO", "THA" ]
+  },
+  "TKL" : {
+    "cca2" : "TK",
+    "ccn3" : "772",
+    "cca3" : "TKL",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "KIR" : {
+    "cca2" : "KI",
+    "ccn3" : "296",
+    "cca3" : "KIR",
+    "cioc" : "KIR",
+    "borders" : [ ]
+  },
+  "TKM" : {
+    "cca2" : "TM",
+    "ccn3" : "795",
+    "cca3" : "TKM",
+    "cioc" : "TKM",
+    "borders" : [ "AFG", "IRN", "KAZ", "UZB" ]
+  },
+  "GRD" : {
+    "cca2" : "GD",
+    "ccn3" : "308",
+    "cca3" : "GRD",
+    "cioc" : "GRN",
+    "borders" : [ ]
+  },
+  "GRC" : {
+    "cca2" : "GR",
+    "ccn3" : "300",
+    "cca3" : "GRC",
+    "cioc" : "GRE",
+    "borders" : [ "ALB", "BGR", "TUR", "MKD" ]
+  },
+  "PCN" : {
+    "cca2" : "PN",
+    "ccn3" : "612",
+    "cca3" : "PCN",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "HTI" : {
+    "cca2" : "HT",
+    "ccn3" : "332",
+    "cca3" : "HTI",
+    "cioc" : "HAI",
+    "borders" : [ "DOM" ]
+  },
+  "GRL" : {
+    "cca2" : "GL",
+    "ccn3" : "304",
+    "cca3" : "GRL",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "YEM" : {
+    "cca2" : "YE",
+    "ccn3" : "887",
+    "cca3" : "YEM",
+    "cioc" : "YEM",
+    "borders" : [ "OMN", "SAU" ]
+  },
+  "AFG" : {
+    "cca2" : "AF",
+    "ccn3" : "004",
+    "cca3" : "AFG",
+    "cioc" : "AFG",
+    "borders" : [ "IRN", "PAK", "TKM", "UZB", "TJK", "CHN" ]
+  },
+  "MNE" : {
+    "cca2" : "ME",
+    "ccn3" : "499",
+    "cca3" : "MNE",
+    "cioc" : "MNE",
+    "borders" : [ "ALB", "BIH", "HRV", "UNK", "SRB" ]
+  },
+  "MNG" : {
+    "cca2" : "MN",
+    "ccn3" : "496",
+    "cca3" : "MNG",
+    "cioc" : "MGL",
+    "borders" : [ "CHN", "RUS" ]
+  },
+  "NPL" : {
+    "cca2" : "NP",
+    "ccn3" : "524",
+    "cca3" : "NPL",
+    "cioc" : "NEP",
+    "borders" : [ "CHN", "IND" ]
+  },
+  "BHS" : {
+    "cca2" : "BS",
+    "ccn3" : "044",
+    "cca3" : "BHS",
+    "cioc" : "BAH",
+    "borders" : [ ]
+  },
+  "BHR" : {
+    "cca2" : "BH",
+    "ccn3" : "048",
+    "cca3" : "BHR",
+    "cioc" : "BRN",
+    "borders" : [ ]
+  },
+  "MNP" : {
+    "cca2" : "MP",
+    "ccn3" : "580",
+    "cca3" : "MNP",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "UNK" : {
+    "cca2" : "XK",
+    "ccn3" : "",
+    "cca3" : "UNK",
+    "cioc" : "KOS",
+    "borders" : [ "ALB", "MKD", "MNE", "SRB" ]
+  },
+  "GBR" : {
+    "cca2" : "GB",
+    "ccn3" : "826",
+    "cca3" : "GBR",
+    "cioc" : "GBR",
+    "borders" : [ "IRL" ]
+  },
+  "SJM" : {
+    "cca2" : "SJ",
+    "ccn3" : "744",
+    "cca3" : "SJM",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "DMA" : {
+    "cca2" : "DM",
+    "ccn3" : "212",
+    "cca3" : "DMA",
+    "cioc" : "DMA",
+    "borders" : [ ]
+  },
+  "TLS" : {
+    "cca2" : "TL",
+    "ccn3" : "626",
+    "cca3" : "TLS",
+    "cioc" : "TLS",
+    "borders" : [ "IDN" ]
+  },
+  "BIH" : {
+    "cca2" : "BA",
+    "ccn3" : "070",
+    "cca3" : "BIH",
+    "cioc" : "BIH",
+    "borders" : [ "HRV", "MNE", "SRB" ]
+  },
+  "HUN" : {
+    "cca2" : "HU",
+    "ccn3" : "348",
+    "cca3" : "HUN",
+    "cioc" : "HUN",
+    "borders" : [ "AUT", "HRV", "ROU", "SRB", "SVK", "SVN", "UKR" ]
+  },
+  "AGO" : {
+    "cca2" : "AO",
+    "ccn3" : "024",
+    "cca3" : "AGO",
+    "cioc" : "ANG",
+    "borders" : [ "COG", "COD", "ZMB", "NAM" ]
+  },
+  "WSM" : {
+    "cca2" : "WS",
+    "ccn3" : "882",
+    "cca3" : "WSM",
+    "cioc" : "SAM",
+    "borders" : [ ]
+  },
+  "FRA" : {
+    "cca2" : "FR",
+    "ccn3" : "250",
+    "cca3" : "FRA",
+    "cioc" : "FRA",
+    "borders" : [ "AND", "BEL", "DEU", "ITA", "LUX", "MCO", "ESP", "CHE" ]
+  },
+  "MOZ" : {
+    "cca2" : "MZ",
+    "ccn3" : "508",
+    "cca3" : "MOZ",
+    "cioc" : "MOZ",
+    "borders" : [ "MWI", "ZAF", "SWZ", "TZA", "ZMB", "ZWE" ]
+  },
+  "NAM" : {
+    "cca2" : "NA",
+    "ccn3" : "516",
+    "cca3" : "NAM",
+    "cioc" : "NAM",
+    "borders" : [ "AGO", "BWA", "ZAF", "ZMB" ]
+  },
+  "PER" : {
+    "cca2" : "PE",
+    "ccn3" : "604",
+    "cca3" : "PER",
+    "cioc" : "PER",
+    "borders" : [ "BOL", "BRA", "CHL", "COL", "ECU" ]
+  },
+  "DNK" : {
+    "cca2" : "DK",
+    "ccn3" : "208",
+    "cca3" : "DNK",
+    "cioc" : "DEN",
+    "borders" : [ "DEU" ]
+  },
+  "GTM" : {
+    "cca2" : "GT",
+    "ccn3" : "320",
+    "cca3" : "GTM",
+    "cioc" : "GUA",
+    "borders" : [ "BLZ", "SLV", "HND", "MEX" ]
+  },
+  "FRO" : {
+    "cca2" : "FO",
+    "ccn3" : "234",
+    "cca3" : "FRO",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "SLB" : {
+    "cca2" : "SB",
+    "ccn3" : "090",
+    "cca3" : "SLB",
+    "cioc" : "SOL",
+    "borders" : [ ]
+  },
+  "VAT" : {
+    "cca2" : "VA",
+    "ccn3" : "336",
+    "cca3" : "VAT",
+    "cioc" : "",
+    "borders" : [ "ITA" ]
+  },
+  "SLE" : {
+    "cca2" : "SL",
+    "ccn3" : "694",
+    "cca3" : "SLE",
+    "cioc" : "SLE",
+    "borders" : [ "GIN", "LBR" ]
+  },
+  "NRU" : {
+    "cca2" : "NR",
+    "ccn3" : "520",
+    "cca3" : "NRU",
+    "cioc" : "NRU",
+    "borders" : [ ]
+  },
+  "AIA" : {
+    "cca2" : "AI",
+    "ccn3" : "660",
+    "cca3" : "AIA",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "GUF" : {
+    "cca2" : "GF",
+    "ccn3" : "254",
+    "cca3" : "GUF",
+    "cioc" : "",
+    "borders" : [ "BRA", "SUR" ]
+  },
+  "SLV" : {
+    "cca2" : "SV",
+    "ccn3" : "222",
+    "cca3" : "SLV",
+    "cioc" : "ESA",
+    "borders" : [ "GTM", "HND" ]
+  },
+  "GUM" : {
+    "cca2" : "GU",
+    "ccn3" : "316",
+    "cca3" : "GUM",
+    "cioc" : "GUM",
+    "borders" : [ ]
+  },
+  "FSM" : {
+    "cca2" : "FM",
+    "ccn3" : "583",
+    "cca3" : "FSM",
+    "cioc" : "FSM",
+    "borders" : [ ]
+  },
+  "DOM" : {
+    "cca2" : "DO",
+    "ccn3" : "214",
+    "cca3" : "DOM",
+    "cioc" : "DOM",
+    "borders" : [ "HTI" ]
+  },
+  "CMR" : {
+    "cca2" : "CM",
+    "ccn3" : "120",
+    "cca3" : "CMR",
+    "cioc" : "CMR",
+    "borders" : [ "CAF", "TCD", "COG", "GNQ", "GAB", "NGA" ]
+  },
+  "GUY" : {
+    "cca2" : "GY",
+    "ccn3" : "328",
+    "cca3" : "GUY",
+    "cioc" : "GUY",
+    "borders" : [ "BRA", "SUR", "VEN" ]
+  },
+  "AZE" : {
+    "cca2" : "AZ",
+    "ccn3" : "031",
+    "cca3" : "AZE",
+    "cioc" : "AZE",
+    "borders" : [ "ARM", "GEO", "IRN", "RUS", "TUR" ]
+  },
+  "MAC" : {
+    "cca2" : "MO",
+    "ccn3" : "446",
+    "cca3" : "MAC",
+    "cioc" : "",
+    "borders" : [ "CHN" ]
+  },
+  "GEO" : {
+    "cca2" : "GE",
+    "ccn3" : "268",
+    "cca3" : "GEO",
+    "cioc" : "GEO",
+    "borders" : [ "ARM", "AZE", "RUS", "TUR" ]
+  },
+  "TON" : {
+    "cca2" : "TO",
+    "ccn3" : "776",
+    "cca3" : "TON",
+    "cioc" : "TGA",
+    "borders" : [ ]
+  },
+  "MAF" : {
+    "cca2" : "MF",
+    "ccn3" : "663",
+    "cca3" : "MAF",
+    "cioc" : "",
+    "borders" : [ "SXM" ]
+  },
+  "NCL" : {
+    "cca2" : "NC",
+    "ccn3" : "540",
+    "cca3" : "NCL",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "SMR" : {
+    "cca2" : "SM",
+    "ccn3" : "674",
+    "cca3" : "SMR",
+    "cioc" : "SMR",
+    "borders" : [ "ITA" ]
+  },
+  "ERI" : {
+    "cca2" : "ER",
+    "ccn3" : "232",
+    "cca3" : "ERI",
+    "cioc" : "ERI",
+    "borders" : [ "DJI", "ETH", "SDN" ]
+  },
+  "KNA" : {
+    "cca2" : "KN",
+    "ccn3" : "659",
+    "cca3" : "KNA",
+    "cioc" : "SKN",
+    "borders" : [ ]
+  },
+  "MAR" : {
+    "cca2" : "MA",
+    "ccn3" : "504",
+    "cca3" : "MAR",
+    "cioc" : "MAR",
+    "borders" : [ "DZA", "ESH", "ESP" ]
+  },
+  "BLM" : {
+    "cca2" : "BL",
+    "ccn3" : "652",
+    "cca3" : "BLM",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "VCT" : {
+    "cca2" : "VC",
+    "ccn3" : "670",
+    "cca3" : "VCT",
+    "cioc" : "VIN",
+    "borders" : [ ]
+  },
+  "BLR" : {
+    "cca2" : "BY",
+    "ccn3" : "112",
+    "cca3" : "BLR",
+    "cioc" : "BLR",
+    "borders" : [ "LVA", "LTU", "POL", "RUS", "UKR" ]
+  },
+  "MRT" : {
+    "cca2" : "MR",
+    "ccn3" : "478",
+    "cca3" : "MRT",
+    "cioc" : "MTN",
+    "borders" : [ "DZA", "MLI", "SEN", "ESH" ]
+  },
+  "BLZ" : {
+    "cca2" : "BZ",
+    "ccn3" : "084",
+    "cca3" : "BLZ",
+    "cioc" : "BIZ",
+    "borders" : [ "GTM", "MEX" ]
+  },
+  "PHL" : {
+    "cca2" : "PH",
+    "ccn3" : "608",
+    "cca3" : "PHL",
+    "cioc" : "PHI",
+    "borders" : [ ]
+  },
+  "COD" : {
+    "cca2" : "CD",
+    "ccn3" : "180",
+    "cca3" : "COD",
+    "cioc" : "COD",
+    "borders" : [ "AGO", "BDI", "CAF", "COG", "RWA", "SSD", "TZA", "UGA", "ZMB" ]
+  },
+  "COG" : {
+    "cca2" : "CG",
+    "ccn3" : "178",
+    "cca3" : "COG",
+    "cioc" : "CGO",
+    "borders" : [ "AGO", "CMR", "CAF", "COD", "GAB" ]
+  },
+  "ESH" : {
+    "cca2" : "EH",
+    "ccn3" : "732",
+    "cca3" : "ESH",
+    "cioc" : "",
+    "borders" : [ "DZA", "MRT", "MAR" ]
+  },
+  "PYF" : {
+    "cca2" : "PF",
+    "ccn3" : "258",
+    "cca3" : "PYF",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "URY" : {
+    "cca2" : "UY",
+    "ccn3" : "858",
+    "cca3" : "URY",
+    "cioc" : "URU",
+    "borders" : [ "ARG", "BRA" ]
+  },
+  "COK" : {
+    "cca2" : "CK",
+    "ccn3" : "184",
+    "cca3" : "COK",
+    "cioc" : "COK",
+    "borders" : [ ]
+  },
+  "COM" : {
+    "cca2" : "KM",
+    "ccn3" : "174",
+    "cca3" : "COM",
+    "cioc" : "COM",
+    "borders" : [ ]
+  },
+  "COL" : {
+    "cca2" : "CO",
+    "ccn3" : "170",
+    "cca3" : "COL",
+    "cioc" : "COL",
+    "borders" : [ "BRA", "ECU", "PAN", "PER", "VEN" ]
+  },
+  "USA" : {
+    "cca2" : "US",
+    "ccn3" : "840",
+    "cca3" : "USA",
+    "cioc" : "USA",
+    "borders" : [ "CAN", "MEX" ]
+  },
+  "ESP" : {
+    "cca2" : "ES",
+    "ccn3" : "724",
+    "cca3" : "ESP",
+    "cioc" : "ESP",
+    "borders" : [ "AND", "FRA", "GIB", "PRT", "MAR" ]
+  },
+  "EST" : {
+    "cca2" : "EE",
+    "ccn3" : "233",
+    "cca3" : "EST",
+    "cioc" : "EST",
+    "borders" : [ "LVA", "RUS" ]
+  },
+  "BMU" : {
+    "cca2" : "BM",
+    "ccn3" : "060",
+    "cca3" : "BMU",
+    "cioc" : "BER",
+    "borders" : [ ]
+  },
+  "MSR" : {
+    "cca2" : "MS",
+    "ccn3" : "500",
+    "cca3" : "MSR",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "ZMB" : {
+    "cca2" : "ZM",
+    "ccn3" : "894",
+    "cca3" : "ZMB",
+    "cioc" : "ZAM",
+    "borders" : [ "AGO", "BWA", "COD", "MWI", "MOZ", "NAM", "TZA", "ZWE" ]
+  },
+  "KOR" : {
+    "cca2" : "KR",
+    "ccn3" : "410",
+    "cca3" : "KOR",
+    "cioc" : "KOR",
+    "borders" : [ "PRK" ]
+  },
+  "SOM" : {
+    "cca2" : "SO",
+    "ccn3" : "706",
+    "cca3" : "SOM",
+    "cioc" : "SOM",
+    "borders" : [ "DJI", "ETH", "KEN" ]
+  },
+  "VUT" : {
+    "cca2" : "VU",
+    "ccn3" : "548",
+    "cca3" : "VUT",
+    "cioc" : "VAN",
+    "borders" : [ ]
+  },
+  "ALA" : {
+    "cca2" : "AX",
+    "ccn3" : "248",
+    "cca3" : "ALA",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "ECU" : {
+    "cca2" : "EC",
+    "ccn3" : "218",
+    "cca3" : "ECU",
+    "cioc" : "ECU",
+    "borders" : [ "COL", "PER" ]
+  },
+  "ALB" : {
+    "cca2" : "AL",
+    "ccn3" : "008",
+    "cca3" : "ALB",
+    "cioc" : "ALB",
+    "borders" : [ "MNE", "GRC", "MKD", "UNK" ]
+  },
+  "ETH" : {
+    "cca2" : "ET",
+    "ccn3" : "231",
+    "cca3" : "ETH",
+    "cioc" : "ETH",
+    "borders" : [ "DJI", "ERI", "KEN", "SOM", "SSD", "SDN" ]
+  },
+  "GGY" : {
+    "cca2" : "GG",
+    "ccn3" : "831",
+    "cca3" : "GGY",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "MCO" : {
+    "cca2" : "MC",
+    "ccn3" : "492",
+    "cca3" : "MCO",
+    "cioc" : "MON",
+    "borders" : [ "FRA" ]
+  },
+  "NER" : {
+    "cca2" : "NE",
+    "ccn3" : "562",
+    "cca3" : "NER",
+    "cioc" : "NIG",
+    "borders" : [ "DZA", "BEN", "BFA", "TCD", "LBY", "MLI", "NGA" ]
+  },
+  "LAO" : {
+    "cca2" : "LA",
+    "ccn3" : "418",
+    "cca3" : "LAO",
+    "cioc" : "LAO",
+    "borders" : [ "MMR", "KHM", "CHN", "THA", "VNM" ]
+  },
+  "VEN" : {
+    "cca2" : "VE",
+    "ccn3" : "862",
+    "cca3" : "VEN",
+    "cioc" : "VEN",
+    "borders" : [ "BRA", "COL", "GUY" ]
+  },
+  "GHA" : {
+    "cca2" : "GH",
+    "ccn3" : "288",
+    "cca3" : "GHA",
+    "cioc" : "GHA",
+    "borders" : [ "BFA", "CIV", "TGO" ]
+  },
+  "CPV" : {
+    "cca2" : "CV",
+    "ccn3" : "132",
+    "cca3" : "CPV",
+    "cioc" : "CPV",
+    "borders" : [ ]
+  },
+  "MDA" : {
+    "cca2" : "MD",
+    "ccn3" : "498",
+    "cca3" : "MDA",
+    "cioc" : "MDA",
+    "borders" : [ "ROU", "UKR" ]
+  },
+  "MTQ" : {
+    "cca2" : "MQ",
+    "ccn3" : "474",
+    "cca3" : "MTQ",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "MDG" : {
+    "cca2" : "MG",
+    "ccn3" : "450",
+    "cca3" : "MDG",
+    "cioc" : "MAD",
+    "borders" : [ ]
+  },
+  "SPM" : {
+    "cca2" : "PM",
+    "ccn3" : "666",
+    "cca3" : "SPM",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "NFK" : {
+    "cca2" : "NF",
+    "ccn3" : "574",
+    "cca3" : "NFK",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "LBN" : {
+    "cca2" : "LB",
+    "ccn3" : "422",
+    "cca3" : "LBN",
+    "cioc" : "LBN",
+    "borders" : [ "ISR", "SYR" ]
+  },
+  "LBR" : {
+    "cca2" : "LR",
+    "ccn3" : "430",
+    "cca3" : "LBR",
+    "cioc" : "LBR",
+    "borders" : [ "GIN", "CIV", "SLE" ]
+  },
+  "BOL" : {
+    "cca2" : "BO",
+    "ccn3" : "068",
+    "cca3" : "BOL",
+    "cioc" : "BOL",
+    "borders" : [ "ARG", "BRA", "CHL", "PRY", "PER" ]
+  },
+  "MDV" : {
+    "cca2" : "MV",
+    "ccn3" : "462",
+    "cca3" : "MDV",
+    "cioc" : "MDV",
+    "borders" : [ ]
+  },
+  "GIB" : {
+    "cca2" : "GI",
+    "ccn3" : "292",
+    "cca3" : "GIB",
+    "cioc" : "",
+    "borders" : [ "ESP" ]
+  },
+  "LBY" : {
+    "cca2" : "LY",
+    "ccn3" : "434",
+    "cca3" : "LBY",
+    "cioc" : "LBA",
+    "borders" : [ "DZA", "TCD", "EGY", "NER", "SDN", "TUN" ]
+  },
+  "HKG" : {
+    "cca2" : "HK",
+    "ccn3" : "344",
+    "cca3" : "HKG",
+    "cioc" : "HKG",
+    "borders" : [ "CHN" ]
+  },
+  "CAF" : {
+    "cca2" : "CF",
+    "ccn3" : "140",
+    "cca3" : "CAF",
+    "cioc" : "CAF",
+    "borders" : [ "CMR", "TCD", "COD", "COG", "SSD", "SDN" ]
+  },
+  "LSO" : {
+    "cca2" : "LS",
+    "ccn3" : "426",
+    "cca3" : "LSO",
+    "cioc" : "LES",
+    "borders" : [ "ZAF" ]
+  },
+  "NGA" : {
+    "cca2" : "NG",
+    "ccn3" : "566",
+    "cca3" : "NGA",
+    "cioc" : "NGR",
+    "borders" : [ "BEN", "CMR", "TCD", "NER" ]
+  },
+  "MUS" : {
+    "cca2" : "MU",
+    "ccn3" : "480",
+    "cca3" : "MUS",
+    "cioc" : "MRI",
+    "borders" : [ ]
+  },
+  "IMN" : {
+    "cca2" : "IM",
+    "ccn3" : "833",
+    "cca3" : "IMN",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "LCA" : {
+    "cca2" : "LC",
+    "ccn3" : "662",
+    "cca3" : "LCA",
+    "cioc" : "LCA",
+    "borders" : [ ]
+  },
+  "JOR" : {
+    "cca2" : "JO",
+    "ccn3" : "400",
+    "cca3" : "JOR",
+    "cioc" : "JOR",
+    "borders" : [ "IRQ", "ISR", "PSE", "SAU", "SYR" ]
+  },
+  "GIN" : {
+    "cca2" : "GN",
+    "ccn3" : "324",
+    "cca3" : "GIN",
+    "cioc" : "GUI",
+    "borders" : [ "CIV", "GNB", "LBR", "MLI", "SEN", "SLE" ]
+  },
+  "VGB" : {
+    "cca2" : "VG",
+    "ccn3" : "092",
+    "cca3" : "VGB",
+    "cioc" : "IVB",
+    "borders" : [ ]
+  },
+  "CAN" : {
+    "cca2" : "CA",
+    "ccn3" : "124",
+    "cca3" : "CAN",
+    "cioc" : "CAN",
+    "borders" : [ "USA" ]
+  },
+  "TCA" : {
+    "cca2" : "TC",
+    "ccn3" : "796",
+    "cca3" : "TCA",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "TCD" : {
+    "cca2" : "TD",
+    "ccn3" : "148",
+    "cca3" : "TCD",
+    "cioc" : "CHA",
+    "borders" : [ "CMR", "CAF", "LBY", "NER", "NGA", "SDN" ]
+  },
+  "AND" : {
+    "cca2" : "AD",
+    "ccn3" : "020",
+    "cca3" : "AND",
+    "cioc" : "AND",
+    "borders" : [ "FRA", "ESP" ]
+  },
+  "ROU" : {
+    "cca2" : "RO",
+    "ccn3" : "642",
+    "cca3" : "ROU",
+    "cioc" : "ROU",
+    "borders" : [ "BGR", "HUN", "MDA", "SRB", "UKR" ]
+  },
+  "CRI" : {
+    "cca2" : "CR",
+    "ccn3" : "188",
+    "cca3" : "CRI",
+    "cioc" : "CRC",
+    "borders" : [ "NIC", "PAN" ]
+  },
+  "IND" : {
+    "cca2" : "IN",
+    "ccn3" : "356",
+    "cca3" : "IND",
+    "cioc" : "IND",
+    "borders" : [ "BGD", "BTN", "MMR", "CHN", "NPL", "PAK" ]
+  },
+  "MEX" : {
+    "cca2" : "MX",
+    "ccn3" : "484",
+    "cca3" : "MEX",
+    "cioc" : "MEX",
+    "borders" : [ "BLZ", "GTM", "USA" ]
+  },
+  "SRB" : {
+    "cca2" : "RS",
+    "ccn3" : "688",
+    "cca3" : "SRB",
+    "cioc" : "SRB",
+    "borders" : [ "BIH", "BGR", "HRV", "HUN", "UNK", "MKD", "MNE", "ROU" ]
+  },
+  "KAZ" : {
+    "cca2" : "KZ",
+    "ccn3" : "398",
+    "cca3" : "KAZ",
+    "cioc" : "KAZ",
+    "borders" : [ "CHN", "KGZ", "RUS", "TKM", "UZB" ]
+  },
+  "SAU" : {
+    "cca2" : "SA",
+    "ccn3" : "682",
+    "cca3" : "SAU",
+    "cioc" : "KSA",
+    "borders" : [ "IRQ", "JOR", "KWT", "OMN", "QAT", "ARE", "YEM" ]
+  },
+  "JPN" : {
+    "cca2" : "JP",
+    "ccn3" : "392",
+    "cca3" : "JPN",
+    "cioc" : "JPN",
+    "borders" : [ ]
+  },
+  "LTU" : {
+    "cca2" : "LT",
+    "ccn3" : "440",
+    "cca3" : "LTU",
+    "cioc" : "LTU",
+    "borders" : [ "BLR", "LVA", "POL", "RUS" ]
+  },
+  "TTO" : {
+    "cca2" : "TT",
+    "ccn3" : "780",
+    "cca3" : "TTO",
+    "cioc" : "TTO",
+    "borders" : [ ]
+  },
+  "PLW" : {
+    "cca2" : "PW",
+    "ccn3" : "585",
+    "cca3" : "PLW",
+    "cioc" : "PLW",
+    "borders" : [ ]
+  },
+  "HMD" : {
+    "cca2" : "HM",
+    "ccn3" : "334",
+    "cca3" : "HMD",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "MWI" : {
+    "cca2" : "MW",
+    "ccn3" : "454",
+    "cca3" : "MWI",
+    "cioc" : "MAW",
+    "borders" : [ "MOZ", "TZA", "ZMB" ]
+  },
+  "SSD" : {
+    "cca2" : "SS",
+    "ccn3" : "728",
+    "cca3" : "SSD",
+    "cioc" : "",
+    "borders" : [ "CAF", "COD", "ETH", "KEN", "SDN", "UGA" ]
+  },
+  "NIC" : {
+    "cca2" : "NI",
+    "ccn3" : "558",
+    "cca3" : "NIC",
+    "cioc" : "NCA",
+    "borders" : [ "CRI", "HND" ]
+  },
+  "CCK" : {
+    "cca2" : "CC",
+    "ccn3" : "166",
+    "cca3" : "CCK",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "FIN" : {
+    "cca2" : "FI",
+    "ccn3" : "246",
+    "cca3" : "FIN",
+    "cioc" : "FIN",
+    "borders" : [ "NOR", "SWE", "RUS" ]
+  },
+  "TUN" : {
+    "cca2" : "TN",
+    "ccn3" : "788",
+    "cca3" : "TUN",
+    "cioc" : "TUN",
+    "borders" : [ "DZA", "LBY" ]
+  },
+  "LUX" : {
+    "cca2" : "LU",
+    "ccn3" : "442",
+    "cca3" : "LUX",
+    "cioc" : "LUX",
+    "borders" : [ "BEL", "FRA", "DEU" ]
+  },
+  "UGA" : {
+    "cca2" : "UG",
+    "ccn3" : "800",
+    "cca3" : "UGA",
+    "cioc" : "UGA",
+    "borders" : [ "COD", "KEN", "RWA", "SSD", "TZA" ]
+  },
+  "IOT" : {
+    "cca2" : "IO",
+    "ccn3" : "086",
+    "cca3" : "IOT",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "BRA" : {
+    "cca2" : "BR",
+    "ccn3" : "076",
+    "cca3" : "BRA",
+    "cioc" : "BRA",
+    "borders" : [ "ARG", "BOL", "COL", "GUF", "GUY", "PRY", "PER", "SUR", "URY", "VEN" ]
+  },
+  "TUR" : {
+    "cca2" : "TR",
+    "ccn3" : "792",
+    "cca3" : "TUR",
+    "cioc" : "TUR",
+    "borders" : [ "ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR" ]
+  },
+  "BRB" : {
+    "cca2" : "BB",
+    "ccn3" : "052",
+    "cca3" : "BRB",
+    "cioc" : "BAR",
+    "borders" : [ ]
+  },
+  "TUV" : {
+    "cca2" : "TV",
+    "ccn3" : "798",
+    "cca3" : "TUV",
+    "cioc" : "TUV",
+    "borders" : [ ]
+  },
+  "DEU" : {
+    "cca2" : "DE",
+    "ccn3" : "276",
+    "cca3" : "DEU",
+    "cioc" : "GER",
+    "borders" : [ "AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE" ]
+  },
+  "EGY" : {
+    "cca2" : "EG",
+    "ccn3" : "818",
+    "cca3" : "EGY",
+    "cioc" : "EGY",
+    "borders" : [ "ISR", "LBY", "PSE", "SDN" ]
+  },
+  "LVA" : {
+    "cca2" : "LV",
+    "ccn3" : "428",
+    "cca3" : "LVA",
+    "cioc" : "LAT",
+    "borders" : [ "BLR", "EST", "LTU", "RUS" ]
+  },
+  "JAM" : {
+    "cca2" : "JM",
+    "ccn3" : "388",
+    "cca3" : "JAM",
+    "cioc" : "JAM",
+    "borders" : [ ]
+  },
+  "NIU" : {
+    "cca2" : "NU",
+    "ccn3" : "570",
+    "cca3" : "NIU",
+    "cioc" : "",
+    "borders" : [ ]
+  },
+  "VIR" : {
+    "cca2" : "VI",
+    "ccn3" : "850",
+    "cca3" : "VIR",
+    "cioc" : "ISV",
+    "borders" : [ ]
+  },
+  "ZAF" : {
+    "cca2" : "ZA",
+    "ccn3" : "710",
+    "cca3" : "ZAF",
+    "cioc" : "RSA",
+    "borders" : [ "BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE" ]
+  },
+  "BRN" : {
+    "cca2" : "BN",
+    "ccn3" : "096",
+    "cca3" : "BRN",
+    "cioc" : "BRU",
+    "borders" : [ "MYS" ]
+  },
+  "HND" : {
+    "cca2" : "HN",
+    "ccn3" : "340",
+    "cca3" : "HND",
+    "cioc" : "HON",
+    "borders" : [ "GTM", "SLV", "NIC" ]
+  }
+}
