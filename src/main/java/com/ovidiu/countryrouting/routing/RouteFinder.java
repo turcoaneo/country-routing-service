@@ -1,17 +1,26 @@
 package com.ovidiu.countryrouting.routing;
 
 
+import com.ovidiu.countryrouting.graph.GraphBuilder;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.*;
 
+
+@Service
+@NoArgsConstructor
 public class RouteFinder {
+    private GraphBuilder graphBuilder;
 
-    private final Map<String, List<String>> graph;
-
-    public RouteFinder(Map<String, List<String>> graph) {
-        this.graph = graph;
+    @Autowired
+    public RouteFinder(GraphBuilder graphBuilder) {
+        this.graphBuilder = graphBuilder;
     }
 
     public List<String> findShortestRoute(String origin, String destination) {
+        Map<String, List<String>> graph = this.graphBuilder.buildGraph();
         if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
             throw new IllegalArgumentException("Unknown country code");
         }

@@ -3,12 +3,16 @@ package com.ovidiu.countryrouting.graph;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ovidiu.countryrouting.utils.CountryBorderMapper.CountryCompact;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
+@NoArgsConstructor
 public class GraphBuilder {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -23,7 +27,8 @@ public class GraphBuilder {
 
         try {
             Map<String, CountryCompact> raw =
-                    MAPPER.readValue(is, new TypeReference<>() {});
+                    MAPPER.readValue(is, new TypeReference<>() {
+                    });
 
             Map<String, List<String>> graph = new HashMap<>();
 
