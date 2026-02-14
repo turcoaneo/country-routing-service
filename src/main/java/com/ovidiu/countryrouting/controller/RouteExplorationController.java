@@ -27,7 +27,7 @@ public class RouteExplorationController {
                                           @PathVariable String destination) {
 
         try {
-            List<List<String>> routes = allRoutesFinder.findAllRoutes(origin, destination);
+            List<List<String>> routes = allRoutesFinder.findAllRoutesIterative(origin, destination);
 
             if (routes.isEmpty()) {
                 return ResponseEntity.badRequest()

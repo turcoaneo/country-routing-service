@@ -15,11 +15,7 @@ public class AllRoutesFinder {
     }
 
     public List<List<String>> findAllRoutes(String origin, String destination) {
-        Map<String, List<String>> graph = graphBuilder.buildGraph();
-
-        if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
-            throw new IllegalArgumentException("Unknown country code");
-        }
+        Map<String, List<String>> graph = getGraph(origin, destination);
 
         List<List<String>> results = new ArrayList<>();
         LinkedList<String> path = new LinkedList<>();
@@ -55,11 +51,7 @@ public class AllRoutesFinder {
     }
 
     public List<List<String>> findAllRoutesIterative(String origin, String destination) {
-        Map<String, List<String>> graph = graphBuilder.buildGraph();
-
-        if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
-            throw new IllegalArgumentException("Unknown country code");
-        }
+        Map<String, List<String>> graph = getGraph(origin, destination);
 
         List<List<String>> results = new ArrayList<>();
 
@@ -87,6 +79,15 @@ public class AllRoutesFinder {
         }
 
         return results;
+    }
+
+    private Map<String, List<String>> getGraph(String origin, String destination) {
+        Map<String, List<String>> graph = graphBuilder.buildGraph();
+
+        if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
+            throw new IllegalArgumentException("Unknown country code");
+        }
+        return graph;
     }
 
     record NodePath(String node, List<String> path) {}
