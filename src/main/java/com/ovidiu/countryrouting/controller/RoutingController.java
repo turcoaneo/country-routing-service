@@ -1,6 +1,7 @@
 package com.ovidiu.countryrouting.controller;
 
 import com.ovidiu.countryrouting.routing.RouteFinder;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/routing")
+@Tag(name = "Shortest Route", description = "Find the shortest land route")
 public class RoutingController {
 
     private final RouteFinder routeFinder;
