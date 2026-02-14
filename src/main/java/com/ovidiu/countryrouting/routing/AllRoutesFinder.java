@@ -14,24 +14,40 @@ public class AllRoutesFinder {
         this.graphBuilder = graphBuilder;
     }
 
-    public List<List<String>> findAllRoutes(String origin, String destination) {
-        Map<String, List<String>> graph = getGraph(origin, destination);
+    public List<List<String>> findAllRoutes(
+            String origin,
+            String destination,
+            int maxDepth,
+            int maxRoutes
+    ) {
+        Map<String, List<String>> graph = graphBuilder.buildGraph();
+
+        if (!graph.containsKey(origin) || !graph.containsKey(destination)) {
+            throw new IllegalArgumentException("Unknown country code");
+        }
 
         List<List<String>> results = new ArrayList<>();
         LinkedList<String> path = new LinkedList<>();
         Set<String> visited = new HashSet<>();
 
-        dfs(graph, origin, destination, visited, path, results);
+        dfs(graph, origin, destination, visited, path, results, maxDepth, maxRoutes);
 
         return results;
     }
 
-    private void dfs(Map<String, List<String>> graph,
-                     String current,
-                     String destination,
-                     Set<String> visited,
-                     LinkedList<String> path,
-                     List<List<String>> results) {
+    private void dfs(
+            Map<String, List<String>> graph,
+            String current,
+            String destination,
+            Set<String> visited,
+            LinkedList<String> path,
+            List<List<String>> results,
+            int maxDepth,
+            int maxRoutes
+    ) {
+        if (path.size() > maxDepth || results.size() >= maxRoutes) {
+            return;
+        }
 
         visited.add(current);
         path.add(current);
@@ -41,7 +57,7 @@ public class AllRoutesFinder {
         } else {
             for (String neighbor : graph.getOrDefault(current, List.of())) {
                 if (!visited.contains(neighbor)) {
-                    dfs(graph, neighbor, destination, visited, path, results);
+                    dfs(graph, neighbor, destination, visited, path, results, maxDepth, maxRoutes);
                 }
             }
         }

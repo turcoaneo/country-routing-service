@@ -34,7 +34,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "D");
+        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "D", 10, 10);
 
         assertEquals(2, routes.size());
         assertTrue(routes.contains(List.of("A", "B", "D")));
@@ -51,7 +51,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "C");
+        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "C", 10, 10);
         assertTrue(routes.isEmpty());
     }
 
@@ -64,7 +64,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "A");
+        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "A", 10, 10);
 
         assertEquals(1, routes.size());
         assertEquals(List.of("A"), routes.getFirst());
@@ -80,7 +80,7 @@ class AllRoutesFinderTest {
         );
 
         assertThrows(IllegalArgumentException.class,
-                () -> allRoutesFinder.findAllRoutes("X", "B"));
+                () -> allRoutesFinder.findAllRoutes("X", "B", 10, 10));
     }
 
     @Test
@@ -93,7 +93,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "C");
+        List<List<String>> routes = allRoutesFinder.findAllRoutes("A", "C", 10, 10);
 
         assertEquals(1, routes.size());
         assertEquals(List.of("A", "B", "C"), routes.getFirst());
@@ -110,7 +110,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "D");
+        List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "D", 10, 10);
         List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "D");
 
         assertEquals(recursive.size(), iterative.size());
@@ -128,7 +128,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "C");
+        List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "C", 10, 10);
         List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "C");
 
         assertEquals(recursive, iterative);

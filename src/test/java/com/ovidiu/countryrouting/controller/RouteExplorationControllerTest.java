@@ -26,13 +26,13 @@ class RouteExplorationControllerTest {
 
     @Test
     void testMultipleRoutes() throws Exception {
-        when(allRoutesFinder.findAllRoutes("A", "D"))
+        when(allRoutesFinder.findAllRoutes("A", "D", 10, 10))
                 .thenReturn(List.of(
                         List.of("A", "B", "D"),
                         List.of("A", "C", "D")
                 ));
 
-        mockMvc.perform(get("/routing/all/A/D"))
+        mockMvc.perform(get("/routing/all/A/D?maxDepth=10&maxRoutes=10"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.routes[0][0]").value("A"))
                 .andExpect(jsonPath("$.routes[0][1]").value("B"))
@@ -44,20 +44,20 @@ class RouteExplorationControllerTest {
 
     @Test
     void testNoRoutes() throws Exception {
-        when(allRoutesFinder.findAllRoutes("USA", "AUS"))
+        when(allRoutesFinder.findAllRoutes("USA", "AUS", 10, 10))
                 .thenReturn(List.of());
 
-        mockMvc.perform(get("/routing/all/USA/AUS"))
+        mockMvc.perform(get("/routing/all/USA/AUS?maxDepth=10&maxRoutes=10"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.error").value("No land routes found"));
     }
 
     @Test
     void testInvalidCountry() throws Exception {
-        when(allRoutesFinder.findAllRoutes("XXX", "ITA"))
+        when(allRoutesFinder.findAllRoutes("XXX", "ITA", 10, 10))
                 .thenThrow(new IllegalArgumentException("Unknown country code"));
 
-        mockMvc.perform(get("/routing/all/XXX/ITA"))
+        mockMvc.perform(get("/routing/all/XXX/ITA?maxDepth=10&maxRoutes=10"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.error").value("Unknown country code"));
     }

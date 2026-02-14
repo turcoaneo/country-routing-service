@@ -3,10 +3,7 @@ package com.ovidiu.countryrouting.controller;
 import com.ovidiu.countryrouting.routing.AllRoutesFinder;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -23,11 +20,16 @@ public class RouteExplorationController {
     }
 
     @GetMapping("/{origin}/{destination}")
-    public ResponseEntity<?> getAllRoutes(@PathVariable String origin,
-                                          @PathVariable String destination) {
-
+    public ResponseEntity<?> getAllRoutes(
+            @PathVariable String origin,
+            @PathVariable String destination,
+            @RequestParam(defaultValue = "10") int maxDepth,
+            @RequestParam(defaultValue = "1000") int maxRoutes
+    ) {
         try {
-            List<List<String>> routes = allRoutesFinder.findAllRoutesIterative(origin, destination);
+            List<List<String>> routes = allRoutesFinder.findAllRoutes(
+                    origin, destination, maxDepth, maxRoutes
+            );
 
             if (routes.isEmpty()) {
                 return ResponseEntity.badRequest()
