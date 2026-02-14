@@ -1,5 +1,6 @@
 package com.ovidiu.countryrouting.routing;
 
+import com.ovidiu.countryrouting.aop.TrackExecutionTime;
 import com.ovidiu.countryrouting.graph.GraphBuilder;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ public class AllRoutesFinder {
         this.graphBuilder = graphBuilder;
     }
 
+    @TrackExecutionTime
     public List<List<String>> findAllRoutes(
             String origin,
             String destination,
@@ -66,6 +68,7 @@ public class AllRoutesFinder {
         visited.remove(current);
     }
 
+    @TrackExecutionTime
     public List<List<String>> findAllRoutesIterative(
             String origin,
             String destination,
