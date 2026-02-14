@@ -161,4 +161,47 @@ class AllRoutesFinderTest {
         assertEquals(1, routes.size());
         assertEquals(List.of("A"), routes.getFirst());
     }
+
+    @Test
+    void benchmarkRecursiveVsIterative() {
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "A", List.of("B", "C"),
+                        "B", List.of("D", "E"),
+                        "C", List.of("F"),
+                        "D", List.of("G"),
+                        "E", List.of("G"),
+                        "F", List.of("G"),
+                        "G", List.of()
+                )
+        );
+
+        int iterations = 10_000;
+        long start, end;
+
+        // Warm-up
+        for (int i = 0; i < 1000; i++) {
+            allRoutesFinder.findAllRoutes("A", "G", 10, 1000);
+            allRoutesFinder.findAllRoutesIterative("A", "G", 10, 1000);
+        }
+
+        // Recursive benchmark
+        start = System.nanoTime();
+        for (int i = 0; i < iterations; i++) {
+            allRoutesFinder.findAllRoutes("A", "G", 10, 1000);
+        }
+        end = System.nanoTime();
+        long recursiveTime = end - start;
+
+        // Iterative benchmark
+        start = System.nanoTime();
+        for (int i = 0; i < iterations; i++) {
+            allRoutesFinder.findAllRoutesIterative("A", "G", 10, 1000);
+        }
+        end = System.nanoTime();
+        long iterativeTime = end - start;
+
+        System.out.println("Recursive DFS: " + recursiveTime / 1_000_000 + " ms");
+        System.out.println("Iterative DFS: " + iterativeTime / 1_000_000 + " ms");
+    }
 }
