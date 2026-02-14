@@ -118,7 +118,7 @@ The project includes:
 ## 🧩 Future Enhancements
 
 - Fuzzy matching for mistyped country codes
-- “All possible routes” mode
+- “All possible routes” mode plus benchmark - iterative / recursive ✅
 - Caching for repeated queries
 - Dockerfile for containerized deployment
 
