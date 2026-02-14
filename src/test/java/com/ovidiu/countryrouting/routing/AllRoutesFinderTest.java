@@ -111,7 +111,7 @@ class AllRoutesFinderTest {
         );
 
         List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "D", 10, 10);
-        List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "D");
+        List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "D", 10, 10);
 
         assertEquals(recursive.size(), iterative.size());
         assertTrue(iterative.containsAll(recursive));
@@ -129,7 +129,7 @@ class AllRoutesFinderTest {
         );
 
         List<List<String>> recursive = allRoutesFinder.findAllRoutes("A", "C", 10, 10);
-        List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "C");
+        List<List<String>> iterative = allRoutesFinder.findAllRoutesIterative("A", "C", 10, 10);
 
         assertEquals(recursive, iterative);
     }
@@ -144,7 +144,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        assertTrue(allRoutesFinder.findAllRoutesIterative("A", "C").isEmpty());
+        assertTrue(allRoutesFinder.findAllRoutesIterative("A", "C", 10, 10).isEmpty());
     }
 
     @Test
@@ -156,7 +156,7 @@ class AllRoutesFinderTest {
                 )
         );
 
-        List<List<String>> routes = allRoutesFinder.findAllRoutesIterative("A", "A");
+        List<List<String>> routes = allRoutesFinder.findAllRoutesIterative("A", "A", 10, 10);
 
         assertEquals(1, routes.size());
         assertEquals(List.of("A"), routes.getFirst());

@@ -24,10 +24,35 @@ public class RouteExplorationController {
             @PathVariable String origin,
             @PathVariable String destination,
             @RequestParam(defaultValue = "10") int maxDepth,
-            @RequestParam(defaultValue = "1000") int maxRoutes
+            @RequestParam(defaultValue = "10") int maxRoutes
     ) {
         try {
             List<List<String>> routes = allRoutesFinder.findAllRoutes(
+                    origin, destination, maxDepth, maxRoutes
+            );
+
+            if (routes.isEmpty()) {
+                return ResponseEntity.badRequest()
+                        .body(Map.of("error", "No land routes found"));
+            }
+
+            return ResponseEntity.ok(Map.of("routes", routes));
+
+        } catch (IllegalArgumentException ex) {
+            return ResponseEntity.badRequest()
+                    .body(Map.of("error", ex.getMessage()));
+        }
+    }
+
+    @GetMapping("/iterative/{origin}/{destination}")
+    public ResponseEntity<?> getAllRoutesIteratively(
+            @PathVariable String origin,
+            @PathVariable String destination,
+            @RequestParam(defaultValue = "15") int maxDepth,
+            @RequestParam(defaultValue = "10") int maxRoutes
+    ) {
+        try {
+            List<List<String>> routes = allRoutesFinder.findAllRoutesIterative(
                     origin, destination, maxDepth, maxRoutes
             );
 

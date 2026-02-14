@@ -66,35 +66,57 @@ public class AllRoutesFinder {
         visited.remove(current);
     }
 
-    public List<List<String>> findAllRoutesIterative(String origin, String destination) {
+    public List<List<String>> findAllRoutesIterative(
+            String origin,
+            String destination,
+            int maxDepth,
+            int maxRoutes
+    ) {
         Map<String, List<String>> graph = getGraph(origin, destination);
 
         List<List<String>> results = new ArrayList<>();
 
-        // Stack holds pairs: (currentNode, currentPath)
-        Deque<NodePath> stack = new ArrayDeque<>();
-        stack.push(new NodePath(origin, List.of(origin)));
+        // Stack holds (currentNode, currentPath, visitedSet)
+        Deque<NodeState> stack = new ArrayDeque<>();
 
-        while (!stack.isEmpty()) {
-            NodePath entry = stack.pop();
-            String current = entry.node();
-            List<String> path = entry.path();
+        stack.push(new NodeState(
+                origin,
+                List.of(origin),
+                Set.of(origin)
+        ));
+
+        while (!stack.isEmpty() && results.size() < maxRoutes) {
+            NodeState state = stack.pop();
+            String current = state.node();
+            List<String> path = state.path();
+            Set<String> visited = state.visited();
 
             if (current.equals(destination)) {
                 results.add(path);
                 continue;
             }
 
+            if (path.size() >= maxDepth) {
+                continue;
+            }
+
             for (String neighbor : graph.getOrDefault(current, List.of())) {
-                if (!path.contains(neighbor)) { // avoid cycles
+                if (!visited.contains(neighbor)) {
                     List<String> newPath = new ArrayList<>(path);
                     newPath.add(neighbor);
-                    stack.push(new NodePath(neighbor, newPath));
+
+                    Set<String> newVisited = new HashSet<>(visited);
+                    newVisited.add(neighbor);
+
+                    stack.push(new NodeState(neighbor, newPath, newVisited));
                 }
             }
         }
 
         return results;
+    }
+
+    private record NodeState(String node, List<String> path, Set<String> visited) {
     }
 
     private Map<String, List<String>> getGraph(String origin, String destination) {
@@ -105,6 +127,4 @@ public class AllRoutesFinder {
         }
         return graph;
     }
-
-    record NodePath(String node, List<String> path) {}
 }

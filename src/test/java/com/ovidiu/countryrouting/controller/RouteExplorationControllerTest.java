@@ -61,4 +61,42 @@ class RouteExplorationControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.error").value("Unknown country code"));
     }
+
+    @Test
+    void testMultipleRoutesIterative() throws Exception {
+        when(allRoutesFinder.findAllRoutesIterative("A", "D", 10, 10))
+                .thenReturn(List.of(
+                        List.of("A", "B", "D"),
+                        List.of("A", "C", "D")
+                ));
+
+        mockMvc.perform(get("/routing/all/iterative/A/D?maxDepth=10&maxRoutes=10"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.routes[0][0]").value("A"))
+                .andExpect(jsonPath("$.routes[0][1]").value("B"))
+                .andExpect(jsonPath("$.routes[0][2]").value("D"))
+                .andExpect(jsonPath("$.routes[1][0]").value("A"))
+                .andExpect(jsonPath("$.routes[1][1]").value("C"))
+                .andExpect(jsonPath("$.routes[1][2]").value("D"));
+    }
+
+    @Test
+    void testNoRoutesIterative() throws Exception {
+        when(allRoutesFinder.findAllRoutesIterative("USA", "AUS", 10, 10))
+                .thenReturn(List.of());
+
+        mockMvc.perform(get("/routing/all/iterative/USA/AUS?maxDepth=10&maxRoutes=10"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.error").value("No land routes found"));
+    }
+
+    @Test
+    void testInvalidCountryIterative() throws Exception {
+        when(allRoutesFinder.findAllRoutesIterative("XXX", "ITA", 10, 10))
+                .thenThrow(new IllegalArgumentException("Unknown country code"));
+
+        mockMvc.perform(get("/routing/all/iterative/XXX/ITA?maxDepth=10&maxRoutes=10"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.error").value("Unknown country code"));
+    }
 }
