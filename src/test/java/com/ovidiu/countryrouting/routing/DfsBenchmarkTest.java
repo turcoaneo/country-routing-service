@@ -21,6 +21,10 @@ class DfsParameterizedBenchmarkTest {
         // Warm-up (JIT stabilization)
         finder.findAllRoutes(origin, destination, 10, 1000);
         finder.findAllRoutesIterative(origin, destination, 10, 1000);
+
+        // Actual benchmark (AOP logs the times)
+        finder.findAllRoutes(origin, destination, 10, 1000);
+        finder.findAllRoutesIterative(origin, destination, 10, 1000);
     }
 
     static Stream<Arguments> countryPairs() {

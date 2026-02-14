@@ -15,7 +15,7 @@ public class AllRoutesFinder {
         this.graphBuilder = graphBuilder;
     }
 
-    @TrackExecutionTime
+    @TrackExecutionTime(includeArgs = true)
     public List<List<String>> findAllRoutes(
             String origin,
             String destination,
@@ -68,7 +68,7 @@ public class AllRoutesFinder {
         visited.remove(current);
     }
 
-    @TrackExecutionTime
+    @TrackExecutionTime(includeArgs = true)
     public List<List<String>> findAllRoutesIterative(
             String origin,
             String destination,
