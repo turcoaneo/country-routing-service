@@ -18,10 +18,22 @@ class CountryBorderMapperTest {
         assertTrue(map.containsKey("ITA"));
 
         var cze = map.get("CZE");
+
+        // Existing checks
         assertEquals("CZ", cze.getCca2());
         assertEquals("203", cze.getCcn3());
         assertEquals("CZE", cze.getCca3());
         assertNotNull(cze.getBorders());
         assertTrue(cze.getBorders().contains("AUT"));
+
+        // NEW: names field
+        assertNotNull(cze.getNames());
+        assertFalse(cze.getNames().isEmpty());
+
+        // Czech Republic should have at least these:
+        assertTrue(
+                cze.getNames().stream().anyMatch(n -> n.equalsIgnoreCase("Czech Republic"))
+                        || cze.getNames().stream().anyMatch(n -> n.equalsIgnoreCase("Czechia"))
+        );
     }
 }

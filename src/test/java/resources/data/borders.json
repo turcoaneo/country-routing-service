@@ -1,1752 +1,2002 @@
 {
-  "NZL" : {
-    "cca2" : "NZ",
-    "ccn3" : "554",
-    "cca3" : "NZL",
-    "cioc" : "NZL",
-    "borders" : [ ]
-  },
-  "FJI" : {
-    "cca2" : "FJ",
-    "ccn3" : "242",
-    "cca3" : "FJI",
-    "cioc" : "FIJ",
-    "borders" : [ ]
-  },
-  "PNG" : {
-    "cca2" : "PG",
-    "ccn3" : "598",
-    "cca3" : "PNG",
-    "cioc" : "PNG",
-    "borders" : [ "IDN" ]
-  },
-  "GLP" : {
-    "cca2" : "GP",
-    "ccn3" : "312",
-    "cca3" : "GLP",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "STP" : {
-    "cca2" : "ST",
-    "ccn3" : "678",
-    "cca3" : "STP",
-    "cioc" : "STP",
-    "borders" : [ ]
-  },
-  "MHL" : {
-    "cca2" : "MH",
-    "ccn3" : "584",
-    "cca3" : "MHL",
-    "cioc" : "MHL",
-    "borders" : [ ]
-  },
-  "WLF" : {
-    "cca2" : "WF",
-    "ccn3" : "876",
-    "cca3" : "WLF",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "CUB" : {
-    "cca2" : "CU",
-    "ccn3" : "192",
-    "cca3" : "CUB",
-    "cioc" : "CUB",
-    "borders" : [ ]
-  },
-  "SDN" : {
-    "cca2" : "SD",
-    "ccn3" : "729",
-    "cca3" : "SDN",
-    "cioc" : "SUD",
-    "borders" : [ "CAF", "TCD", "EGY", "ERI", "ETH", "LBY", "SSD" ]
-  },
-  "GMB" : {
-    "cca2" : "GM",
-    "ccn3" : "270",
-    "cca3" : "GMB",
-    "cioc" : "GAM",
-    "borders" : [ "SEN" ]
-  },
-  "CUW" : {
-    "cca2" : "CW",
-    "ccn3" : "531",
-    "cca3" : "CUW",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "MYS" : {
-    "cca2" : "MY",
-    "ccn3" : "458",
-    "cca3" : "MYS",
-    "cioc" : "MAS",
-    "borders" : [ "BRN", "IDN", "THA" ]
-  },
-  "MYT" : {
-    "cca2" : "YT",
-    "ccn3" : "175",
-    "cca3" : "MYT",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "TWN" : {
-    "cca2" : "TW",
-    "ccn3" : "158",
-    "cca3" : "TWN",
-    "cioc" : "TPE",
-    "borders" : [ ]
-  },
-  "POL" : {
-    "cca2" : "PL",
-    "ccn3" : "616",
-    "cca3" : "POL",
-    "cioc" : "POL",
-    "borders" : [ "BLR", "CZE", "DEU", "LTU", "RUS", "SVK", "UKR" ]
-  },
-  "OMN" : {
-    "cca2" : "OM",
-    "ccn3" : "512",
-    "cca3" : "OMN",
-    "cioc" : "OMA",
-    "borders" : [ "SAU", "ARE", "YEM" ]
-  },
-  "SUR" : {
-    "cca2" : "SR",
-    "ccn3" : "740",
-    "cca3" : "SUR",
-    "cioc" : "SUR",
-    "borders" : [ "BRA", "GUF", "GUY" ]
-  },
-  "ARE" : {
-    "cca2" : "AE",
-    "ccn3" : "784",
-    "cca3" : "ARE",
-    "cioc" : "UAE",
-    "borders" : [ "OMN", "SAU" ]
-  },
-  "KEN" : {
-    "cca2" : "KE",
-    "ccn3" : "404",
-    "cca3" : "KEN",
-    "cioc" : "KEN",
-    "borders" : [ "ETH", "SOM", "SSD", "TZA", "UGA" ]
-  },
-  "ARG" : {
-    "cca2" : "AR",
-    "ccn3" : "032",
-    "cca3" : "ARG",
-    "cioc" : "ARG",
-    "borders" : [ "BOL", "BRA", "CHL", "PRY", "URY" ]
-  },
-  "GNB" : {
-    "cca2" : "GW",
-    "ccn3" : "624",
-    "cca3" : "GNB",
-    "cioc" : "GBS",
-    "borders" : [ "GIN", "SEN" ]
-  },
-  "ARM" : {
-    "cca2" : "AM",
-    "ccn3" : "051",
-    "cca3" : "ARM",
-    "cioc" : "ARM",
-    "borders" : [ "AZE", "GEO", "IRN", "TUR" ]
-  },
-  "UZB" : {
-    "cca2" : "UZ",
-    "ccn3" : "860",
-    "cca3" : "UZB",
-    "cioc" : "UZB",
-    "borders" : [ "AFG", "KAZ", "KGZ", "TJK", "TKM" ]
-  },
-  "BTN" : {
-    "cca2" : "BT",
-    "ccn3" : "064",
-    "cca3" : "BTN",
-    "cioc" : "BHU",
-    "borders" : [ "CHN", "IND" ]
-  },
-  "SEN" : {
-    "cca2" : "SN",
-    "ccn3" : "686",
-    "cca3" : "SEN",
-    "cioc" : "SEN",
-    "borders" : [ "GMB", "GIN", "GNB", "MLI", "MRT" ]
-  },
-  "TGO" : {
-    "cca2" : "TG",
-    "ccn3" : "768",
-    "cca3" : "TGO",
-    "cioc" : "TOG",
-    "borders" : [ "BEN", "BFA", "GHA" ]
-  },
-  "IRL" : {
-    "cca2" : "IE",
-    "ccn3" : "372",
-    "cca3" : "IRL",
-    "cioc" : "IRL",
-    "borders" : [ "GBR" ]
-  },
-  "FLK" : {
-    "cca2" : "FK",
-    "ccn3" : "238",
-    "cca3" : "FLK",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "IRN" : {
-    "cca2" : "IR",
-    "ccn3" : "364",
-    "cca3" : "IRN",
-    "cioc" : "IRI",
-    "borders" : [ "AFG", "ARM", "AZE", "IRQ", "PAK", "TUR", "TKM" ]
-  },
-  "QAT" : {
-    "cca2" : "QA",
-    "ccn3" : "634",
-    "cca3" : "QAT",
-    "cioc" : "QAT",
-    "borders" : [ "SAU" ]
-  },
-  "BDI" : {
-    "cca2" : "BI",
-    "ccn3" : "108",
-    "cca3" : "BDI",
-    "cioc" : "BDI",
-    "borders" : [ "COD", "RWA", "TZA" ]
-  },
-  "NLD" : {
-    "cca2" : "NL",
-    "ccn3" : "528",
-    "cca3" : "NLD",
-    "cioc" : "NED",
-    "borders" : [ "BEL", "DEU" ]
-  },
-  "IRQ" : {
-    "cca2" : "IQ",
-    "ccn3" : "368",
-    "cca3" : "IRQ",
-    "cioc" : "IRQ",
-    "borders" : [ "IRN", "JOR", "KWT", "SAU", "SYR", "TUR" ]
-  },
-  "SVK" : {
-    "cca2" : "SK",
-    "ccn3" : "703",
-    "cca3" : "SVK",
-    "cioc" : "SVK",
-    "borders" : [ "AUT", "CZE", "HUN", "POL", "UKR" ]
-  },
-  "SVN" : {
-    "cca2" : "SI",
-    "ccn3" : "705",
-    "cca3" : "SVN",
-    "cioc" : "SLO",
-    "borders" : [ "AUT", "HRV", "ITA", "HUN" ]
-  },
-  "GNQ" : {
-    "cca2" : "GQ",
-    "ccn3" : "226",
-    "cca3" : "GNQ",
-    "cioc" : "GEQ",
-    "borders" : [ "CMR", "GAB" ]
-  },
-  "THA" : {
-    "cca2" : "TH",
-    "ccn3" : "764",
-    "cca3" : "THA",
-    "cioc" : "THA",
-    "borders" : [ "MMR", "KHM", "LAO", "MYS" ]
-  },
   "ABW" : {
     "cca2" : "AW",
     "ccn3" : "533",
     "cca3" : "ABW",
     "cioc" : "ARU",
-    "borders" : [ ]
-  },
-  "ASM" : {
-    "cca2" : "AS",
-    "ccn3" : "016",
-    "cca3" : "ASM",
-    "cioc" : "ASA",
-    "borders" : [ ]
-  },
-  "SWE" : {
-    "cca2" : "SE",
-    "ccn3" : "752",
-    "cca3" : "SWE",
-    "cioc" : "SWE",
-    "borders" : [ "FIN", "NOR" ]
-  },
-  "ISL" : {
-    "cca2" : "IS",
-    "ccn3" : "352",
-    "cca3" : "ISL",
-    "cioc" : "ISL",
-    "borders" : [ ]
-  },
-  "MKD" : {
-    "cca2" : "MK",
-    "ccn3" : "807",
-    "cca3" : "MKD",
-    "cioc" : "MKD",
-    "borders" : [ "ALB", "BGR", "GRC", "UNK", "SRB" ]
-  },
-  "BEL" : {
-    "cca2" : "BE",
-    "ccn3" : "056",
-    "cca3" : "BEL",
-    "cioc" : "BEL",
-    "borders" : [ "FRA", "DEU", "LUX", "NLD" ]
-  },
-  "ISR" : {
-    "cca2" : "IL",
-    "ccn3" : "376",
-    "cca3" : "ISR",
-    "cioc" : "ISR",
-    "borders" : [ "EGY", "JOR", "LBN", "PSE", "SYR" ]
-  },
-  "KWT" : {
-    "cca2" : "KW",
-    "ccn3" : "414",
-    "cca3" : "KWT",
-    "cioc" : "KUW",
-    "borders" : [ "IRQ", "SAU" ]
-  },
-  "LIE" : {
-    "cca2" : "LI",
-    "ccn3" : "438",
-    "cca3" : "LIE",
-    "cioc" : "LIE",
-    "borders" : [ "AUT", "CHE" ]
-  },
-  "BEN" : {
-    "cca2" : "BJ",
-    "ccn3" : "204",
-    "cca3" : "BEN",
-    "cioc" : "BEN",
-    "borders" : [ "BFA", "NER", "NGA", "TGO" ]
-  },
-  "DZA" : {
-    "cca2" : "DZ",
-    "ccn3" : "012",
-    "cca3" : "DZA",
-    "cioc" : "ALG",
-    "borders" : [ "TUN", "LBY", "NER", "ESH", "MRT", "MLI", "MAR" ]
-  },
-  "ATA" : {
-    "cca2" : "AQ",
-    "ccn3" : "010",
-    "cca3" : "ATA",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "BES" : {
-    "cca2" : "BQ",
-    "ccn3" : "535",
-    "cca3" : "BES",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "RUS" : {
-    "cca2" : "RU",
-    "ccn3" : "643",
-    "cca3" : "RUS",
-    "cioc" : "RUS",
-    "borders" : [ "AZE", "BLR", "CHN", "EST", "FIN", "GEO", "KAZ", "PRK", "LVA", "LTU", "MNG", "NOR", "POL", "UKR" ]
-  },
-  "ATF" : {
-    "cca2" : "TF",
-    "ccn3" : "260",
-    "cca3" : "ATF",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "ATG" : {
-    "cca2" : "AG",
-    "ccn3" : "028",
-    "cca3" : "ATG",
-    "cioc" : "ANT",
-    "borders" : [ ]
-  },
-  "ITA" : {
-    "cca2" : "IT",
-    "ccn3" : "380",
-    "cca3" : "ITA",
-    "cioc" : "ITA",
-    "borders" : [ "AUT", "FRA", "SMR", "SVN", "CHE", "VAT" ]
-  },
-  "SWZ" : {
-    "cca2" : "SZ",
-    "ccn3" : "748",
-    "cca3" : "SWZ",
-    "cioc" : "SWZ",
-    "borders" : [ "MOZ", "ZAF" ]
-  },
-  "TZA" : {
-    "cca2" : "TZ",
-    "ccn3" : "834",
-    "cca3" : "TZA",
-    "cioc" : "TAN",
-    "borders" : [ "BDI", "COD", "KEN", "MWI", "MOZ", "RWA", "UGA", "ZMB" ]
-  },
-  "PAK" : {
-    "cca2" : "PK",
-    "ccn3" : "586",
-    "cca3" : "PAK",
-    "cioc" : "PAK",
-    "borders" : [ "AFG", "CHN", "IND", "IRN" ]
-  },
-  "BFA" : {
-    "cca2" : "BF",
-    "ccn3" : "854",
-    "cca3" : "BFA",
-    "cioc" : "BUR",
-    "borders" : [ "BEN", "CIV", "GHA", "MLI", "NER", "TGO" ]
-  },
-  "CXR" : {
-    "cca2" : "CX",
-    "ccn3" : "162",
-    "cca3" : "CXR",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "PAN" : {
-    "cca2" : "PA",
-    "ccn3" : "591",
-    "cca3" : "PAN",
-    "cioc" : "PAN",
-    "borders" : [ "COL", "CRI" ]
-  },
-  "SGP" : {
-    "cca2" : "SG",
-    "ccn3" : "702",
-    "cca3" : "SGP",
-    "cioc" : "SGP",
-    "borders" : [ ]
-  },
-  "UKR" : {
-    "cca2" : "UA",
-    "ccn3" : "804",
-    "cca3" : "UKR",
-    "cioc" : "UKR",
-    "borders" : [ "BLR", "HUN", "MDA", "POL", "ROU", "RUS", "SVK" ]
-  },
-  "SGS" : {
-    "cca2" : "GS",
-    "ccn3" : "239",
-    "cca3" : "SGS",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "JEY" : {
-    "cca2" : "JE",
-    "ccn3" : "832",
-    "cca3" : "JEY",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "KGZ" : {
-    "cca2" : "KG",
-    "ccn3" : "417",
-    "cca3" : "KGZ",
-    "cioc" : "KGZ",
-    "borders" : [ "CHN", "KAZ", "TJK", "UZB" ]
-  },
-  "BVT" : {
-    "cca2" : "BV",
-    "ccn3" : "074",
-    "cca3" : "BVT",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "CHE" : {
-    "cca2" : "CH",
-    "ccn3" : "756",
-    "cca3" : "CHE",
-    "cioc" : "SUI",
-    "borders" : [ "AUT", "FRA", "ITA", "LIE", "DEU" ]
-  },
-  "DJI" : {
-    "cca2" : "DJ",
-    "ccn3" : "262",
-    "cca3" : "DJI",
-    "cioc" : "DJI",
-    "borders" : [ "ERI", "ETH", "SOM" ]
-  },
-  "REU" : {
-    "cca2" : "RE",
-    "ccn3" : "638",
-    "cca3" : "REU",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "CHL" : {
-    "cca2" : "CL",
-    "ccn3" : "152",
-    "cca3" : "CHL",
-    "cioc" : "CHI",
-    "borders" : [ "ARG", "BOL", "PER" ]
-  },
-  "PRI" : {
-    "cca2" : "PR",
-    "ccn3" : "630",
-    "cca3" : "PRI",
-    "cioc" : "PUR",
-    "borders" : [ ]
-  },
-  "CHN" : {
-    "cca2" : "CN",
-    "ccn3" : "156",
-    "cca3" : "CHN",
-    "cioc" : "CHN",
-    "borders" : [ "AFG", "BTN", "MMR", "HKG", "IND", "KAZ", "NPL", "PRK", "KGZ", "LAO", "MAC", "MNG", "PAK", "RUS", "TJK", "VNM" ]
-  },
-  "PRK" : {
-    "cca2" : "KP",
-    "ccn3" : "408",
-    "cca3" : "PRK",
-    "cioc" : "PRK",
-    "borders" : [ "CHN", "KOR", "RUS" ]
-  },
-  "SXM" : {
-    "cca2" : "SX",
-    "ccn3" : "534",
-    "cca3" : "SXM",
-    "cioc" : "",
-    "borders" : [ "MAF" ]
-  },
-  "MLI" : {
-    "cca2" : "ML",
-    "ccn3" : "466",
-    "cca3" : "MLI",
-    "cioc" : "MLI",
-    "borders" : [ "DZA", "BFA", "GIN", "CIV", "MRT", "NER", "SEN" ]
-  },
-  "BWA" : {
-    "cca2" : "BW",
-    "ccn3" : "072",
-    "cca3" : "BWA",
-    "cioc" : "BOT",
-    "borders" : [ "NAM", "ZAF", "ZMB", "ZWE" ]
-  },
-  "HRV" : {
-    "cca2" : "HR",
-    "ccn3" : "191",
-    "cca3" : "HRV",
-    "cioc" : "CRO",
-    "borders" : [ "BIH", "HUN", "MNE", "SRB", "SVN" ]
-  },
-  "KHM" : {
-    "cca2" : "KH",
-    "ccn3" : "116",
-    "cca3" : "KHM",
-    "cioc" : "CAM",
-    "borders" : [ "LAO", "THA", "VNM" ]
-  },
-  "IDN" : {
-    "cca2" : "ID",
-    "ccn3" : "360",
-    "cca3" : "IDN",
-    "cioc" : "INA",
-    "borders" : [ "TLS", "MYS", "PNG" ]
-  },
-  "PRT" : {
-    "cca2" : "PT",
-    "ccn3" : "620",
-    "cca3" : "PRT",
-    "cioc" : "POR",
-    "borders" : [ "ESP" ]
-  },
-  "MLT" : {
-    "cca2" : "MT",
-    "ccn3" : "470",
-    "cca3" : "MLT",
-    "cioc" : "MLT",
-    "borders" : [ ]
-  },
-  "TJK" : {
-    "cca2" : "TJ",
-    "ccn3" : "762",
-    "cca3" : "TJK",
-    "cioc" : "TJK",
-    "borders" : [ "AFG", "CHN", "KGZ", "UZB" ]
-  },
-  "VNM" : {
-    "cca2" : "VN",
-    "ccn3" : "704",
-    "cca3" : "VNM",
-    "cioc" : "VIE",
-    "borders" : [ "KHM", "CHN", "LAO" ]
-  },
-  "CYM" : {
-    "cca2" : "KY",
-    "ccn3" : "136",
-    "cca3" : "CYM",
-    "cioc" : "CAY",
-    "borders" : [ ]
-  },
-  "PRY" : {
-    "cca2" : "PY",
-    "ccn3" : "600",
-    "cca3" : "PRY",
-    "cioc" : "PAR",
-    "borders" : [ "ARG", "BOL", "BRA" ]
-  },
-  "SHN" : {
-    "cca2" : "SH",
-    "ccn3" : "654",
-    "cca3" : "SHN",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "CYP" : {
-    "cca2" : "CY",
-    "ccn3" : "196",
-    "cca3" : "CYP",
-    "cioc" : "CYP",
-    "borders" : [ ]
-  },
-  "SYC" : {
-    "cca2" : "SC",
-    "ccn3" : "690",
-    "cca3" : "SYC",
-    "cioc" : "SEY",
-    "borders" : [ ]
-  },
-  "RWA" : {
-    "cca2" : "RW",
-    "ccn3" : "646",
-    "cca3" : "RWA",
-    "cioc" : "RWA",
-    "borders" : [ "BDI", "COD", "TZA", "UGA" ]
-  },
-  "BGD" : {
-    "cca2" : "BD",
-    "ccn3" : "050",
-    "cca3" : "BGD",
-    "cioc" : "BAN",
-    "borders" : [ "MMR", "IND" ]
-  },
-  "AUS" : {
-    "cca2" : "AU",
-    "ccn3" : "036",
-    "cca3" : "AUS",
-    "cioc" : "AUS",
-    "borders" : [ ]
-  },
-  "AUT" : {
-    "cca2" : "AT",
-    "ccn3" : "040",
-    "cca3" : "AUT",
-    "cioc" : "AUT",
-    "borders" : [ "CZE", "DEU", "HUN", "ITA", "LIE", "SVK", "SVN", "CHE" ]
-  },
-  "LKA" : {
-    "cca2" : "LK",
-    "ccn3" : "144",
-    "cca3" : "LKA",
-    "cioc" : "SRI",
-    "borders" : [ "IND" ]
-  },
-  "PSE" : {
-    "cca2" : "PS",
-    "ccn3" : "275",
-    "cca3" : "PSE",
-    "cioc" : "PLE",
-    "borders" : [ "ISR", "EGY", "JOR" ]
-  },
-  "GAB" : {
-    "cca2" : "GA",
-    "ccn3" : "266",
-    "cca3" : "GAB",
-    "cioc" : "GAB",
-    "borders" : [ "CMR", "COG", "GNQ" ]
-  },
-  "ZWE" : {
-    "cca2" : "ZW",
-    "ccn3" : "716",
-    "cca3" : "ZWE",
-    "cioc" : "ZIM",
-    "borders" : [ "BWA", "MOZ", "ZAF", "ZMB" ]
-  },
-  "BGR" : {
-    "cca2" : "BG",
-    "ccn3" : "100",
-    "cca3" : "BGR",
-    "cioc" : "BUL",
-    "borders" : [ "GRC", "MKD", "ROU", "SRB", "TUR" ]
-  },
-  "SYR" : {
-    "cca2" : "SY",
-    "ccn3" : "760",
-    "cca3" : "SYR",
-    "cioc" : "SYR",
-    "borders" : [ "IRQ", "ISR", "JOR", "LBN", "TUR" ]
-  },
-  "CZE" : {
-    "cca2" : "CZ",
-    "ccn3" : "203",
-    "cca3" : "CZE",
-    "cioc" : "CZE",
-    "borders" : [ "AUT", "DEU", "POL", "SVK" ]
-  },
-  "NOR" : {
-    "cca2" : "NO",
-    "ccn3" : "578",
-    "cca3" : "NOR",
-    "cioc" : "NOR",
-    "borders" : [ "FIN", "SWE", "RUS" ]
-  },
-  "UMI" : {
-    "cca2" : "UM",
-    "ccn3" : "581",
-    "cca3" : "UMI",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "CIV" : {
-    "cca2" : "CI",
-    "ccn3" : "384",
-    "cca3" : "CIV",
-    "cioc" : "CIV",
-    "borders" : [ "BFA", "GHA", "GIN", "LBR", "MLI" ]
-  },
-  "MMR" : {
-    "cca2" : "MM",
-    "ccn3" : "104",
-    "cca3" : "MMR",
-    "cioc" : "MYA",
-    "borders" : [ "BGD", "CHN", "IND", "LAO", "THA" ]
-  },
-  "TKL" : {
-    "cca2" : "TK",
-    "ccn3" : "772",
-    "cca3" : "TKL",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "KIR" : {
-    "cca2" : "KI",
-    "ccn3" : "296",
-    "cca3" : "KIR",
-    "cioc" : "KIR",
-    "borders" : [ ]
-  },
-  "TKM" : {
-    "cca2" : "TM",
-    "ccn3" : "795",
-    "cca3" : "TKM",
-    "cioc" : "TKM",
-    "borders" : [ "AFG", "IRN", "KAZ", "UZB" ]
-  },
-  "GRD" : {
-    "cca2" : "GD",
-    "ccn3" : "308",
-    "cca3" : "GRD",
-    "cioc" : "GRN",
-    "borders" : [ ]
-  },
-  "GRC" : {
-    "cca2" : "GR",
-    "ccn3" : "300",
-    "cca3" : "GRC",
-    "cioc" : "GRE",
-    "borders" : [ "ALB", "BGR", "TUR", "MKD" ]
-  },
-  "PCN" : {
-    "cca2" : "PN",
-    "ccn3" : "612",
-    "cca3" : "PCN",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "HTI" : {
-    "cca2" : "HT",
-    "ccn3" : "332",
-    "cca3" : "HTI",
-    "cioc" : "HAI",
-    "borders" : [ "DOM" ]
-  },
-  "GRL" : {
-    "cca2" : "GL",
-    "ccn3" : "304",
-    "cca3" : "GRL",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "YEM" : {
-    "cca2" : "YE",
-    "ccn3" : "887",
-    "cca3" : "YEM",
-    "cioc" : "YEM",
-    "borders" : [ "OMN", "SAU" ]
+    "borders" : [ ],
+    "names" : [ "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba" ]
   },
   "AFG" : {
     "cca2" : "AF",
     "ccn3" : "004",
     "cca3" : "AFG",
     "cioc" : "AFG",
-    "borders" : [ "IRN", "PAK", "TKM", "UZB", "TJK", "CHN" ]
-  },
-  "MNE" : {
-    "cca2" : "ME",
-    "ccn3" : "499",
-    "cca3" : "MNE",
-    "cioc" : "MNE",
-    "borders" : [ "ALB", "BIH", "HRV", "UNK", "SRB" ]
-  },
-  "MNG" : {
-    "cca2" : "MN",
-    "ccn3" : "496",
-    "cca3" : "MNG",
-    "cioc" : "MGL",
-    "borders" : [ "CHN", "RUS" ]
-  },
-  "NPL" : {
-    "cca2" : "NP",
-    "ccn3" : "524",
-    "cca3" : "NPL",
-    "cioc" : "NEP",
-    "borders" : [ "CHN", "IND" ]
-  },
-  "BHS" : {
-    "cca2" : "BS",
-    "ccn3" : "044",
-    "cca3" : "BHS",
-    "cioc" : "BAH",
-    "borders" : [ ]
-  },
-  "BHR" : {
-    "cca2" : "BH",
-    "ccn3" : "048",
-    "cca3" : "BHR",
-    "cioc" : "BRN",
-    "borders" : [ ]
-  },
-  "MNP" : {
-    "cca2" : "MP",
-    "ccn3" : "580",
-    "cca3" : "MNP",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "UNK" : {
-    "cca2" : "XK",
-    "ccn3" : "",
-    "cca3" : "UNK",
-    "cioc" : "KOS",
-    "borders" : [ "ALB", "MKD", "MNE", "SRB" ]
-  },
-  "GBR" : {
-    "cca2" : "GB",
-    "ccn3" : "826",
-    "cca3" : "GBR",
-    "cioc" : "GBR",
-    "borders" : [ "IRL" ]
-  },
-  "SJM" : {
-    "cca2" : "SJ",
-    "ccn3" : "744",
-    "cca3" : "SJM",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "DMA" : {
-    "cca2" : "DM",
-    "ccn3" : "212",
-    "cca3" : "DMA",
-    "cioc" : "DMA",
-    "borders" : [ ]
-  },
-  "TLS" : {
-    "cca2" : "TL",
-    "ccn3" : "626",
-    "cca3" : "TLS",
-    "cioc" : "TLS",
-    "borders" : [ "IDN" ]
-  },
-  "BIH" : {
-    "cca2" : "BA",
-    "ccn3" : "070",
-    "cca3" : "BIH",
-    "cioc" : "BIH",
-    "borders" : [ "HRV", "MNE", "SRB" ]
-  },
-  "HUN" : {
-    "cca2" : "HU",
-    "ccn3" : "348",
-    "cca3" : "HUN",
-    "cioc" : "HUN",
-    "borders" : [ "AUT", "HRV", "ROU", "SRB", "SVK", "SVN", "UKR" ]
+    "borders" : [ "CHN", "IRN", "PAK", "TJK", "TKM", "UZB" ],
+    "names" : [ "Afghanistan", "Islamic Republic of Afghanistan", "افغانستان", "جمهوری اسلامی افغانستان", "افغانستان", "د افغانستان اسلامي جمهوریت", "Owganystan", "Owganystan Yslam Respublikasy" ]
   },
   "AGO" : {
     "cca2" : "AO",
     "ccn3" : "024",
     "cca3" : "AGO",
     "cioc" : "ANG",
-    "borders" : [ "COG", "COD", "ZMB", "NAM" ]
-  },
-  "WSM" : {
-    "cca2" : "WS",
-    "ccn3" : "882",
-    "cca3" : "WSM",
-    "cioc" : "SAM",
-    "borders" : [ ]
-  },
-  "FRA" : {
-    "cca2" : "FR",
-    "ccn3" : "250",
-    "cca3" : "FRA",
-    "cioc" : "FRA",
-    "borders" : [ "AND", "BEL", "DEU", "ITA", "LUX", "MCO", "ESP", "CHE" ]
-  },
-  "MOZ" : {
-    "cca2" : "MZ",
-    "ccn3" : "508",
-    "cca3" : "MOZ",
-    "cioc" : "MOZ",
-    "borders" : [ "MWI", "ZAF", "SWZ", "TZA", "ZMB", "ZWE" ]
-  },
-  "NAM" : {
-    "cca2" : "NA",
-    "ccn3" : "516",
-    "cca3" : "NAM",
-    "cioc" : "NAM",
-    "borders" : [ "AGO", "BWA", "ZAF", "ZMB" ]
-  },
-  "PER" : {
-    "cca2" : "PE",
-    "ccn3" : "604",
-    "cca3" : "PER",
-    "cioc" : "PER",
-    "borders" : [ "BOL", "BRA", "CHL", "COL", "ECU" ]
-  },
-  "DNK" : {
-    "cca2" : "DK",
-    "ccn3" : "208",
-    "cca3" : "DNK",
-    "cioc" : "DEN",
-    "borders" : [ "DEU" ]
-  },
-  "GTM" : {
-    "cca2" : "GT",
-    "ccn3" : "320",
-    "cca3" : "GTM",
-    "cioc" : "GUA",
-    "borders" : [ "BLZ", "SLV", "HND", "MEX" ]
-  },
-  "FRO" : {
-    "cca2" : "FO",
-    "ccn3" : "234",
-    "cca3" : "FRO",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "SLB" : {
-    "cca2" : "SB",
-    "ccn3" : "090",
-    "cca3" : "SLB",
-    "cioc" : "SOL",
-    "borders" : [ ]
-  },
-  "VAT" : {
-    "cca2" : "VA",
-    "ccn3" : "336",
-    "cca3" : "VAT",
-    "cioc" : "",
-    "borders" : [ "ITA" ]
-  },
-  "SLE" : {
-    "cca2" : "SL",
-    "ccn3" : "694",
-    "cca3" : "SLE",
-    "cioc" : "SLE",
-    "borders" : [ "GIN", "LBR" ]
-  },
-  "NRU" : {
-    "cca2" : "NR",
-    "ccn3" : "520",
-    "cca3" : "NRU",
-    "cioc" : "NRU",
-    "borders" : [ ]
+    "borders" : [ "COD", "COG", "NAM", "ZMB" ],
+    "names" : [ "Angola", "Republic of Angola", "Angola", "República de Angola" ]
   },
   "AIA" : {
     "cca2" : "AI",
     "ccn3" : "660",
     "cca3" : "AIA",
     "cioc" : "",
-    "borders" : [ ]
-  },
-  "GUF" : {
-    "cca2" : "GF",
-    "ccn3" : "254",
-    "cca3" : "GUF",
-    "cioc" : "",
-    "borders" : [ "BRA", "SUR" ]
-  },
-  "SLV" : {
-    "cca2" : "SV",
-    "ccn3" : "222",
-    "cca3" : "SLV",
-    "cioc" : "ESA",
-    "borders" : [ "GTM", "HND" ]
-  },
-  "GUM" : {
-    "cca2" : "GU",
-    "ccn3" : "316",
-    "cca3" : "GUM",
-    "cioc" : "GUM",
-    "borders" : [ ]
-  },
-  "FSM" : {
-    "cca2" : "FM",
-    "ccn3" : "583",
-    "cca3" : "FSM",
-    "cioc" : "FSM",
-    "borders" : [ ]
-  },
-  "DOM" : {
-    "cca2" : "DO",
-    "ccn3" : "214",
-    "cca3" : "DOM",
-    "cioc" : "DOM",
-    "borders" : [ "HTI" ]
-  },
-  "CMR" : {
-    "cca2" : "CM",
-    "ccn3" : "120",
-    "cca3" : "CMR",
-    "cioc" : "CMR",
-    "borders" : [ "CAF", "TCD", "COG", "GNQ", "GAB", "NGA" ]
-  },
-  "GUY" : {
-    "cca2" : "GY",
-    "ccn3" : "328",
-    "cca3" : "GUY",
-    "cioc" : "GUY",
-    "borders" : [ "BRA", "SUR", "VEN" ]
-  },
-  "AZE" : {
-    "cca2" : "AZ",
-    "ccn3" : "031",
-    "cca3" : "AZE",
-    "cioc" : "AZE",
-    "borders" : [ "ARM", "GEO", "IRN", "RUS", "TUR" ]
-  },
-  "MAC" : {
-    "cca2" : "MO",
-    "ccn3" : "446",
-    "cca3" : "MAC",
-    "cioc" : "",
-    "borders" : [ "CHN" ]
-  },
-  "GEO" : {
-    "cca2" : "GE",
-    "ccn3" : "268",
-    "cca3" : "GEO",
-    "cioc" : "GEO",
-    "borders" : [ "ARM", "AZE", "RUS", "TUR" ]
-  },
-  "TON" : {
-    "cca2" : "TO",
-    "ccn3" : "776",
-    "cca3" : "TON",
-    "cioc" : "TGA",
-    "borders" : [ ]
-  },
-  "MAF" : {
-    "cca2" : "MF",
-    "ccn3" : "663",
-    "cca3" : "MAF",
-    "cioc" : "",
-    "borders" : [ "SXM" ]
-  },
-  "NCL" : {
-    "cca2" : "NC",
-    "ccn3" : "540",
-    "cca3" : "NCL",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "SMR" : {
-    "cca2" : "SM",
-    "ccn3" : "674",
-    "cca3" : "SMR",
-    "cioc" : "SMR",
-    "borders" : [ "ITA" ]
-  },
-  "ERI" : {
-    "cca2" : "ER",
-    "ccn3" : "232",
-    "cca3" : "ERI",
-    "cioc" : "ERI",
-    "borders" : [ "DJI", "ETH", "SDN" ]
-  },
-  "KNA" : {
-    "cca2" : "KN",
-    "ccn3" : "659",
-    "cca3" : "KNA",
-    "cioc" : "SKN",
-    "borders" : [ ]
-  },
-  "MAR" : {
-    "cca2" : "MA",
-    "ccn3" : "504",
-    "cca3" : "MAR",
-    "cioc" : "MAR",
-    "borders" : [ "DZA", "ESH", "ESP" ]
-  },
-  "BLM" : {
-    "cca2" : "BL",
-    "ccn3" : "652",
-    "cca3" : "BLM",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "VCT" : {
-    "cca2" : "VC",
-    "ccn3" : "670",
-    "cca3" : "VCT",
-    "cioc" : "VIN",
-    "borders" : [ ]
-  },
-  "BLR" : {
-    "cca2" : "BY",
-    "ccn3" : "112",
-    "cca3" : "BLR",
-    "cioc" : "BLR",
-    "borders" : [ "LVA", "LTU", "POL", "RUS", "UKR" ]
-  },
-  "MRT" : {
-    "cca2" : "MR",
-    "ccn3" : "478",
-    "cca3" : "MRT",
-    "cioc" : "MTN",
-    "borders" : [ "DZA", "MLI", "SEN", "ESH" ]
-  },
-  "BLZ" : {
-    "cca2" : "BZ",
-    "ccn3" : "084",
-    "cca3" : "BLZ",
-    "cioc" : "BIZ",
-    "borders" : [ "GTM", "MEX" ]
-  },
-  "PHL" : {
-    "cca2" : "PH",
-    "ccn3" : "608",
-    "cca3" : "PHL",
-    "cioc" : "PHI",
-    "borders" : [ ]
-  },
-  "COD" : {
-    "cca2" : "CD",
-    "ccn3" : "180",
-    "cca3" : "COD",
-    "cioc" : "COD",
-    "borders" : [ "AGO", "BDI", "CAF", "COG", "RWA", "SSD", "TZA", "UGA", "ZMB" ]
-  },
-  "COG" : {
-    "cca2" : "CG",
-    "ccn3" : "178",
-    "cca3" : "COG",
-    "cioc" : "CGO",
-    "borders" : [ "AGO", "CMR", "CAF", "COD", "GAB" ]
-  },
-  "ESH" : {
-    "cca2" : "EH",
-    "ccn3" : "732",
-    "cca3" : "ESH",
-    "cioc" : "",
-    "borders" : [ "DZA", "MRT", "MAR" ]
-  },
-  "PYF" : {
-    "cca2" : "PF",
-    "ccn3" : "258",
-    "cca3" : "PYF",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "URY" : {
-    "cca2" : "UY",
-    "ccn3" : "858",
-    "cca3" : "URY",
-    "cioc" : "URU",
-    "borders" : [ "ARG", "BRA" ]
-  },
-  "COK" : {
-    "cca2" : "CK",
-    "ccn3" : "184",
-    "cca3" : "COK",
-    "cioc" : "COK",
-    "borders" : [ ]
-  },
-  "COM" : {
-    "cca2" : "KM",
-    "ccn3" : "174",
-    "cca3" : "COM",
-    "cioc" : "COM",
-    "borders" : [ ]
-  },
-  "COL" : {
-    "cca2" : "CO",
-    "ccn3" : "170",
-    "cca3" : "COL",
-    "cioc" : "COL",
-    "borders" : [ "BRA", "ECU", "PAN", "PER", "VEN" ]
-  },
-  "USA" : {
-    "cca2" : "US",
-    "ccn3" : "840",
-    "cca3" : "USA",
-    "cioc" : "USA",
-    "borders" : [ "CAN", "MEX" ]
-  },
-  "ESP" : {
-    "cca2" : "ES",
-    "ccn3" : "724",
-    "cca3" : "ESP",
-    "cioc" : "ESP",
-    "borders" : [ "AND", "FRA", "GIB", "PRT", "MAR" ]
-  },
-  "EST" : {
-    "cca2" : "EE",
-    "ccn3" : "233",
-    "cca3" : "EST",
-    "cioc" : "EST",
-    "borders" : [ "LVA", "RUS" ]
-  },
-  "BMU" : {
-    "cca2" : "BM",
-    "ccn3" : "060",
-    "cca3" : "BMU",
-    "cioc" : "BER",
-    "borders" : [ ]
-  },
-  "MSR" : {
-    "cca2" : "MS",
-    "ccn3" : "500",
-    "cca3" : "MSR",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "ZMB" : {
-    "cca2" : "ZM",
-    "ccn3" : "894",
-    "cca3" : "ZMB",
-    "cioc" : "ZAM",
-    "borders" : [ "AGO", "BWA", "COD", "MWI", "MOZ", "NAM", "TZA", "ZWE" ]
-  },
-  "KOR" : {
-    "cca2" : "KR",
-    "ccn3" : "410",
-    "cca3" : "KOR",
-    "cioc" : "KOR",
-    "borders" : [ "PRK" ]
-  },
-  "SOM" : {
-    "cca2" : "SO",
-    "ccn3" : "706",
-    "cca3" : "SOM",
-    "cioc" : "SOM",
-    "borders" : [ "DJI", "ETH", "KEN" ]
-  },
-  "VUT" : {
-    "cca2" : "VU",
-    "ccn3" : "548",
-    "cca3" : "VUT",
-    "cioc" : "VAN",
-    "borders" : [ ]
+    "borders" : [ ],
+    "names" : [ "Anguilla", "Anguilla", "Anguilla", "Anguilla" ]
   },
   "ALA" : {
     "cca2" : "AX",
     "ccn3" : "248",
     "cca3" : "ALA",
     "cioc" : "",
-    "borders" : [ ]
-  },
-  "ECU" : {
-    "cca2" : "EC",
-    "ccn3" : "218",
-    "cca3" : "ECU",
-    "cioc" : "ECU",
-    "borders" : [ "COL", "PER" ]
+    "borders" : [ ],
+    "names" : [ "Åland Islands", "Åland Islands", "Åland", "Landskapet Åland" ]
   },
   "ALB" : {
     "cca2" : "AL",
     "ccn3" : "008",
     "cca3" : "ALB",
     "cioc" : "ALB",
-    "borders" : [ "MNE", "GRC", "MKD", "UNK" ]
-  },
-  "ETH" : {
-    "cca2" : "ET",
-    "ccn3" : "231",
-    "cca3" : "ETH",
-    "cioc" : "ETH",
-    "borders" : [ "DJI", "ERI", "KEN", "SOM", "SSD", "SDN" ]
-  },
-  "GGY" : {
-    "cca2" : "GG",
-    "ccn3" : "831",
-    "cca3" : "GGY",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "MCO" : {
-    "cca2" : "MC",
-    "ccn3" : "492",
-    "cca3" : "MCO",
-    "cioc" : "MON",
-    "borders" : [ "FRA" ]
-  },
-  "NER" : {
-    "cca2" : "NE",
-    "ccn3" : "562",
-    "cca3" : "NER",
-    "cioc" : "NIG",
-    "borders" : [ "DZA", "BEN", "BFA", "TCD", "LBY", "MLI", "NGA" ]
-  },
-  "LAO" : {
-    "cca2" : "LA",
-    "ccn3" : "418",
-    "cca3" : "LAO",
-    "cioc" : "LAO",
-    "borders" : [ "MMR", "KHM", "CHN", "THA", "VNM" ]
-  },
-  "VEN" : {
-    "cca2" : "VE",
-    "ccn3" : "862",
-    "cca3" : "VEN",
-    "cioc" : "VEN",
-    "borders" : [ "BRA", "COL", "GUY" ]
-  },
-  "GHA" : {
-    "cca2" : "GH",
-    "ccn3" : "288",
-    "cca3" : "GHA",
-    "cioc" : "GHA",
-    "borders" : [ "BFA", "CIV", "TGO" ]
-  },
-  "CPV" : {
-    "cca2" : "CV",
-    "ccn3" : "132",
-    "cca3" : "CPV",
-    "cioc" : "CPV",
-    "borders" : [ ]
-  },
-  "MDA" : {
-    "cca2" : "MD",
-    "ccn3" : "498",
-    "cca3" : "MDA",
-    "cioc" : "MDA",
-    "borders" : [ "ROU", "UKR" ]
-  },
-  "MTQ" : {
-    "cca2" : "MQ",
-    "ccn3" : "474",
-    "cca3" : "MTQ",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "MDG" : {
-    "cca2" : "MG",
-    "ccn3" : "450",
-    "cca3" : "MDG",
-    "cioc" : "MAD",
-    "borders" : [ ]
-  },
-  "SPM" : {
-    "cca2" : "PM",
-    "ccn3" : "666",
-    "cca3" : "SPM",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "NFK" : {
-    "cca2" : "NF",
-    "ccn3" : "574",
-    "cca3" : "NFK",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "LBN" : {
-    "cca2" : "LB",
-    "ccn3" : "422",
-    "cca3" : "LBN",
-    "cioc" : "LBN",
-    "borders" : [ "ISR", "SYR" ]
-  },
-  "LBR" : {
-    "cca2" : "LR",
-    "ccn3" : "430",
-    "cca3" : "LBR",
-    "cioc" : "LBR",
-    "borders" : [ "GIN", "CIV", "SLE" ]
-  },
-  "BOL" : {
-    "cca2" : "BO",
-    "ccn3" : "068",
-    "cca3" : "BOL",
-    "cioc" : "BOL",
-    "borders" : [ "ARG", "BRA", "CHL", "PRY", "PER" ]
-  },
-  "MDV" : {
-    "cca2" : "MV",
-    "ccn3" : "462",
-    "cca3" : "MDV",
-    "cioc" : "MDV",
-    "borders" : [ ]
-  },
-  "GIB" : {
-    "cca2" : "GI",
-    "ccn3" : "292",
-    "cca3" : "GIB",
-    "cioc" : "",
-    "borders" : [ "ESP" ]
-  },
-  "LBY" : {
-    "cca2" : "LY",
-    "ccn3" : "434",
-    "cca3" : "LBY",
-    "cioc" : "LBA",
-    "borders" : [ "DZA", "TCD", "EGY", "NER", "SDN", "TUN" ]
-  },
-  "HKG" : {
-    "cca2" : "HK",
-    "ccn3" : "344",
-    "cca3" : "HKG",
-    "cioc" : "HKG",
-    "borders" : [ "CHN" ]
-  },
-  "CAF" : {
-    "cca2" : "CF",
-    "ccn3" : "140",
-    "cca3" : "CAF",
-    "cioc" : "CAF",
-    "borders" : [ "CMR", "TCD", "COD", "COG", "SSD", "SDN" ]
-  },
-  "LSO" : {
-    "cca2" : "LS",
-    "ccn3" : "426",
-    "cca3" : "LSO",
-    "cioc" : "LES",
-    "borders" : [ "ZAF" ]
-  },
-  "NGA" : {
-    "cca2" : "NG",
-    "ccn3" : "566",
-    "cca3" : "NGA",
-    "cioc" : "NGR",
-    "borders" : [ "BEN", "CMR", "TCD", "NER" ]
-  },
-  "MUS" : {
-    "cca2" : "MU",
-    "ccn3" : "480",
-    "cca3" : "MUS",
-    "cioc" : "MRI",
-    "borders" : [ ]
-  },
-  "IMN" : {
-    "cca2" : "IM",
-    "ccn3" : "833",
-    "cca3" : "IMN",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "LCA" : {
-    "cca2" : "LC",
-    "ccn3" : "662",
-    "cca3" : "LCA",
-    "cioc" : "LCA",
-    "borders" : [ ]
-  },
-  "JOR" : {
-    "cca2" : "JO",
-    "ccn3" : "400",
-    "cca3" : "JOR",
-    "cioc" : "JOR",
-    "borders" : [ "IRQ", "ISR", "PSE", "SAU", "SYR" ]
-  },
-  "GIN" : {
-    "cca2" : "GN",
-    "ccn3" : "324",
-    "cca3" : "GIN",
-    "cioc" : "GUI",
-    "borders" : [ "CIV", "GNB", "LBR", "MLI", "SEN", "SLE" ]
-  },
-  "VGB" : {
-    "cca2" : "VG",
-    "ccn3" : "092",
-    "cca3" : "VGB",
-    "cioc" : "IVB",
-    "borders" : [ ]
-  },
-  "CAN" : {
-    "cca2" : "CA",
-    "ccn3" : "124",
-    "cca3" : "CAN",
-    "cioc" : "CAN",
-    "borders" : [ "USA" ]
-  },
-  "TCA" : {
-    "cca2" : "TC",
-    "ccn3" : "796",
-    "cca3" : "TCA",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "TCD" : {
-    "cca2" : "TD",
-    "ccn3" : "148",
-    "cca3" : "TCD",
-    "cioc" : "CHA",
-    "borders" : [ "CMR", "CAF", "LBY", "NER", "NGA", "SDN" ]
+    "borders" : [ "GRC", "MKD", "MNE", "UNK" ],
+    "names" : [ "Albania", "Republic of Albania", "Shqipëria", "Republika e Shqipërisë" ]
   },
   "AND" : {
     "cca2" : "AD",
     "ccn3" : "020",
     "cca3" : "AND",
     "cioc" : "AND",
-    "borders" : [ "FRA", "ESP" ]
+    "borders" : [ "ESP", "FRA" ],
+    "names" : [ "Andorra", "Principality of Andorra", "Andorra", "Principat d'Andorra" ]
   },
-  "ROU" : {
-    "cca2" : "RO",
-    "ccn3" : "642",
-    "cca3" : "ROU",
-    "cioc" : "ROU",
-    "borders" : [ "BGR", "HUN", "MDA", "SRB", "UKR" ]
+  "ARE" : {
+    "cca2" : "AE",
+    "ccn3" : "784",
+    "cca3" : "ARE",
+    "cioc" : "UAE",
+    "borders" : [ "OMN", "SAU" ],
+    "names" : [ "United Arab Emirates", "United Arab Emirates", "الإمارات", "الإمارات العربية المتحدة" ]
   },
-  "CRI" : {
-    "cca2" : "CR",
-    "ccn3" : "188",
-    "cca3" : "CRI",
-    "cioc" : "CRC",
-    "borders" : [ "NIC", "PAN" ]
+  "ARG" : {
+    "cca2" : "AR",
+    "ccn3" : "032",
+    "cca3" : "ARG",
+    "cioc" : "ARG",
+    "borders" : [ "BOL", "BRA", "CHL", "PRY", "URY" ],
+    "names" : [ "Argentina", "Argentine Republic", "Argentina", "Argentine Republic", "Argentina", "República Argentina" ]
   },
-  "IND" : {
-    "cca2" : "IN",
-    "ccn3" : "356",
-    "cca3" : "IND",
-    "cioc" : "IND",
-    "borders" : [ "BGD", "BTN", "MMR", "CHN", "NPL", "PAK" ]
+  "ARM" : {
+    "cca2" : "AM",
+    "ccn3" : "051",
+    "cca3" : "ARM",
+    "cioc" : "ARM",
+    "borders" : [ "AZE", "GEO", "IRN", "TUR" ],
+    "names" : [ "Armenia", "Republic of Armenia", "Հայաստան", "Հայաստանի Հանրապետություն" ]
   },
-  "MEX" : {
-    "cca2" : "MX",
-    "ccn3" : "484",
-    "cca3" : "MEX",
-    "cioc" : "MEX",
-    "borders" : [ "BLZ", "GTM", "USA" ]
+  "ASM" : {
+    "cca2" : "AS",
+    "ccn3" : "016",
+    "cca3" : "ASM",
+    "cioc" : "ASA",
+    "borders" : [ ],
+    "names" : [ "American Samoa", "American Samoa", "American Samoa", "American Samoa", "Sāmoa Amelika", "Sāmoa Amelika" ]
   },
-  "SRB" : {
-    "cca2" : "RS",
-    "ccn3" : "688",
-    "cca3" : "SRB",
-    "cioc" : "SRB",
-    "borders" : [ "BIH", "BGR", "HRV", "HUN", "UNK", "MKD", "MNE", "ROU" ]
-  },
-  "KAZ" : {
-    "cca2" : "KZ",
-    "ccn3" : "398",
-    "cca3" : "KAZ",
-    "cioc" : "KAZ",
-    "borders" : [ "CHN", "KGZ", "RUS", "TKM", "UZB" ]
-  },
-  "SAU" : {
-    "cca2" : "SA",
-    "ccn3" : "682",
-    "cca3" : "SAU",
-    "cioc" : "KSA",
-    "borders" : [ "IRQ", "JOR", "KWT", "OMN", "QAT", "ARE", "YEM" ]
-  },
-  "JPN" : {
-    "cca2" : "JP",
-    "ccn3" : "392",
-    "cca3" : "JPN",
-    "cioc" : "JPN",
-    "borders" : [ ]
-  },
-  "LTU" : {
-    "cca2" : "LT",
-    "ccn3" : "440",
-    "cca3" : "LTU",
-    "cioc" : "LTU",
-    "borders" : [ "BLR", "LVA", "POL", "RUS" ]
-  },
-  "TTO" : {
-    "cca2" : "TT",
-    "ccn3" : "780",
-    "cca3" : "TTO",
-    "cioc" : "TTO",
-    "borders" : [ ]
-  },
-  "PLW" : {
-    "cca2" : "PW",
-    "ccn3" : "585",
-    "cca3" : "PLW",
-    "cioc" : "PLW",
-    "borders" : [ ]
-  },
-  "HMD" : {
-    "cca2" : "HM",
-    "ccn3" : "334",
-    "cca3" : "HMD",
+  "ATA" : {
+    "cca2" : "AQ",
+    "ccn3" : "010",
+    "cca3" : "ATA",
     "cioc" : "",
-    "borders" : [ ]
+    "borders" : [ ],
+    "names" : [ "Antarctica", "Antarctica" ]
   },
-  "MWI" : {
-    "cca2" : "MW",
-    "ccn3" : "454",
-    "cca3" : "MWI",
-    "cioc" : "MAW",
-    "borders" : [ "MOZ", "TZA", "ZMB" ]
-  },
-  "SSD" : {
-    "cca2" : "SS",
-    "ccn3" : "728",
-    "cca3" : "SSD",
+  "ATF" : {
+    "cca2" : "TF",
+    "ccn3" : "260",
+    "cca3" : "ATF",
     "cioc" : "",
-    "borders" : [ "CAF", "COD", "ETH", "KEN", "SDN", "UGA" ]
+    "borders" : [ ],
+    "names" : [ "French Southern and Antarctic Lands", "Territory of the French Southern and Antarctic Lands", "Terres australes et antarctiques françaises", "Territoire des Terres australes et antarctiques françaises" ]
   },
-  "NIC" : {
-    "cca2" : "NI",
-    "ccn3" : "558",
-    "cca3" : "NIC",
-    "cioc" : "NCA",
-    "borders" : [ "CRI", "HND" ]
+  "ATG" : {
+    "cca2" : "AG",
+    "ccn3" : "028",
+    "cca3" : "ATG",
+    "cioc" : "ANT",
+    "borders" : [ ],
+    "names" : [ "Antigua and Barbuda", "Antigua and Barbuda", "Antigua and Barbuda", "Antigua and Barbuda" ]
   },
-  "CCK" : {
-    "cca2" : "CC",
-    "ccn3" : "166",
-    "cca3" : "CCK",
+  "AUS" : {
+    "cca2" : "AU",
+    "ccn3" : "036",
+    "cca3" : "AUS",
+    "cioc" : "AUS",
+    "borders" : [ ],
+    "names" : [ "Australia", "Commonwealth of Australia", "Australia", "Commonwealth of Australia" ]
+  },
+  "AUT" : {
+    "cca2" : "AT",
+    "ccn3" : "040",
+    "cca3" : "AUT",
+    "cioc" : "AUT",
+    "borders" : [ "CHE", "CZE", "DEU", "HUN", "ITA", "LIE", "SVK", "SVN" ],
+    "names" : [ "Austria", "Republic of Austria", "Österreich", "Republik Österreich" ]
+  },
+  "AZE" : {
+    "cca2" : "AZ",
+    "ccn3" : "031",
+    "cca3" : "AZE",
+    "cioc" : "AZE",
+    "borders" : [ "ARM", "GEO", "IRN", "RUS", "TUR" ],
+    "names" : [ "Azerbaijan", "Republic of Azerbaijan", "Azərbaycan", "Azərbaycan Respublikası", "Азербайджан", "Азербайджанская Республика" ]
+  },
+  "BDI" : {
+    "cca2" : "BI",
+    "ccn3" : "108",
+    "cca3" : "BDI",
+    "cioc" : "BDI",
+    "borders" : [ "COD", "RWA", "TZA" ],
+    "names" : [ "Burundi", "Republic of Burundi", "Burundi", "République du Burundi", "Uburundi", "Republika y'Uburundi " ]
+  },
+  "BEL" : {
+    "cca2" : "BE",
+    "ccn3" : "056",
+    "cca3" : "BEL",
+    "cioc" : "BEL",
+    "borders" : [ "DEU", "FRA", "LUX", "NLD" ],
+    "names" : [ "Belgium", "Kingdom of Belgium", "Belgien", "Königreich Belgien", "Belgique", "Royaume de Belgique", "België", "Koninkrijk België" ]
+  },
+  "BEN" : {
+    "cca2" : "BJ",
+    "ccn3" : "204",
+    "cca3" : "BEN",
+    "cioc" : "BEN",
+    "borders" : [ "BFA", "NER", "NGA", "TGO" ],
+    "names" : [ "Benin", "Republic of Benin", "Bénin", "République du Bénin" ]
+  },
+  "BES" : {
+    "cca2" : "BQ",
+    "ccn3" : "535",
+    "cca3" : "BES",
     "cioc" : "",
-    "borders" : [ ]
+    "borders" : [ ],
+    "names" : [ "Caribbean Netherlands", "Bonaire, Sint Eustatius and Saba", "Caribisch Nederland", "Bonaire, Sint Eustatius en Saba", "Boneiru, Sint Eustatius y Saba", "Boneiru, Sint Eustatius y Saba" ]
   },
-  "FIN" : {
-    "cca2" : "FI",
-    "ccn3" : "246",
-    "cca3" : "FIN",
-    "cioc" : "FIN",
-    "borders" : [ "NOR", "SWE", "RUS" ]
+  "BFA" : {
+    "cca2" : "BF",
+    "ccn3" : "854",
+    "cca3" : "BFA",
+    "cioc" : "BUR",
+    "borders" : [ "BEN", "CIV", "GHA", "MLI", "NER", "TGO" ],
+    "names" : [ "Burkina Faso", "Burkina Faso", "Burkina Faso", "République du Burkina" ]
   },
-  "TUN" : {
-    "cca2" : "TN",
-    "ccn3" : "788",
-    "cca3" : "TUN",
-    "cioc" : "TUN",
-    "borders" : [ "DZA", "LBY" ]
+  "BGD" : {
+    "cca2" : "BD",
+    "ccn3" : "050",
+    "cca3" : "BGD",
+    "cioc" : "BAN",
+    "borders" : [ "IND", "MMR" ],
+    "names" : [ "Bangladesh", "People's Republic of Bangladesh", "বাংলাদেশ", "বাংলাদেশ গণপ্রজাতন্ত্রী" ]
   },
-  "LUX" : {
-    "cca2" : "LU",
-    "ccn3" : "442",
-    "cca3" : "LUX",
-    "cioc" : "LUX",
-    "borders" : [ "BEL", "FRA", "DEU" ]
+  "BGR" : {
+    "cca2" : "BG",
+    "ccn3" : "100",
+    "cca3" : "BGR",
+    "cioc" : "BUL",
+    "borders" : [ "GRC", "MKD", "ROU", "SRB", "TUR" ],
+    "names" : [ "Bulgaria", "Republic of Bulgaria", "България", "Република България" ]
   },
-  "UGA" : {
-    "cca2" : "UG",
-    "ccn3" : "800",
-    "cca3" : "UGA",
-    "cioc" : "UGA",
-    "borders" : [ "COD", "KEN", "RWA", "SSD", "TZA" ]
+  "BHR" : {
+    "cca2" : "BH",
+    "ccn3" : "048",
+    "cca3" : "BHR",
+    "cioc" : "BRN",
+    "borders" : [ ],
+    "names" : [ "Bahrain", "Kingdom of Bahrain", "البحرين", "مملكة البحرين" ]
   },
-  "IOT" : {
-    "cca2" : "IO",
-    "ccn3" : "086",
-    "cca3" : "IOT",
+  "BHS" : {
+    "cca2" : "BS",
+    "ccn3" : "044",
+    "cca3" : "BHS",
+    "cioc" : "BAH",
+    "borders" : [ ],
+    "names" : [ "Bahamas", "Commonwealth of the Bahamas", "Bahamas", "Commonwealth of the Bahamas" ]
+  },
+  "BIH" : {
+    "cca2" : "BA",
+    "ccn3" : "070",
+    "cca3" : "BIH",
+    "cioc" : "BIH",
+    "borders" : [ "HRV", "MNE", "SRB" ],
+    "names" : [ "Bosnia and Herzegovina", "Bosnia and Herzegovina", "Bosna i Hercegovina", "Bosna i Hercegovina", "Bosna i Hercegovina", "Bosna i Hercegovina", "Боснa и Херцеговина", "Боснa и Херцеговина" ]
+  },
+  "BLM" : {
+    "cca2" : "BL",
+    "ccn3" : "652",
+    "cca3" : "BLM",
     "cioc" : "",
-    "borders" : [ ]
+    "borders" : [ ],
+    "names" : [ "Saint Barthélemy", "Collectivity of Saint Barthélemy", "Saint-Barthélemy", "Collectivité de Saint-Barthélemy" ]
+  },
+  "BLR" : {
+    "cca2" : "BY",
+    "ccn3" : "112",
+    "cca3" : "BLR",
+    "cioc" : "BLR",
+    "borders" : [ "LTU", "LVA", "POL", "RUS", "UKR" ],
+    "names" : [ "Belarus", "Republic of Belarus", "Белару́сь", "Рэспубліка Беларусь", "Беларусь", "Республика Беларусь" ]
+  },
+  "BLZ" : {
+    "cca2" : "BZ",
+    "ccn3" : "084",
+    "cca3" : "BLZ",
+    "cioc" : "BIZ",
+    "borders" : [ "GTM", "MEX" ],
+    "names" : [ "Belize", "Belize", "Belize", "Belize", "Belize", "Belize", "Belice", "Belice" ]
+  },
+  "BMU" : {
+    "cca2" : "BM",
+    "ccn3" : "060",
+    "cca3" : "BMU",
+    "cioc" : "BER",
+    "borders" : [ ],
+    "names" : [ "Bermuda", "Bermuda", "Bermuda", "Bermuda" ]
+  },
+  "BOL" : {
+    "cca2" : "BO",
+    "ccn3" : "068",
+    "cca3" : "BOL",
+    "cioc" : "BOL",
+    "borders" : [ "ARG", "BRA", "CHL", "PER", "PRY" ],
+    "names" : [ "Bolivia", "Plurinational State of Bolivia", "Wuliwya", "Wuliwya Suyu", "Volívia", "Tetã Volívia", "Buliwya", "Buliwya Mamallaqta", "Bolivia", "Estado Plurinacional de Bolivia" ]
   },
   "BRA" : {
     "cca2" : "BR",
     "ccn3" : "076",
     "cca3" : "BRA",
     "cioc" : "BRA",
-    "borders" : [ "ARG", "BOL", "COL", "GUF", "GUY", "PRY", "PER", "SUR", "URY", "VEN" ]
-  },
-  "TUR" : {
-    "cca2" : "TR",
-    "ccn3" : "792",
-    "cca3" : "TUR",
-    "cioc" : "TUR",
-    "borders" : [ "ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR" ]
+    "borders" : [ "ARG", "BOL", "COL", "GUF", "GUY", "PER", "PRY", "SUR", "URY", "VEN" ],
+    "names" : [ "Brazil", "Federative Republic of Brazil", "Brasil", "República Federativa do Brasil" ]
   },
   "BRB" : {
     "cca2" : "BB",
     "ccn3" : "052",
     "cca3" : "BRB",
     "cioc" : "BAR",
-    "borders" : [ ]
-  },
-  "TUV" : {
-    "cca2" : "TV",
-    "ccn3" : "798",
-    "cca3" : "TUV",
-    "cioc" : "TUV",
-    "borders" : [ ]
-  },
-  "DEU" : {
-    "cca2" : "DE",
-    "ccn3" : "276",
-    "cca3" : "DEU",
-    "cioc" : "GER",
-    "borders" : [ "AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE" ]
-  },
-  "EGY" : {
-    "cca2" : "EG",
-    "ccn3" : "818",
-    "cca3" : "EGY",
-    "cioc" : "EGY",
-    "borders" : [ "ISR", "LBY", "PSE", "SDN" ]
-  },
-  "LVA" : {
-    "cca2" : "LV",
-    "ccn3" : "428",
-    "cca3" : "LVA",
-    "cioc" : "LAT",
-    "borders" : [ "BLR", "EST", "LTU", "RUS" ]
-  },
-  "JAM" : {
-    "cca2" : "JM",
-    "ccn3" : "388",
-    "cca3" : "JAM",
-    "cioc" : "JAM",
-    "borders" : [ ]
-  },
-  "NIU" : {
-    "cca2" : "NU",
-    "ccn3" : "570",
-    "cca3" : "NIU",
-    "cioc" : "",
-    "borders" : [ ]
-  },
-  "VIR" : {
-    "cca2" : "VI",
-    "ccn3" : "850",
-    "cca3" : "VIR",
-    "cioc" : "ISV",
-    "borders" : [ ]
-  },
-  "ZAF" : {
-    "cca2" : "ZA",
-    "ccn3" : "710",
-    "cca3" : "ZAF",
-    "cioc" : "RSA",
-    "borders" : [ "BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE" ]
+    "borders" : [ ],
+    "names" : [ "Barbados", "Barbados", "Barbados", "Barbados" ]
   },
   "BRN" : {
     "cca2" : "BN",
     "ccn3" : "096",
     "cca3" : "BRN",
     "cioc" : "BRU",
-    "borders" : [ "MYS" ]
+    "borders" : [ "MYS" ],
+    "names" : [ "Brunei", "Nation of Brunei, Abode of Peace", "Negara Brunei Darussalam", "Nation of Brunei, Abode Damai" ]
+  },
+  "BTN" : {
+    "cca2" : "BT",
+    "ccn3" : "064",
+    "cca3" : "BTN",
+    "cioc" : "BHU",
+    "borders" : [ "CHN", "IND" ],
+    "names" : [ "Bhutan", "Kingdom of Bhutan", "འབྲུག་ཡུལ་", "འབྲུག་རྒྱལ་ཁབ་" ]
+  },
+  "BVT" : {
+    "cca2" : "BV",
+    "ccn3" : "074",
+    "cca3" : "BVT",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Bouvet Island", "Bouvet Island", "Bouvetøya", "Bouvetøya" ]
+  },
+  "BWA" : {
+    "cca2" : "BW",
+    "ccn3" : "072",
+    "cca3" : "BWA",
+    "cioc" : "BOT",
+    "borders" : [ "NAM", "ZAF", "ZMB", "ZWE" ],
+    "names" : [ "Botswana", "Republic of Botswana", "Botswana", "Republic of Botswana", "Botswana", "Lefatshe la Botswana" ]
+  },
+  "CAF" : {
+    "cca2" : "CF",
+    "ccn3" : "140",
+    "cca3" : "CAF",
+    "cioc" : "CAF",
+    "borders" : [ "CMR", "COD", "COG", "SDN", "SSD", "TCD" ],
+    "names" : [ "Central African Republic", "Central African Republic", "République centrafricaine", "République centrafricaine", "Bêafrîka", "Ködörösêse tî Bêafrîka" ]
+  },
+  "CAN" : {
+    "cca2" : "CA",
+    "ccn3" : "124",
+    "cca3" : "CAN",
+    "cioc" : "CAN",
+    "borders" : [ "USA" ],
+    "names" : [ "Canada", "Canada", "Canada", "Canada", "Canada", "Canada" ]
+  },
+  "CCK" : {
+    "cca2" : "CC",
+    "ccn3" : "166",
+    "cca3" : "CCK",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Cocos (Keeling) Islands", "Territory of the Cocos (Keeling) Islands", "Cocos (Keeling) Islands", "Territory of the Cocos (Keeling) Islands" ]
+  },
+  "CHE" : {
+    "cca2" : "CH",
+    "ccn3" : "756",
+    "cca3" : "CHE",
+    "cioc" : "SUI",
+    "borders" : [ "AUT", "DEU", "FRA", "ITA", "LIE" ],
+    "names" : [ "Switzerland", "Swiss Confederation", "Suisse", "Confédération suisse", "Schweiz", "Schweizerische Eidgenossenschaft", "Svizzera", "Confederazione Svizzera", "Svizra", "Confederaziun svizra" ]
+  },
+  "CHL" : {
+    "cca2" : "CL",
+    "ccn3" : "152",
+    "cca3" : "CHL",
+    "cioc" : "CHI",
+    "borders" : [ "ARG", "BOL", "PER" ],
+    "names" : [ "Chile", "Republic of Chile", "Chile", "República de Chile" ]
+  },
+  "CHN" : {
+    "cca2" : "CN",
+    "ccn3" : "156",
+    "cca3" : "CHN",
+    "cioc" : "CHN",
+    "borders" : [ "AFG", "BTN", "HKG", "IND", "KAZ", "KGZ", "LAO", "MAC", "MMR", "MNG", "NPL", "PAK", "PRK", "RUS", "TJK", "VNM" ],
+    "names" : [ "China", "People's Republic of China", "中国", "中华人民共和国" ]
+  },
+  "CIV" : {
+    "cca2" : "CI",
+    "ccn3" : "384",
+    "cca3" : "CIV",
+    "cioc" : "CIV",
+    "borders" : [ "BFA", "GHA", "GIN", "LBR", "MLI" ],
+    "names" : [ "Ivory Coast", "Republic of Côte d'Ivoire", "Côte d'Ivoire", "République de Côte d'Ivoire" ]
+  },
+  "CMR" : {
+    "cca2" : "CM",
+    "ccn3" : "120",
+    "cca3" : "CMR",
+    "cioc" : "CMR",
+    "borders" : [ "CAF", "COG", "GAB", "GNQ", "NGA", "TCD" ],
+    "names" : [ "Cameroon", "Republic of Cameroon", "Cameroon", "Republic of Cameroon", "Cameroun", "République du Cameroun" ]
+  },
+  "COD" : {
+    "cca2" : "CD",
+    "ccn3" : "180",
+    "cca3" : "COD",
+    "cioc" : "COD",
+    "borders" : [ "AGO", "BDI", "CAF", "COG", "RWA", "SSD", "TZA", "UGA", "ZMB" ],
+    "names" : [ "DR Congo", "Democratic Republic of the Congo", "RD Congo", "République démocratique du Congo", "Repubilika ya Kongo Demokratiki", "Repubilika ya Kongo Demokratiki", "Republiki ya Kongó Demokratiki", "Republiki ya Kongó Demokratiki", "Ditunga dia Kongu wa Mungalaata", "Ditunga dia Kongu wa Mungalaata", "Jamhuri ya Kidemokrasia ya Kongo", "Jamhuri ya Kidemokrasia ya Kongo" ]
+  },
+  "COG" : {
+    "cca2" : "CG",
+    "ccn3" : "178",
+    "cca3" : "COG",
+    "cioc" : "CGO",
+    "borders" : [ "AGO", "CAF", "CMR", "COD", "GAB" ],
+    "names" : [ "Congo", "Republic of the Congo", "République du Congo", "République du Congo", "Repubilika ya Kongo", "Repubilika ya Kongo", "Republíki ya Kongó", "Republíki ya Kongó" ]
+  },
+  "COK" : {
+    "cca2" : "CK",
+    "ccn3" : "184",
+    "cca3" : "COK",
+    "cioc" : "COK",
+    "borders" : [ ],
+    "names" : [ "Cook Islands", "Cook Islands", "Cook Islands", "Cook Islands", "Kūki 'Āirani", "Kūki 'Āirani" ]
+  },
+  "COL" : {
+    "cca2" : "CO",
+    "ccn3" : "170",
+    "cca3" : "COL",
+    "cioc" : "COL",
+    "borders" : [ "BRA", "ECU", "PAN", "PER", "VEN" ],
+    "names" : [ "Colombia", "Republic of Colombia", "Colombia", "República de Colombia" ]
+  },
+  "COM" : {
+    "cca2" : "KM",
+    "ccn3" : "174",
+    "cca3" : "COM",
+    "cioc" : "COM",
+    "borders" : [ ],
+    "names" : [ "Comoros", "Union of the Comoros", "جزر القمر", "الاتحاد القمري", "Comores", "Union des Comores", "Komori", "Udzima wa Komori" ]
+  },
+  "CPV" : {
+    "cca2" : "CV",
+    "ccn3" : "132",
+    "cca3" : "CPV",
+    "cioc" : "CPV",
+    "borders" : [ ],
+    "names" : [ "Cape Verde", "Republic of Cabo Verde", "Cabo Verde", "República de Cabo Verde" ]
+  },
+  "CRI" : {
+    "cca2" : "CR",
+    "ccn3" : "188",
+    "cca3" : "CRI",
+    "cioc" : "CRC",
+    "borders" : [ "NIC", "PAN" ],
+    "names" : [ "Costa Rica", "Republic of Costa Rica", "Costa Rica", "República de Costa Rica" ]
+  },
+  "CUB" : {
+    "cca2" : "CU",
+    "ccn3" : "192",
+    "cca3" : "CUB",
+    "cioc" : "CUB",
+    "borders" : [ ],
+    "names" : [ "Cuba", "Republic of Cuba", "Cuba", "República de Cuba" ]
+  },
+  "CUW" : {
+    "cca2" : "CW",
+    "ccn3" : "531",
+    "cca3" : "CUW",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Curaçao", "Country of Curaçao", "Curaçao", "Country of Curaçao", "Curaçao", "Land Curaçao", "Pais Kòrsou", "Pais Kòrsou" ]
+  },
+  "CXR" : {
+    "cca2" : "CX",
+    "ccn3" : "162",
+    "cca3" : "CXR",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Christmas Island", "Territory of Christmas Island", "Christmas Island", "Territory of Christmas Island" ]
+  },
+  "CYM" : {
+    "cca2" : "KY",
+    "ccn3" : "136",
+    "cca3" : "CYM",
+    "cioc" : "CAY",
+    "borders" : [ ],
+    "names" : [ "Cayman Islands", "Cayman Islands", "Cayman Islands", "Cayman Islands" ]
+  },
+  "CYP" : {
+    "cca2" : "CY",
+    "ccn3" : "196",
+    "cca3" : "CYP",
+    "cioc" : "CYP",
+    "borders" : [ ],
+    "names" : [ "Cyprus", "Republic of Cyprus", "Κύπρος", "Δημοκρατία της Κύπρος", "Kıbrıs", "Kıbrıs Cumhuriyeti" ]
+  },
+  "CZE" : {
+    "cca2" : "CZ",
+    "ccn3" : "203",
+    "cca3" : "CZE",
+    "cioc" : "CZE",
+    "borders" : [ "AUT", "DEU", "POL", "SVK" ],
+    "names" : [ "Czechia", "Czech Republic", "Česko", "Česká republika", "Česko", "Česká republika" ]
+  },
+  "DEU" : {
+    "cca2" : "DE",
+    "ccn3" : "276",
+    "cca3" : "DEU",
+    "cioc" : "GER",
+    "borders" : [ "AUT", "BEL", "CHE", "CZE", "DNK", "FRA", "LUX", "NLD", "POL" ],
+    "names" : [ "Germany", "Federal Republic of Germany", "Deutschland", "Bundesrepublik Deutschland" ]
+  },
+  "DJI" : {
+    "cca2" : "DJ",
+    "ccn3" : "262",
+    "cca3" : "DJI",
+    "cioc" : "DJI",
+    "borders" : [ "ERI", "ETH", "SOM" ],
+    "names" : [ "Djibouti", "Republic of Djibouti", "جيبوتي", "جمهورية جيبوتي", "Djibouti", "République de Djibouti" ]
+  },
+  "DMA" : {
+    "cca2" : "DM",
+    "ccn3" : "212",
+    "cca3" : "DMA",
+    "cioc" : "DMA",
+    "borders" : [ ],
+    "names" : [ "Dominica", "Commonwealth of Dominica", "Dominica", "Commonwealth of Dominica" ]
+  },
+  "DNK" : {
+    "cca2" : "DK",
+    "ccn3" : "208",
+    "cca3" : "DNK",
+    "cioc" : "DEN",
+    "borders" : [ "DEU" ],
+    "names" : [ "Denmark", "Kingdom of Denmark", "Danmark", "Kongeriget Danmark" ]
+  },
+  "DOM" : {
+    "cca2" : "DO",
+    "ccn3" : "214",
+    "cca3" : "DOM",
+    "cioc" : "DOM",
+    "borders" : [ "HTI" ],
+    "names" : [ "Dominican Republic", "Dominican Republic", "República Dominicana", "República Dominicana" ]
+  },
+  "DZA" : {
+    "cca2" : "DZ",
+    "ccn3" : "012",
+    "cca3" : "DZA",
+    "cioc" : "ALG",
+    "borders" : [ "ESH", "LBY", "MAR", "MLI", "MRT", "NER", "TUN" ],
+    "names" : [ "Algeria", "People's Democratic Republic of Algeria", "الجزائر", "الجمهورية الديمقراطية الشعبية الجزائرية" ]
+  },
+  "ECU" : {
+    "cca2" : "EC",
+    "ccn3" : "218",
+    "cca3" : "ECU",
+    "cioc" : "ECU",
+    "borders" : [ "COL", "PER" ],
+    "names" : [ "Ecuador", "Republic of Ecuador", "Ecuador", "República del Ecuador" ]
+  },
+  "EGY" : {
+    "cca2" : "EG",
+    "ccn3" : "818",
+    "cca3" : "EGY",
+    "cioc" : "EGY",
+    "borders" : [ "ISR", "LBY", "PSE", "SDN" ],
+    "names" : [ "Egypt", "Arab Republic of Egypt", "مصر", "جمهورية مصر العربية" ]
+  },
+  "ERI" : {
+    "cca2" : "ER",
+    "ccn3" : "232",
+    "cca3" : "ERI",
+    "cioc" : "ERI",
+    "borders" : [ "DJI", "ETH", "SDN" ],
+    "names" : [ "Eritrea", "State of Eritrea", "إريتريا", "دولة إريتريا", "Eritrea", "State of Eritrea", "ኤርትራ", "ሃገረ ኤርትራ" ]
+  },
+  "ESH" : {
+    "cca2" : "EH",
+    "ccn3" : "732",
+    "cca3" : "ESH",
+    "cioc" : "",
+    "borders" : [ "DZA", "MAR", "MRT" ],
+    "names" : [ "Western Sahara", "Sahrawi Arab Democratic Republic", "Western Sahara", "Sahrawi Arab Democratic Republic", "الصحراء الغربية", "الجمهورية العربية الصحراوية الديمقراطية", "Sahara Occidental", "República Árabe Saharaui Democrática" ]
+  },
+  "ESP" : {
+    "cca2" : "ES",
+    "ccn3" : "724",
+    "cca3" : "ESP",
+    "cioc" : "ESP",
+    "borders" : [ "AND", "FRA", "GIB", "MAR", "PRT" ],
+    "names" : [ "Spain", "Kingdom of Spain", "España", "Reino de España" ]
+  },
+  "EST" : {
+    "cca2" : "EE",
+    "ccn3" : "233",
+    "cca3" : "EST",
+    "cioc" : "EST",
+    "borders" : [ "LVA", "RUS" ],
+    "names" : [ "Estonia", "Republic of Estonia", "Eesti", "Eesti Vabariik" ]
+  },
+  "ETH" : {
+    "cca2" : "ET",
+    "ccn3" : "231",
+    "cca3" : "ETH",
+    "cioc" : "ETH",
+    "borders" : [ "DJI", "ERI", "KEN", "SDN", "SOM", "SSD" ],
+    "names" : [ "Ethiopia", "Federal Democratic Republic of Ethiopia", "ኢትዮጵያ", "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ" ]
+  },
+  "FIN" : {
+    "cca2" : "FI",
+    "ccn3" : "246",
+    "cca3" : "FIN",
+    "cioc" : "FIN",
+    "borders" : [ "NOR", "RUS", "SWE" ],
+    "names" : [ "Finland", "Republic of Finland", "Suomi", "Suomen tasavalta", "Finland", "Republiken Finland" ]
+  },
+  "FJI" : {
+    "cca2" : "FJ",
+    "ccn3" : "242",
+    "cca3" : "FJI",
+    "cioc" : "FIJ",
+    "borders" : [ ],
+    "names" : [ "Fiji", "Republic of Fiji", "Fiji", "Republic of Fiji", "Viti", "Matanitu Tugalala o Viti", "फिजी", "रिपब्लिक ऑफ फीजी" ]
+  },
+  "FLK" : {
+    "cca2" : "FK",
+    "ccn3" : "238",
+    "cca3" : "FLK",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Falkland Islands", "Falkland Islands", "Falkland Islands", "Falkland Islands" ]
+  },
+  "FRA" : {
+    "cca2" : "FR",
+    "ccn3" : "250",
+    "cca3" : "FRA",
+    "cioc" : "FRA",
+    "borders" : [ "AND", "BEL", "CHE", "DEU", "ESP", "ITA", "LUX", "MCO" ],
+    "names" : [ "France", "French Republic", "France", "République française" ]
+  },
+  "FRO" : {
+    "cca2" : "FO",
+    "ccn3" : "234",
+    "cca3" : "FRO",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Faroe Islands", "Faroe Islands", "Færøerne", "Færøerne", "Føroyar", "Føroyar" ]
+  },
+  "FSM" : {
+    "cca2" : "FM",
+    "ccn3" : "583",
+    "cca3" : "FSM",
+    "cioc" : "FSM",
+    "borders" : [ ],
+    "names" : [ "Micronesia", "Federated States of Micronesia", "Micronesia", "Federated States of Micronesia" ]
+  },
+  "GAB" : {
+    "cca2" : "GA",
+    "ccn3" : "266",
+    "cca3" : "GAB",
+    "cioc" : "GAB",
+    "borders" : [ "CMR", "COG", "GNQ" ],
+    "names" : [ "Gabon", "Gabonese Republic", "Gabon", "République gabonaise" ]
+  },
+  "GBR" : {
+    "cca2" : "GB",
+    "ccn3" : "826",
+    "cca3" : "GBR",
+    "cioc" : "GBR",
+    "borders" : [ "IRL" ],
+    "names" : [ "United Kingdom", "United Kingdom of Great Britain and Northern Ireland", "United Kingdom", "United Kingdom of Great Britain and Northern Ireland" ]
+  },
+  "GEO" : {
+    "cca2" : "GE",
+    "ccn3" : "268",
+    "cca3" : "GEO",
+    "cioc" : "GEO",
+    "borders" : [ "ARM", "AZE", "RUS", "TUR" ],
+    "names" : [ "Georgia", "Georgia", "საქართველო", "საქართველო" ]
+  },
+  "GGY" : {
+    "cca2" : "GG",
+    "ccn3" : "831",
+    "cca3" : "GGY",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Guernsey", "Bailiwick of Guernsey", "Guernsey", "Bailiwick of Guernsey", "Guernesey", "Bailliage de Guernesey", "Dgèrnésiais", "Dgèrnésiais" ]
+  },
+  "GHA" : {
+    "cca2" : "GH",
+    "ccn3" : "288",
+    "cca3" : "GHA",
+    "cioc" : "GHA",
+    "borders" : [ "BFA", "CIV", "TGO" ],
+    "names" : [ "Ghana", "Republic of Ghana", "Ghana", "Republic of Ghana" ]
+  },
+  "GIB" : {
+    "cca2" : "GI",
+    "ccn3" : "292",
+    "cca3" : "GIB",
+    "cioc" : "",
+    "borders" : [ "ESP" ],
+    "names" : [ "Gibraltar", "Gibraltar", "Gibraltar", "Gibraltar" ]
+  },
+  "GIN" : {
+    "cca2" : "GN",
+    "ccn3" : "324",
+    "cca3" : "GIN",
+    "cioc" : "GUI",
+    "borders" : [ "CIV", "GNB", "LBR", "MLI", "SEN", "SLE" ],
+    "names" : [ "Guinea", "Republic of Guinea", "Guinée", "République de Guinée" ]
+  },
+  "GLP" : {
+    "cca2" : "GP",
+    "ccn3" : "312",
+    "cca3" : "GLP",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Guadeloupe", "Guadeloupe", "Guadeloupe", "Guadeloupe" ]
+  },
+  "GMB" : {
+    "cca2" : "GM",
+    "ccn3" : "270",
+    "cca3" : "GMB",
+    "cioc" : "GAM",
+    "borders" : [ "SEN" ],
+    "names" : [ "Gambia", "Republic of the Gambia", "Gambia", "Republic of the Gambia" ]
+  },
+  "GNB" : {
+    "cca2" : "GW",
+    "ccn3" : "624",
+    "cca3" : "GNB",
+    "cioc" : "GBS",
+    "borders" : [ "GIN", "SEN" ],
+    "names" : [ "Guinea-Bissau", "Republic of Guinea-Bissau", "Guiné-Bissau", "República da Guiné-Bissau", "Guiné-Bissau", "República da Guiné-Bissau" ]
+  },
+  "GNQ" : {
+    "cca2" : "GQ",
+    "ccn3" : "226",
+    "cca3" : "GNQ",
+    "cioc" : "GEQ",
+    "borders" : [ "CMR", "GAB" ],
+    "names" : [ "Equatorial Guinea", "Republic of Equatorial Guinea", "Guinée équatoriale", "République de la Guinée Équatoriale", "Guiné Equatorial", "República da Guiné Equatorial", "Guinea Ecuatorial", "República de Guinea Ecuatorial" ]
+  },
+  "GRC" : {
+    "cca2" : "GR",
+    "ccn3" : "300",
+    "cca3" : "GRC",
+    "cioc" : "GRE",
+    "borders" : [ "ALB", "BGR", "MKD", "TUR" ],
+    "names" : [ "Greece", "Hellenic Republic", "Ελλάδα", "Ελληνική Δημοκρατία" ]
+  },
+  "GRD" : {
+    "cca2" : "GD",
+    "ccn3" : "308",
+    "cca3" : "GRD",
+    "cioc" : "GRN",
+    "borders" : [ ],
+    "names" : [ "Grenada", "Grenada", "Grenada", "Grenada" ]
+  },
+  "GRL" : {
+    "cca2" : "GL",
+    "ccn3" : "304",
+    "cca3" : "GRL",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Greenland", "Greenland", "Kalaallit Nunaat", "Kalaallit Nunaat" ]
+  },
+  "GTM" : {
+    "cca2" : "GT",
+    "ccn3" : "320",
+    "cca3" : "GTM",
+    "cioc" : "GUA",
+    "borders" : [ "BLZ", "HND", "MEX", "SLV" ],
+    "names" : [ "Guatemala", "Republic of Guatemala", "Guatemala", "República de Guatemala" ]
+  },
+  "GUF" : {
+    "cca2" : "GF",
+    "ccn3" : "254",
+    "cca3" : "GUF",
+    "cioc" : "",
+    "borders" : [ "BRA", "SUR" ],
+    "names" : [ "French Guiana", "Guiana", "Guyane française", "Guyane" ]
+  },
+  "GUM" : {
+    "cca2" : "GU",
+    "ccn3" : "316",
+    "cca3" : "GUM",
+    "cioc" : "GUM",
+    "borders" : [ ],
+    "names" : [ "Guam", "Guam", "Guåhån", "Guåhån", "Guam", "Guam", "Guam", "Guam" ]
+  },
+  "GUY" : {
+    "cca2" : "GY",
+    "ccn3" : "328",
+    "cca3" : "GUY",
+    "cioc" : "GUY",
+    "borders" : [ "BRA", "SUR", "VEN" ],
+    "names" : [ "Guyana", "Co-operative Republic of Guyana", "Guyana", "Co-operative Republic of Guyana" ]
+  },
+  "HKG" : {
+    "cca2" : "HK",
+    "ccn3" : "344",
+    "cca3" : "HKG",
+    "cioc" : "HKG",
+    "borders" : [ "CHN" ],
+    "names" : [ "Hong Kong", "Hong Kong Special Administrative Region of the People's Republic of China", "Hong Kong", "Hong Kong Special Administrative Region of the People's Republic of China", "香港", "中华人民共和国香港特别行政区" ]
+  },
+  "HMD" : {
+    "cca2" : "HM",
+    "ccn3" : "334",
+    "cca3" : "HMD",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Heard Island and McDonald Islands", "Heard Island and McDonald Islands", "Heard Island and McDonald Islands", "Heard Island and McDonald Islands" ]
   },
   "HND" : {
     "cca2" : "HN",
     "ccn3" : "340",
     "cca3" : "HND",
     "cioc" : "HON",
-    "borders" : [ "GTM", "SLV", "NIC" ]
+    "borders" : [ "GTM", "NIC", "SLV" ],
+    "names" : [ "Honduras", "Republic of Honduras", "Honduras", "República de Honduras" ]
+  },
+  "HRV" : {
+    "cca2" : "HR",
+    "ccn3" : "191",
+    "cca3" : "HRV",
+    "cioc" : "CRO",
+    "borders" : [ "BIH", "HUN", "MNE", "SRB", "SVN" ],
+    "names" : [ "Croatia", "Republic of Croatia", "Hrvatska", "Republika Hrvatska" ]
+  },
+  "HTI" : {
+    "cca2" : "HT",
+    "ccn3" : "332",
+    "cca3" : "HTI",
+    "cioc" : "HAI",
+    "borders" : [ "DOM" ],
+    "names" : [ "Haiti", "Republic of Haiti", "Haïti", "République d'Haïti", "Ayiti", "Repiblik Ayiti" ]
+  },
+  "HUN" : {
+    "cca2" : "HU",
+    "ccn3" : "348",
+    "cca3" : "HUN",
+    "cioc" : "HUN",
+    "borders" : [ "AUT", "HRV", "ROU", "SRB", "SVK", "SVN", "UKR" ],
+    "names" : [ "Hungary", "Hungary", "Magyarország", "Magyarország" ]
+  },
+  "IDN" : {
+    "cca2" : "ID",
+    "ccn3" : "360",
+    "cca3" : "IDN",
+    "cioc" : "INA",
+    "borders" : [ "MYS", "PNG", "TLS" ],
+    "names" : [ "Indonesia", "Republic of Indonesia", "Indonesia", "Republik Indonesia" ]
+  },
+  "IMN" : {
+    "cca2" : "IM",
+    "ccn3" : "833",
+    "cca3" : "IMN",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Isle of Man", "Isle of Man", "Isle of Man", "Isle of Man", "Mannin", "Ellan Vannin or Mannin" ]
+  },
+  "IND" : {
+    "cca2" : "IN",
+    "ccn3" : "356",
+    "cca3" : "IND",
+    "cioc" : "IND",
+    "borders" : [ "BGD", "BTN", "CHN", "MMR", "NPL", "PAK" ],
+    "names" : [ "India", "Republic of India", "India", "Republic of India", "भारत", "भारत गणराज्य", "இந்தியா", "இந்தியக் குடியரசு" ]
+  },
+  "IOT" : {
+    "cca2" : "IO",
+    "ccn3" : "086",
+    "cca3" : "IOT",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "British Indian Ocean Territory", "British Indian Ocean Territory", "British Indian Ocean Territory", "British Indian Ocean Territory" ]
+  },
+  "IRL" : {
+    "cca2" : "IE",
+    "ccn3" : "372",
+    "cca3" : "IRL",
+    "cioc" : "IRL",
+    "borders" : [ "GBR" ],
+    "names" : [ "Ireland", "Republic of Ireland", "Ireland", "Republic of Ireland", "Éire", "Poblacht na hÉireann" ]
+  },
+  "IRN" : {
+    "cca2" : "IR",
+    "ccn3" : "364",
+    "cca3" : "IRN",
+    "cioc" : "IRI",
+    "borders" : [ "AFG", "ARM", "AZE", "IRQ", "PAK", "TKM", "TUR" ],
+    "names" : [ "Iran", "Islamic Republic of Iran", "ایران", "جمهوری اسلامی ایران" ]
+  },
+  "IRQ" : {
+    "cca2" : "IQ",
+    "ccn3" : "368",
+    "cca3" : "IRQ",
+    "cioc" : "IRQ",
+    "borders" : [ "IRN", "JOR", "KWT", "SAU", "SYR", "TUR" ],
+    "names" : [ "Iraq", "Republic of Iraq", "العراق", "جمهورية العراق", "ܩܘܼܛܢܵܐ", "ܩܘܼܛܢܵܐ ܐܝܼܪܲܩ", "کۆماری", "کۆماری عێراق" ]
+  },
+  "ISL" : {
+    "cca2" : "IS",
+    "ccn3" : "352",
+    "cca3" : "ISL",
+    "cioc" : "ISL",
+    "borders" : [ ],
+    "names" : [ "Iceland", "Iceland", "Ísland", "Ísland" ]
+  },
+  "ISR" : {
+    "cca2" : "IL",
+    "ccn3" : "376",
+    "cca3" : "ISR",
+    "cioc" : "ISR",
+    "borders" : [ "EGY", "JOR", "LBN", "PSE", "SYR" ],
+    "names" : [ "Israel", "State of Israel", "إسرائيل", "دولة إسرائيل", "ישראל", "מדינת ישראל" ]
+  },
+  "ITA" : {
+    "cca2" : "IT",
+    "ccn3" : "380",
+    "cca3" : "ITA",
+    "cioc" : "ITA",
+    "borders" : [ "AUT", "CHE", "FRA", "SMR", "SVN", "VAT" ],
+    "names" : [ "Italy", "Italian Republic", "Italia", "Repubblica italiana" ]
+  },
+  "JAM" : {
+    "cca2" : "JM",
+    "ccn3" : "388",
+    "cca3" : "JAM",
+    "cioc" : "JAM",
+    "borders" : [ ],
+    "names" : [ "Jamaica", "Jamaica", "Jamaica", "Jamaica", "Jamaica", "Jamaica" ]
+  },
+  "JEY" : {
+    "cca2" : "JE",
+    "ccn3" : "832",
+    "cca3" : "JEY",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Jersey", "Bailiwick of Jersey", "Jersey", "Bailiwick of Jersey", "Jersey", "Bailliage de Jersey", "Jèrri", "Bailliage dé Jèrri" ]
+  },
+  "JOR" : {
+    "cca2" : "JO",
+    "ccn3" : "400",
+    "cca3" : "JOR",
+    "cioc" : "JOR",
+    "borders" : [ "IRQ", "ISR", "PSE", "SAU", "SYR" ],
+    "names" : [ "Jordan", "Hashemite Kingdom of Jordan", "الأردن", "المملكة الأردنية الهاشمية" ]
+  },
+  "JPN" : {
+    "cca2" : "JP",
+    "ccn3" : "392",
+    "cca3" : "JPN",
+    "cioc" : "JPN",
+    "borders" : [ ],
+    "names" : [ "Japan", "Japan", "日本", "日本" ]
+  },
+  "KAZ" : {
+    "cca2" : "KZ",
+    "ccn3" : "398",
+    "cca3" : "KAZ",
+    "cioc" : "KAZ",
+    "borders" : [ "CHN", "KGZ", "RUS", "TKM", "UZB" ],
+    "names" : [ "Kazakhstan", "Republic of Kazakhstan", "Қазақстан", "Қазақстан Республикасы", "Казахстан", "Республика Казахстан" ]
+  },
+  "KEN" : {
+    "cca2" : "KE",
+    "ccn3" : "404",
+    "cca3" : "KEN",
+    "cioc" : "KEN",
+    "borders" : [ "ETH", "SOM", "SSD", "TZA", "UGA" ],
+    "names" : [ "Kenya", "Republic of Kenya", "Kenya", "Republic of Kenya", "Kenya", "Republic of Kenya" ]
+  },
+  "KGZ" : {
+    "cca2" : "KG",
+    "ccn3" : "417",
+    "cca3" : "KGZ",
+    "cioc" : "KGZ",
+    "borders" : [ "CHN", "KAZ", "TJK", "UZB" ],
+    "names" : [ "Kyrgyzstan", "Kyrgyz Republic", "Кыргызстан", "Кыргыз Республикасы", "Киргизия", "Кыргызская Республика" ]
+  },
+  "KHM" : {
+    "cca2" : "KH",
+    "ccn3" : "116",
+    "cca3" : "KHM",
+    "cioc" : "CAM",
+    "borders" : [ "LAO", "THA", "VNM" ],
+    "names" : [ "Cambodia", "Kingdom of Cambodia", "Kâmpŭchéa", "ព្រះរាជាណាចក្រកម្ពុជា" ]
+  },
+  "KIR" : {
+    "cca2" : "KI",
+    "ccn3" : "296",
+    "cca3" : "KIR",
+    "cioc" : "KIR",
+    "borders" : [ ],
+    "names" : [ "Kiribati", "Independent and Sovereign Republic of Kiribati", "Kiribati", "Independent and Sovereign Republic of Kiribati", "Kiribati", "Ribaberiki Kiribati" ]
+  },
+  "KNA" : {
+    "cca2" : "KN",
+    "ccn3" : "659",
+    "cca3" : "KNA",
+    "cioc" : "SKN",
+    "borders" : [ ],
+    "names" : [ "Saint Kitts and Nevis", "Federation of Saint Christopher and Nevis", "Saint Kitts and Nevis", "Federation of Saint Christopher and Nevis" ]
+  },
+  "KOR" : {
+    "cca2" : "KR",
+    "ccn3" : "410",
+    "cca3" : "KOR",
+    "cioc" : "KOR",
+    "borders" : [ "PRK" ],
+    "names" : [ "South Korea", "Republic of Korea", "한국", "대한민국" ]
+  },
+  "KWT" : {
+    "cca2" : "KW",
+    "ccn3" : "414",
+    "cca3" : "KWT",
+    "cioc" : "KUW",
+    "borders" : [ "IRQ", "SAU" ],
+    "names" : [ "Kuwait", "State of Kuwait", "الكويت", "دولة الكويت" ]
+  },
+  "LAO" : {
+    "cca2" : "LA",
+    "ccn3" : "418",
+    "cca3" : "LAO",
+    "cioc" : "LAO",
+    "borders" : [ "CHN", "KHM", "MMR", "THA", "VNM" ],
+    "names" : [ "Laos", "Lao People's Democratic Republic", "ສປປລາວ", "ສາທາລະນະ ຊາທິປະໄຕ ຄົນລາວ ຂອງ" ]
+  },
+  "LBN" : {
+    "cca2" : "LB",
+    "ccn3" : "422",
+    "cca3" : "LBN",
+    "cioc" : "LBN",
+    "borders" : [ "ISR", "SYR" ],
+    "names" : [ "Lebanon", "Lebanese Republic", "لبنان", "الجمهورية اللبنانية", "Liban", "République libanaise" ]
+  },
+  "LBR" : {
+    "cca2" : "LR",
+    "ccn3" : "430",
+    "cca3" : "LBR",
+    "cioc" : "LBR",
+    "borders" : [ "CIV", "GIN", "SLE" ],
+    "names" : [ "Liberia", "Republic of Liberia", "Liberia", "Republic of Liberia" ]
+  },
+  "LBY" : {
+    "cca2" : "LY",
+    "ccn3" : "434",
+    "cca3" : "LBY",
+    "cioc" : "LBA",
+    "borders" : [ "DZA", "EGY", "NER", "SDN", "TCD", "TUN" ],
+    "names" : [ "Libya", "State of Libya", "ليبيا", "دولة ليبيا" ]
+  },
+  "LCA" : {
+    "cca2" : "LC",
+    "ccn3" : "662",
+    "cca3" : "LCA",
+    "cioc" : "LCA",
+    "borders" : [ ],
+    "names" : [ "Saint Lucia", "Saint Lucia", "Saint Lucia", "Saint Lucia" ]
+  },
+  "LIE" : {
+    "cca2" : "LI",
+    "ccn3" : "438",
+    "cca3" : "LIE",
+    "cioc" : "LIE",
+    "borders" : [ "AUT", "CHE" ],
+    "names" : [ "Liechtenstein", "Principality of Liechtenstein", "Liechtenstein", "Fürstentum Liechtenstein" ]
+  },
+  "LKA" : {
+    "cca2" : "LK",
+    "ccn3" : "144",
+    "cca3" : "LKA",
+    "cioc" : "SRI",
+    "borders" : [ "IND" ],
+    "names" : [ "Sri Lanka", "Democratic Socialist Republic of Sri Lanka", "ශ්‍රී ලංකාව", "ශ්‍රී ලංකා ප්‍රජාතාන්ත්‍රික සමාජවාදී ජනරජය", "இலங்கை", "இலங்கை சனநாயக சோசலிசக் குடியரசு" ]
+  },
+  "LSO" : {
+    "cca2" : "LS",
+    "ccn3" : "426",
+    "cca3" : "LSO",
+    "cioc" : "LES",
+    "borders" : [ "ZAF" ],
+    "names" : [ "Lesotho", "Kingdom of Lesotho", "Lesotho", "Kingdom of Lesotho", "Lesotho", "Kingdom of Lesotho" ]
+  },
+  "LTU" : {
+    "cca2" : "LT",
+    "ccn3" : "440",
+    "cca3" : "LTU",
+    "cioc" : "LTU",
+    "borders" : [ "BLR", "LVA", "POL", "RUS" ],
+    "names" : [ "Lithuania", "Republic of Lithuania", "Lietuva", "Lietuvos Respublikos" ]
+  },
+  "LUX" : {
+    "cca2" : "LU",
+    "ccn3" : "442",
+    "cca3" : "LUX",
+    "cioc" : "LUX",
+    "borders" : [ "BEL", "DEU", "FRA" ],
+    "names" : [ "Luxembourg", "Grand Duchy of Luxembourg", "Luxemburg", "Großherzogtum Luxemburg", "Luxembourg", "Grand-Duché de Luxembourg", "Lëtzebuerg", "Groussherzogtum Lëtzebuerg" ]
+  },
+  "LVA" : {
+    "cca2" : "LV",
+    "ccn3" : "428",
+    "cca3" : "LVA",
+    "cioc" : "LAT",
+    "borders" : [ "BLR", "EST", "LTU", "RUS" ],
+    "names" : [ "Latvia", "Republic of Latvia", "Latvija", "Latvijas Republikas" ]
+  },
+  "MAC" : {
+    "cca2" : "MO",
+    "ccn3" : "446",
+    "cca3" : "MAC",
+    "cioc" : "",
+    "borders" : [ "CHN" ],
+    "names" : [ "Macau", "Macao Special Administrative Region of the People's Republic of China", "Macau", "Região Administrativa Especial de Macau da República Popular da China", "澳门", "中华人民共和国澳门特别行政区" ]
+  },
+  "MAF" : {
+    "cca2" : "MF",
+    "ccn3" : "663",
+    "cca3" : "MAF",
+    "cioc" : "",
+    "borders" : [ "SXM" ],
+    "names" : [ "Saint Martin", "Saint Martin", "Saint-Martin", "Saint-Martin" ]
+  },
+  "MAR" : {
+    "cca2" : "MA",
+    "ccn3" : "504",
+    "cca3" : "MAR",
+    "cioc" : "MAR",
+    "borders" : [ "DZA", "ESH", "ESP" ],
+    "names" : [ "Morocco", "Kingdom of Morocco", "المغرب", "المملكة المغربية", "ⵍⵎⴰⵖⵔⵉⴱ", "ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ" ]
+  },
+  "MCO" : {
+    "cca2" : "MC",
+    "ccn3" : "492",
+    "cca3" : "MCO",
+    "cioc" : "MON",
+    "borders" : [ "FRA" ],
+    "names" : [ "Monaco", "Principality of Monaco", "Monaco", "Principauté de Monaco" ]
+  },
+  "MDA" : {
+    "cca2" : "MD",
+    "ccn3" : "498",
+    "cca3" : "MDA",
+    "cioc" : "MDA",
+    "borders" : [ "ROU", "UKR" ],
+    "names" : [ "Moldova", "Republic of Moldova", "Moldova", "Republica Moldova" ]
+  },
+  "MDG" : {
+    "cca2" : "MG",
+    "ccn3" : "450",
+    "cca3" : "MDG",
+    "cioc" : "MAD",
+    "borders" : [ ],
+    "names" : [ "Madagascar", "Republic of Madagascar", "Madagascar", "République de Madagascar", "Madagasikara", "Repoblikan'i Madagasikara" ]
+  },
+  "MDV" : {
+    "cca2" : "MV",
+    "ccn3" : "462",
+    "cca3" : "MDV",
+    "cioc" : "MDV",
+    "borders" : [ ],
+    "names" : [ "Maldives", "Republic of the Maldives", "ދިވެހިރާއްޖޭގެ", "ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ" ]
+  },
+  "MEX" : {
+    "cca2" : "MX",
+    "ccn3" : "484",
+    "cca3" : "MEX",
+    "cioc" : "MEX",
+    "borders" : [ "BLZ", "GTM", "USA" ],
+    "names" : [ "Mexico", "United Mexican States", "México", "Estados Unidos Mexicanos" ]
+  },
+  "MHL" : {
+    "cca2" : "MH",
+    "ccn3" : "584",
+    "cca3" : "MHL",
+    "cioc" : "MHL",
+    "borders" : [ ],
+    "names" : [ "Marshall Islands", "Republic of the Marshall Islands", "Marshall Islands", "Republic of the Marshall Islands", "M̧ajeļ", "Republic of the Marshall Islands" ]
+  },
+  "MKD" : {
+    "cca2" : "MK",
+    "ccn3" : "807",
+    "cca3" : "MKD",
+    "cioc" : "MKD",
+    "borders" : [ "ALB", "BGR", "GRC", "SRB", "UNK" ],
+    "names" : [ "North Macedonia", "Republic of North Macedonia", "Македонија", "Република Северна Македонија" ]
+  },
+  "MLI" : {
+    "cca2" : "ML",
+    "ccn3" : "466",
+    "cca3" : "MLI",
+    "cioc" : "MLI",
+    "borders" : [ "BFA", "CIV", "DZA", "GIN", "MRT", "NER", "SEN" ],
+    "names" : [ "Mali", "Republic of Mali", "Mali", "République du Mali" ]
+  },
+  "MLT" : {
+    "cca2" : "MT",
+    "ccn3" : "470",
+    "cca3" : "MLT",
+    "cioc" : "MLT",
+    "borders" : [ ],
+    "names" : [ "Malta", "Republic of Malta", "Malta", "Republic of Malta", "Malta", "Repubblika ta ' Malta" ]
+  },
+  "MMR" : {
+    "cca2" : "MM",
+    "ccn3" : "104",
+    "cca3" : "MMR",
+    "cioc" : "MYA",
+    "borders" : [ "BGD", "CHN", "IND", "LAO", "THA" ],
+    "names" : [ "Myanmar", "Republic of the Union of Myanmar", "မြန်မာ", "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်" ]
+  },
+  "MNE" : {
+    "cca2" : "ME",
+    "ccn3" : "499",
+    "cca3" : "MNE",
+    "cioc" : "MNE",
+    "borders" : [ "ALB", "BIH", "HRV", "SRB", "UNK" ],
+    "names" : [ "Montenegro", "Montenegro", "Црна Гора", "Црна Гора" ]
+  },
+  "MNG" : {
+    "cca2" : "MN",
+    "ccn3" : "496",
+    "cca3" : "MNG",
+    "cioc" : "MGL",
+    "borders" : [ "CHN", "RUS" ],
+    "names" : [ "Mongolia", "Mongolia", "Монгол улс", "Монгол улс" ]
+  },
+  "MNP" : {
+    "cca2" : "MP",
+    "ccn3" : "580",
+    "cca3" : "MNP",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Northern Mariana Islands", "Commonwealth of the Northern Mariana Islands", "Northern Mariana Islands", "Commonwealth of the Northern Mariana Islands", "Na Islas Mariånas", "Sankattan Siha Na Islas Mariånas", "Northern Mariana Islands", "Commonwealth of the Northern Mariana Islands" ]
+  },
+  "MOZ" : {
+    "cca2" : "MZ",
+    "ccn3" : "508",
+    "cca3" : "MOZ",
+    "cioc" : "MOZ",
+    "borders" : [ "MWI", "SWZ", "TZA", "ZAF", "ZMB", "ZWE" ],
+    "names" : [ "Mozambique", "Republic of Mozambique", "Moçambique", "República de Moçambique" ]
+  },
+  "MRT" : {
+    "cca2" : "MR",
+    "ccn3" : "478",
+    "cca3" : "MRT",
+    "cioc" : "MTN",
+    "borders" : [ "DZA", "ESH", "MLI", "SEN" ],
+    "names" : [ "Mauritania", "Islamic Republic of Mauritania", "موريتانيا", "الجمهورية الإسلامية الموريتانية" ]
+  },
+  "MSR" : {
+    "cca2" : "MS",
+    "ccn3" : "500",
+    "cca3" : "MSR",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Montserrat", "Montserrat", "Montserrat", "Montserrat" ]
+  },
+  "MTQ" : {
+    "cca2" : "MQ",
+    "ccn3" : "474",
+    "cca3" : "MTQ",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Martinique", "Martinique", "Martinique", "Martinique" ]
+  },
+  "MUS" : {
+    "cca2" : "MU",
+    "ccn3" : "480",
+    "cca3" : "MUS",
+    "cioc" : "MRI",
+    "borders" : [ ],
+    "names" : [ "Mauritius", "Republic of Mauritius", "Mauritius", "Republic of Mauritius", "Maurice", "République de Maurice", "Moris", "Republik Moris" ]
+  },
+  "MWI" : {
+    "cca2" : "MW",
+    "ccn3" : "454",
+    "cca3" : "MWI",
+    "cioc" : "MAW",
+    "borders" : [ "MOZ", "TZA", "ZMB" ],
+    "names" : [ "Malawi", "Republic of Malawi", "Malawi", "Republic of Malawi", "Malaŵi", "Chalo cha Malawi, Dziko la Malaŵi" ]
+  },
+  "MYS" : {
+    "cca2" : "MY",
+    "ccn3" : "458",
+    "cca3" : "MYS",
+    "cioc" : "MAS",
+    "borders" : [ "BRN", "IDN", "THA" ],
+    "names" : [ "Malaysia", "Malaysia", "Malaysia", "Malaysia", "مليسيا", "مليسيا" ]
+  },
+  "MYT" : {
+    "cca2" : "YT",
+    "ccn3" : "175",
+    "cca3" : "MYT",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Mayotte", "Department of Mayotte", "Mayotte", "Département de Mayotte" ]
+  },
+  "NAM" : {
+    "cca2" : "NA",
+    "ccn3" : "516",
+    "cca3" : "NAM",
+    "cioc" : "NAM",
+    "borders" : [ "AGO", "BWA", "ZAF", "ZMB" ],
+    "names" : [ "Namibia", "Republic of Namibia", "Namibië", "Republiek van Namibië", "Namibia", "Republik Namibia", "Namibia", "Republic of Namibia", "Namibia", "Republic of Namibia", "Namibia", "Republic of Namibia", "Namibia", "Republic of Namibia", "Namibia", "Republic of Namibia", "Namibia", "Republic of Namibia", "Namibia", "Lefatshe la Namibia" ]
+  },
+  "NCL" : {
+    "cca2" : "NC",
+    "ccn3" : "540",
+    "cca3" : "NCL",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "New Caledonia", "New Caledonia", "Nouvelle-Calédonie", "Nouvelle-Calédonie" ]
+  },
+  "NER" : {
+    "cca2" : "NE",
+    "ccn3" : "562",
+    "cca3" : "NER",
+    "cioc" : "NIG",
+    "borders" : [ "BEN", "BFA", "DZA", "LBY", "MLI", "NGA", "TCD" ],
+    "names" : [ "Niger", "Republic of Niger", "Niger", "République du Niger" ]
+  },
+  "NFK" : {
+    "cca2" : "NF",
+    "ccn3" : "574",
+    "cca3" : "NFK",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Norfolk Island", "Territory of Norfolk Island", "Norfolk Island", "Territory of Norfolk Island", "Norf'k Ailen", "Teratri of Norf'k Ailen" ]
+  },
+  "NGA" : {
+    "cca2" : "NG",
+    "ccn3" : "566",
+    "cca3" : "NGA",
+    "cioc" : "NGR",
+    "borders" : [ "BEN", "CMR", "NER", "TCD" ],
+    "names" : [ "Nigeria", "Federal Republic of Nigeria", "Nigeria", "Federal Republic of Nigeria" ]
+  },
+  "NIC" : {
+    "cca2" : "NI",
+    "ccn3" : "558",
+    "cca3" : "NIC",
+    "cioc" : "NCA",
+    "borders" : [ "CRI", "HND" ],
+    "names" : [ "Nicaragua", "Republic of Nicaragua", "Nicaragua", "República de Nicaragua" ]
+  },
+  "NIU" : {
+    "cca2" : "NU",
+    "ccn3" : "570",
+    "cca3" : "NIU",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Niue", "Niue", "Niue", "Niue", "Niuē", "Niuē" ]
+  },
+  "NLD" : {
+    "cca2" : "NL",
+    "ccn3" : "528",
+    "cca3" : "NLD",
+    "cioc" : "NED",
+    "borders" : [ "BEL", "DEU" ],
+    "names" : [ "Netherlands", "Kingdom of the Netherlands", "Nederland", "Koninkrijk der Nederlanden" ]
+  },
+  "NOR" : {
+    "cca2" : "NO",
+    "ccn3" : "578",
+    "cca3" : "NOR",
+    "cioc" : "NOR",
+    "borders" : [ "FIN", "RUS", "SWE" ],
+    "names" : [ "Norway", "Kingdom of Norway", "Noreg", "Kongeriket Noreg", "Norge", "Kongeriket Norge", "Norgga", "Norgga gonagasriika" ]
+  },
+  "NPL" : {
+    "cca2" : "NP",
+    "ccn3" : "524",
+    "cca3" : "NPL",
+    "cioc" : "NEP",
+    "borders" : [ "CHN", "IND" ],
+    "names" : [ "Nepal", "Federal Democratic Republic of Nepal", "नेपाल", "नेपाल संघीय लोकतान्त्रिक गणतन्त्र" ]
+  },
+  "NRU" : {
+    "cca2" : "NR",
+    "ccn3" : "520",
+    "cca3" : "NRU",
+    "cioc" : "NRU",
+    "borders" : [ ],
+    "names" : [ "Nauru", "Republic of Nauru", "Nauru", "Republic of Nauru", "Nauru", "Republic of Nauru" ]
+  },
+  "NZL" : {
+    "cca2" : "NZ",
+    "ccn3" : "554",
+    "cca3" : "NZL",
+    "cioc" : "NZL",
+    "borders" : [ ],
+    "names" : [ "New Zealand", "New Zealand", "New Zealand", "New Zealand", "Aotearoa", "Aotearoa", "New Zealand", "New Zealand" ]
+  },
+  "OMN" : {
+    "cca2" : "OM",
+    "ccn3" : "512",
+    "cca3" : "OMN",
+    "cioc" : "OMA",
+    "borders" : [ "ARE", "SAU", "YEM" ],
+    "names" : [ "Oman", "Sultanate of Oman", "عمان", "سلطنة عمان" ]
+  },
+  "PAK" : {
+    "cca2" : "PK",
+    "ccn3" : "586",
+    "cca3" : "PAK",
+    "cioc" : "PAK",
+    "borders" : [ "AFG", "CHN", "IND", "IRN" ],
+    "names" : [ "Pakistan", "Islamic Republic of Pakistan", "Pakistan", "Islamic Republic of Pakistan", "پاكستان", "اسلامی جمہوریۂ پاكستان" ]
+  },
+  "PAN" : {
+    "cca2" : "PA",
+    "ccn3" : "591",
+    "cca3" : "PAN",
+    "cioc" : "PAN",
+    "borders" : [ "COL", "CRI" ],
+    "names" : [ "Panama", "Republic of Panama", "Panamá", "República de Panamá" ]
+  },
+  "PCN" : {
+    "cca2" : "PN",
+    "ccn3" : "612",
+    "cca3" : "PCN",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Pitcairn Islands", "Pitcairn Group of Islands", "Pitcairn Islands", "Pitcairn Group of Islands" ]
+  },
+  "PER" : {
+    "cca2" : "PE",
+    "ccn3" : "604",
+    "cca3" : "PER",
+    "cioc" : "PER",
+    "borders" : [ "BOL", "BRA", "CHL", "COL", "ECU" ],
+    "names" : [ "Peru", "Republic of Peru", "Piruw", "Piruw Suyu", "Piruw", "Piruw Ripuwlika", "Perú", "República del Perú" ]
+  },
+  "PHL" : {
+    "cca2" : "PH",
+    "ccn3" : "608",
+    "cca3" : "PHL",
+    "cioc" : "PHI",
+    "borders" : [ ],
+    "names" : [ "Philippines", "Republic of the Philippines", "Philippines", "Republic of the Philippines", "Pilipinas", "Republic of the Philippines" ]
+  },
+  "PLW" : {
+    "cca2" : "PW",
+    "ccn3" : "585",
+    "cca3" : "PLW",
+    "cioc" : "PLW",
+    "borders" : [ ],
+    "names" : [ "Palau", "Republic of Palau", "Palau", "Republic of Palau", "Belau", "Beluu er a Belau" ]
+  },
+  "PNG" : {
+    "cca2" : "PG",
+    "ccn3" : "598",
+    "cca3" : "PNG",
+    "cioc" : "PNG",
+    "borders" : [ "IDN" ],
+    "names" : [ "Papua New Guinea", "Independent State of Papua New Guinea", "Papua New Guinea", "Independent State of Papua New Guinea", "Papua Niu Gini", "Independen Stet bilong Papua Niugini", "Papua Niugini", "Independen Stet bilong Papua Niugini" ]
+  },
+  "POL" : {
+    "cca2" : "PL",
+    "ccn3" : "616",
+    "cca3" : "POL",
+    "cioc" : "POL",
+    "borders" : [ "BLR", "CZE", "DEU", "LTU", "RUS", "SVK", "UKR" ],
+    "names" : [ "Poland", "Republic of Poland", "Polska", "Rzeczpospolita Polska" ]
+  },
+  "PRI" : {
+    "cca2" : "PR",
+    "ccn3" : "630",
+    "cca3" : "PRI",
+    "cioc" : "PUR",
+    "borders" : [ ],
+    "names" : [ "Puerto Rico", "Commonwealth of Puerto Rico", "Puerto Rico", "Commonwealth of Puerto Rico", "Puerto Rico", "Estado Libre Asociado de Puerto Rico" ]
+  },
+  "PRK" : {
+    "cca2" : "KP",
+    "ccn3" : "408",
+    "cca3" : "PRK",
+    "cioc" : "PRK",
+    "borders" : [ "CHN", "KOR", "RUS" ],
+    "names" : [ "North Korea", "Democratic People's Republic of Korea", "조선", "조선민주주의인민공화국" ]
+  },
+  "PRT" : {
+    "cca2" : "PT",
+    "ccn3" : "620",
+    "cca3" : "PRT",
+    "cioc" : "POR",
+    "borders" : [ "ESP" ],
+    "names" : [ "Portugal", "Portuguese Republic", "Portugal", "República português" ]
+  },
+  "PRY" : {
+    "cca2" : "PY",
+    "ccn3" : "600",
+    "cca3" : "PRY",
+    "cioc" : "PAR",
+    "borders" : [ "ARG", "BOL", "BRA" ],
+    "names" : [ "Paraguay", "Republic of Paraguay", "Paraguái", "Tetã Paraguái", "Paraguay", "República de Paraguay" ]
+  },
+  "PSE" : {
+    "cca2" : "PS",
+    "ccn3" : "275",
+    "cca3" : "PSE",
+    "cioc" : "PLE",
+    "borders" : [ "EGY", "ISR", "JOR" ],
+    "names" : [ "Palestine", "State of Palestine", "فلسطين", "دولة فلسطين" ]
+  },
+  "PYF" : {
+    "cca2" : "PF",
+    "ccn3" : "258",
+    "cca3" : "PYF",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "French Polynesia", "French Polynesia", "Polynésie française", "Polynésie française" ]
+  },
+  "QAT" : {
+    "cca2" : "QA",
+    "ccn3" : "634",
+    "cca3" : "QAT",
+    "cioc" : "QAT",
+    "borders" : [ "SAU" ],
+    "names" : [ "Qatar", "State of Qatar", "قطر", "دولة قطر" ]
+  },
+  "REU" : {
+    "cca2" : "RE",
+    "ccn3" : "638",
+    "cca3" : "REU",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Réunion", "Réunion Island", "La Réunion", "Ile de la Réunion" ]
+  },
+  "ROU" : {
+    "cca2" : "RO",
+    "ccn3" : "642",
+    "cca3" : "ROU",
+    "cioc" : "ROU",
+    "borders" : [ "BGR", "HUN", "MDA", "SRB", "UKR" ],
+    "names" : [ "Romania", "Romania", "România", "România" ]
+  },
+  "RUS" : {
+    "cca2" : "RU",
+    "ccn3" : "643",
+    "cca3" : "RUS",
+    "cioc" : "RUS",
+    "borders" : [ "AZE", "BLR", "CHN", "EST", "FIN", "GEO", "KAZ", "LTU", "LVA", "MNG", "NOR", "POL", "PRK", "UKR" ],
+    "names" : [ "Russia", "Russian Federation", "Россия", "Российская Федерация" ]
+  },
+  "RWA" : {
+    "cca2" : "RW",
+    "ccn3" : "646",
+    "cca3" : "RWA",
+    "cioc" : "RWA",
+    "borders" : [ "BDI", "COD", "TZA", "UGA" ],
+    "names" : [ "Rwanda", "Republic of Rwanda", "Rwanda", "Republic of Rwanda", "Rwanda", "République rwandaise", "Rwanda", "Repubulika y'u Rwanda" ]
+  },
+  "SAU" : {
+    "cca2" : "SA",
+    "ccn3" : "682",
+    "cca3" : "SAU",
+    "cioc" : "KSA",
+    "borders" : [ "ARE", "IRQ", "JOR", "KWT", "OMN", "QAT", "YEM" ],
+    "names" : [ "Saudi Arabia", "Kingdom of Saudi Arabia", "السعودية", "المملكة العربية السعودية" ]
+  },
+  "SDN" : {
+    "cca2" : "SD",
+    "ccn3" : "729",
+    "cca3" : "SDN",
+    "cioc" : "SUD",
+    "borders" : [ "CAF", "EGY", "ERI", "ETH", "LBY", "SSD", "TCD" ],
+    "names" : [ "Sudan", "Republic of the Sudan", "السودان", "جمهورية السودان", "Sudan", "Republic of the Sudan" ]
+  },
+  "SEN" : {
+    "cca2" : "SN",
+    "ccn3" : "686",
+    "cca3" : "SEN",
+    "cioc" : "SEN",
+    "borders" : [ "GIN", "GMB", "GNB", "MLI", "MRT" ],
+    "names" : [ "Senegal", "Republic of Senegal", "Sénégal", "République du Sénégal" ]
+  },
+  "SGP" : {
+    "cca2" : "SG",
+    "ccn3" : "702",
+    "cca3" : "SGP",
+    "cioc" : "SGP",
+    "borders" : [ ],
+    "names" : [ "Singapore", "Republic of Singapore", "Singapore", "Republic of Singapore", "Singapura", "Republik Singapura", "சிங்கப்பூர்", "சிங்கப்பூர் குடியரசு", "新加坡", "新加坡共和国" ]
+  },
+  "SGS" : {
+    "cca2" : "GS",
+    "ccn3" : "239",
+    "cca3" : "SGS",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "South Georgia", "South Georgia and the South Sandwich Islands", "South Georgia", "South Georgia and the South Sandwich Islands" ]
+  },
+  "SHN" : {
+    "cca2" : "SH",
+    "ccn3" : "654",
+    "cca3" : "SHN",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Saint Helena, Ascension and Tristan da Cunha", "Saint Helena, Ascension and Tristan da Cunha", "Saint Helena, Ascension and Tristan da Cunha", "Saint Helena, Ascension and Tristan da Cunha" ]
+  },
+  "SJM" : {
+    "cca2" : "SJ",
+    "ccn3" : "744",
+    "cca3" : "SJM",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Svalbard and Jan Mayen", "Svalbard og Jan Mayen", "Svalbard og Jan Mayen", "Svalbard og Jan Mayen" ]
+  },
+  "SLB" : {
+    "cca2" : "SB",
+    "ccn3" : "090",
+    "cca3" : "SLB",
+    "cioc" : "SOL",
+    "borders" : [ ],
+    "names" : [ "Solomon Islands", "Solomon Islands", "Solomon Islands", "Solomon Islands" ]
+  },
+  "SLE" : {
+    "cca2" : "SL",
+    "ccn3" : "694",
+    "cca3" : "SLE",
+    "cioc" : "SLE",
+    "borders" : [ "GIN", "LBR" ],
+    "names" : [ "Sierra Leone", "Republic of Sierra Leone", "Sierra Leone", "Republic of Sierra Leone" ]
+  },
+  "SLV" : {
+    "cca2" : "SV",
+    "ccn3" : "222",
+    "cca3" : "SLV",
+    "cioc" : "ESA",
+    "borders" : [ "GTM", "HND" ],
+    "names" : [ "El Salvador", "Republic of El Salvador", "El Salvador", "República de El Salvador" ]
+  },
+  "SMR" : {
+    "cca2" : "SM",
+    "ccn3" : "674",
+    "cca3" : "SMR",
+    "cioc" : "SMR",
+    "borders" : [ "ITA" ],
+    "names" : [ "San Marino", "Most Serene Republic of San Marino", "San Marino", "Serenissima Repubblica di San Marino" ]
+  },
+  "SOM" : {
+    "cca2" : "SO",
+    "ccn3" : "706",
+    "cca3" : "SOM",
+    "cioc" : "SOM",
+    "borders" : [ "DJI", "ETH", "KEN" ],
+    "names" : [ "Somalia", "Federal Republic of Somalia", "الصومال", "جمهورية الصومال الفيدرالية", "Soomaaliya", "Jamhuuriyadda Federaalka Soomaaliya" ]
+  },
+  "SPM" : {
+    "cca2" : "PM",
+    "ccn3" : "666",
+    "cca3" : "SPM",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Saint Pierre and Miquelon", "Saint Pierre and Miquelon", "Saint-Pierre-et-Miquelon", "Collectivité territoriale de Saint-Pierre-et-Miquelon" ]
+  },
+  "SRB" : {
+    "cca2" : "RS",
+    "ccn3" : "688",
+    "cca3" : "SRB",
+    "cioc" : "SRB",
+    "borders" : [ "BGR", "BIH", "HRV", "HUN", "MKD", "MNE", "ROU", "UNK" ],
+    "names" : [ "Serbia", "Republic of Serbia", "Србија", "Република Србија" ]
+  },
+  "SSD" : {
+    "cca2" : "SS",
+    "ccn3" : "728",
+    "cca3" : "SSD",
+    "cioc" : "",
+    "borders" : [ "CAF", "COD", "ETH", "KEN", "SDN", "UGA" ],
+    "names" : [ "South Sudan", "Republic of South Sudan", "South Sudan", "Republic of South Sudan" ]
+  },
+  "STP" : {
+    "cca2" : "ST",
+    "ccn3" : "678",
+    "cca3" : "STP",
+    "cioc" : "STP",
+    "borders" : [ ],
+    "names" : [ "São Tomé and Príncipe", "Democratic Republic of São Tomé and Príncipe", "São Tomé e Príncipe", "República Democrática do São Tomé e Príncipe" ]
+  },
+  "SUR" : {
+    "cca2" : "SR",
+    "ccn3" : "740",
+    "cca3" : "SUR",
+    "cioc" : "SUR",
+    "borders" : [ "BRA", "GUF", "GUY" ],
+    "names" : [ "Suriname", "Republic of Suriname", "Suriname", "Republiek Suriname" ]
+  },
+  "SVK" : {
+    "cca2" : "SK",
+    "ccn3" : "703",
+    "cca3" : "SVK",
+    "cioc" : "SVK",
+    "borders" : [ "AUT", "CZE", "HUN", "POL", "UKR" ],
+    "names" : [ "Slovakia", "Slovak Republic", "Slovensko", "Slovenská republika" ]
+  },
+  "SVN" : {
+    "cca2" : "SI",
+    "ccn3" : "705",
+    "cca3" : "SVN",
+    "cioc" : "SLO",
+    "borders" : [ "AUT", "HRV", "HUN", "ITA" ],
+    "names" : [ "Slovenia", "Republic of Slovenia", "Slovenija", "Republika Slovenija" ]
+  },
+  "SWE" : {
+    "cca2" : "SE",
+    "ccn3" : "752",
+    "cca3" : "SWE",
+    "cioc" : "SWE",
+    "borders" : [ "FIN", "NOR" ],
+    "names" : [ "Sweden", "Kingdom of Sweden", "Sverige", "Konungariket Sverige" ]
+  },
+  "SWZ" : {
+    "cca2" : "SZ",
+    "ccn3" : "748",
+    "cca3" : "SWZ",
+    "cioc" : "SWZ",
+    "borders" : [ "MOZ", "ZAF" ],
+    "names" : [ "Eswatini", "Kingdom of Eswatini", "Eswatini", "Kingdom of Eswatini", "eSwatini", "Umbuso weSwatini" ]
+  },
+  "SXM" : {
+    "cca2" : "SX",
+    "ccn3" : "534",
+    "cca3" : "SXM",
+    "cioc" : "",
+    "borders" : [ "MAF" ],
+    "names" : [ "Sint Maarten", "Sint Maarten", "Sint Maarten", "Sint Maarten", "Saint-Martin", "Saint-Martin", "Sint Maarten", "Sint Maarten" ]
+  },
+  "SYC" : {
+    "cca2" : "SC",
+    "ccn3" : "690",
+    "cca3" : "SYC",
+    "cioc" : "SEY",
+    "borders" : [ ],
+    "names" : [ "Seychelles", "Republic of Seychelles", "Sesel", "Repiblik Sesel", "Seychelles", "Republic of Seychelles", "Seychelles", "République des Seychelles" ]
+  },
+  "SYR" : {
+    "cca2" : "SY",
+    "ccn3" : "760",
+    "cca3" : "SYR",
+    "cioc" : "SYR",
+    "borders" : [ "IRQ", "ISR", "JOR", "LBN", "TUR" ],
+    "names" : [ "Syria", "Syrian Arab Republic", "سوريا", "الجمهورية العربية السورية" ]
+  },
+  "TCA" : {
+    "cca2" : "TC",
+    "ccn3" : "796",
+    "cca3" : "TCA",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Turks and Caicos Islands", "Turks and Caicos Islands", "Turks and Caicos Islands", "Turks and Caicos Islands" ]
+  },
+  "TCD" : {
+    "cca2" : "TD",
+    "ccn3" : "148",
+    "cca3" : "TCD",
+    "cioc" : "CHA",
+    "borders" : [ "CAF", "CMR", "LBY", "NER", "NGA", "SDN" ],
+    "names" : [ "Chad", "Republic of Chad", "تشاد", "جمهورية تشاد", "Tchad", "République du Tchad" ]
+  },
+  "TGO" : {
+    "cca2" : "TG",
+    "ccn3" : "768",
+    "cca3" : "TGO",
+    "cioc" : "TOG",
+    "borders" : [ "BEN", "BFA", "GHA" ],
+    "names" : [ "Togo", "Togolese Republic", "Togo", "République togolaise" ]
+  },
+  "THA" : {
+    "cca2" : "TH",
+    "ccn3" : "764",
+    "cca3" : "THA",
+    "cioc" : "THA",
+    "borders" : [ "KHM", "LAO", "MMR", "MYS" ],
+    "names" : [ "Thailand", "Kingdom of Thailand", "ประเทศไทย", "ราชอาณาจักรไทย" ]
+  },
+  "TJK" : {
+    "cca2" : "TJ",
+    "ccn3" : "762",
+    "cca3" : "TJK",
+    "cioc" : "TJK",
+    "borders" : [ "AFG", "CHN", "KGZ", "UZB" ],
+    "names" : [ "Tajikistan", "Republic of Tajikistan", "Таджикистан", "Республика Таджикистан", "Тоҷикистон", "Ҷумҳурии Тоҷикистон" ]
+  },
+  "TKL" : {
+    "cca2" : "TK",
+    "ccn3" : "772",
+    "cca3" : "TKL",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Tokelau", "Tokelau", "Tokelau", "Tokelau", "Tokelau", "Tokelau", "Tokelau", "Tokelau" ]
+  },
+  "TKM" : {
+    "cca2" : "TM",
+    "ccn3" : "795",
+    "cca3" : "TKM",
+    "cioc" : "TKM",
+    "borders" : [ "AFG", "IRN", "KAZ", "UZB" ],
+    "names" : [ "Turkmenistan", "Turkmenistan", "Туркмения", "Туркменистан", "Türkmenistan", "Türkmenistan" ]
+  },
+  "TLS" : {
+    "cca2" : "TL",
+    "ccn3" : "626",
+    "cca3" : "TLS",
+    "cioc" : "TLS",
+    "borders" : [ "IDN" ],
+    "names" : [ "Timor-Leste", "Democratic Republic of Timor-Leste", "Timor-Leste", "República Democrática de Timor-Leste", "Timór-Leste", "Repúblika Demokrátika Timór-Leste" ]
+  },
+  "TON" : {
+    "cca2" : "TO",
+    "ccn3" : "776",
+    "cca3" : "TON",
+    "cioc" : "TGA",
+    "borders" : [ ],
+    "names" : [ "Tonga", "Kingdom of Tonga", "Tonga", "Kingdom of Tonga", "Tonga", "Kingdom of Tonga" ]
+  },
+  "TTO" : {
+    "cca2" : "TT",
+    "ccn3" : "780",
+    "cca3" : "TTO",
+    "cioc" : "TTO",
+    "borders" : [ ],
+    "names" : [ "Trinidad and Tobago", "Republic of Trinidad and Tobago", "Trinidad and Tobago", "Republic of Trinidad and Tobago" ]
+  },
+  "TUN" : {
+    "cca2" : "TN",
+    "ccn3" : "788",
+    "cca3" : "TUN",
+    "cioc" : "TUN",
+    "borders" : [ "DZA", "LBY" ],
+    "names" : [ "Tunisia", "Tunisian Republic", "تونس", "الجمهورية التونسية" ]
+  },
+  "TUR" : {
+    "cca2" : "TR",
+    "ccn3" : "792",
+    "cca3" : "TUR",
+    "cioc" : "TUR",
+    "borders" : [ "ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR" ],
+    "names" : [ "Türkiye", "Republic of Türkiye", "Türkiye", "Türkiye Cumhuriyeti" ]
+  },
+  "TUV" : {
+    "cca2" : "TV",
+    "ccn3" : "798",
+    "cca3" : "TUV",
+    "cioc" : "TUV",
+    "borders" : [ ],
+    "names" : [ "Tuvalu", "Tuvalu", "Tuvalu", "Tuvalu", "Tuvalu", "Tuvalu" ]
+  },
+  "TWN" : {
+    "cca2" : "TW",
+    "ccn3" : "158",
+    "cca3" : "TWN",
+    "cioc" : "TPE",
+    "borders" : [ ],
+    "names" : [ "Taiwan", "Republic of China (Taiwan)", "台灣", "中華民國" ]
+  },
+  "TZA" : {
+    "cca2" : "TZ",
+    "ccn3" : "834",
+    "cca3" : "TZA",
+    "cioc" : "TAN",
+    "borders" : [ "BDI", "COD", "KEN", "MOZ", "MWI", "RWA", "UGA", "ZMB" ],
+    "names" : [ "Tanzania", "United Republic of Tanzania", "Tanzania", "United Republic of Tanzania", "Tanzania", "Jamhuri ya Muungano wa Tanzania" ]
+  },
+  "UGA" : {
+    "cca2" : "UG",
+    "ccn3" : "800",
+    "cca3" : "UGA",
+    "cioc" : "UGA",
+    "borders" : [ "COD", "KEN", "RWA", "SSD", "TZA" ],
+    "names" : [ "Uganda", "Republic of Uganda", "Uganda", "Republic of Uganda", "Uganda", "Republic of Uganda" ]
+  },
+  "UKR" : {
+    "cca2" : "UA",
+    "ccn3" : "804",
+    "cca3" : "UKR",
+    "cioc" : "UKR",
+    "borders" : [ "BLR", "HUN", "MDA", "POL", "ROU", "RUS", "SVK" ],
+    "names" : [ "Ukraine", "Ukraine", "Україна", "Україна" ]
+  },
+  "UMI" : {
+    "cca2" : "UM",
+    "ccn3" : "581",
+    "cca3" : "UMI",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "United States Minor Outlying Islands", "United States Minor Outlying Islands", "United States Minor Outlying Islands", "United States Minor Outlying Islands" ]
+  },
+  "UNK" : {
+    "cca2" : "XK",
+    "ccn3" : "",
+    "cca3" : "UNK",
+    "cioc" : "KOS",
+    "borders" : [ "ALB", "MKD", "MNE", "SRB" ],
+    "names" : [ "Kosovo", "Republic of Kosovo", "Kosova", "Republika e Kosovës", "Косово", "Република Косово" ]
+  },
+  "URY" : {
+    "cca2" : "UY",
+    "ccn3" : "858",
+    "cca3" : "URY",
+    "cioc" : "URU",
+    "borders" : [ "ARG", "BRA" ],
+    "names" : [ "Uruguay", "Oriental Republic of Uruguay", "Uruguay", "República Oriental del Uruguay" ]
+  },
+  "USA" : {
+    "cca2" : "US",
+    "ccn3" : "840",
+    "cca3" : "USA",
+    "cioc" : "USA",
+    "borders" : [ "CAN", "MEX" ],
+    "names" : [ "United States", "United States of America", "United States", "United States of America" ]
+  },
+  "UZB" : {
+    "cca2" : "UZ",
+    "ccn3" : "860",
+    "cca3" : "UZB",
+    "cioc" : "UZB",
+    "borders" : [ "AFG", "KAZ", "KGZ", "TJK", "TKM" ],
+    "names" : [ "Uzbekistan", "Republic of Uzbekistan", "Узбекистан", "Республика Узбекистан", "O‘zbekiston", "O'zbekiston Respublikasi" ]
+  },
+  "VAT" : {
+    "cca2" : "VA",
+    "ccn3" : "336",
+    "cca3" : "VAT",
+    "cioc" : "",
+    "borders" : [ "ITA" ],
+    "names" : [ "Vatican City", "Vatican City State", "Vaticano", "Stato della Città del Vaticano", "Vaticanæ", "Status Civitatis Vaticanæ" ]
+  },
+  "VCT" : {
+    "cca2" : "VC",
+    "ccn3" : "670",
+    "cca3" : "VCT",
+    "cioc" : "VIN",
+    "borders" : [ ],
+    "names" : [ "Saint Vincent and the Grenadines", "Saint Vincent and the Grenadines", "Saint Vincent and the Grenadines", "Saint Vincent and the Grenadines" ]
+  },
+  "VEN" : {
+    "cca2" : "VE",
+    "ccn3" : "862",
+    "cca3" : "VEN",
+    "cioc" : "VEN",
+    "borders" : [ "BRA", "COL", "GUY" ],
+    "names" : [ "Venezuela", "Bolivarian Republic of Venezuela", "Venezuela", "República Bolivariana de Venezuela" ]
+  },
+  "VGB" : {
+    "cca2" : "VG",
+    "ccn3" : "092",
+    "cca3" : "VGB",
+    "cioc" : "IVB",
+    "borders" : [ ],
+    "names" : [ "British Virgin Islands", "Virgin Islands", "British Virgin Islands", "Virgin Islands" ]
+  },
+  "VIR" : {
+    "cca2" : "VI",
+    "ccn3" : "850",
+    "cca3" : "VIR",
+    "cioc" : "ISV",
+    "borders" : [ ],
+    "names" : [ "United States Virgin Islands", "Virgin Islands of the United States", "United States Virgin Islands", "Virgin Islands of the United States" ]
+  },
+  "VNM" : {
+    "cca2" : "VN",
+    "ccn3" : "704",
+    "cca3" : "VNM",
+    "cioc" : "VIE",
+    "borders" : [ "CHN", "KHM", "LAO" ],
+    "names" : [ "Vietnam", "Socialist Republic of Vietnam", "Việt Nam", "Cộng hòa xã hội chủ nghĩa Việt Nam" ]
+  },
+  "VUT" : {
+    "cca2" : "VU",
+    "ccn3" : "548",
+    "cca3" : "VUT",
+    "cioc" : "VAN",
+    "borders" : [ ],
+    "names" : [ "Vanuatu", "Republic of Vanuatu", "Vanuatu", "Ripablik blong Vanuatu", "Vanuatu", "Republic of Vanuatu", "Vanuatu", "République de Vanuatu" ]
+  },
+  "WLF" : {
+    "cca2" : "WF",
+    "ccn3" : "876",
+    "cca3" : "WLF",
+    "cioc" : "",
+    "borders" : [ ],
+    "names" : [ "Wallis and Futuna", "Territory of the Wallis and Futuna Islands", "Wallis et Futuna", "Territoire des îles Wallis et Futuna" ]
+  },
+  "WSM" : {
+    "cca2" : "WS",
+    "ccn3" : "882",
+    "cca3" : "WSM",
+    "cioc" : "SAM",
+    "borders" : [ ],
+    "names" : [ "Samoa", "Independent State of Samoa", "Samoa", "Independent State of Samoa", "Sāmoa", "Malo Saʻoloto Tutoʻatasi o Sāmoa" ]
+  },
+  "YEM" : {
+    "cca2" : "YE",
+    "ccn3" : "887",
+    "cca3" : "YEM",
+    "cioc" : "YEM",
+    "borders" : [ "OMN", "SAU" ],
+    "names" : [ "Yemen", "Republic of Yemen", "اليمن", "الجمهورية اليمنية" ]
+  },
+  "ZAF" : {
+    "cca2" : "ZA",
+    "ccn3" : "710",
+    "cca3" : "ZAF",
+    "cioc" : "RSA",
+    "borders" : [ "BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE" ],
+    "names" : [ "South Africa", "Republic of South Africa", "South Africa", "Republiek van Suid-Afrika", "South Africa", "Republic of South Africa", "Sewula Afrika", "IRiphabliki yeSewula Afrika", "Afrika-Borwa", "Rephaboliki ya Afrika-Borwa ", "Afrika Borwa", "Rephaboliki ya Afrika Borwa", "Ningizimu Afrika", "IRiphabhulikhi yeNingizimu Afrika", "Aforika Borwa", "Rephaboliki ya Aforika Borwa", "Afrika Dzonga", "Riphabliki ra Afrika Dzonga", "Afurika Tshipembe", "Riphabuḽiki ya Afurika Tshipembe", "Mzantsi Afrika", "IRiphabliki yaseMzantsi Afrika", "Ningizimu Afrika", "IRiphabliki yaseNingizimu Afrika" ]
+  },
+  "ZMB" : {
+    "cca2" : "ZM",
+    "ccn3" : "894",
+    "cca3" : "ZMB",
+    "cioc" : "ZAM",
+    "borders" : [ "AGO", "BWA", "COD", "MOZ", "MWI", "NAM", "TZA", "ZWE" ],
+    "names" : [ "Zambia", "Republic of Zambia", "Zambia", "Republic of Zambia" ]
+  },
+  "ZWE" : {
+    "cca2" : "ZW",
+    "ccn3" : "716",
+    "cca3" : "ZWE",
+    "cioc" : "ZIM",
+    "borders" : [ "BWA", "MOZ", "ZAF", "ZMB" ],
+    "names" : [ "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe", "Zimbabwe", "Republic of Zimbabwe" ]
   }
 }

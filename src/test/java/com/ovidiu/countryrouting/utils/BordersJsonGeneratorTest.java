@@ -38,6 +38,17 @@ class BordersJsonGeneratorTest {
         assertTrue(loaded.containsKey("CZE"));
         assertTrue(loaded.containsKey("ITA"));
         assertEquals("CZE", loaded.get("CZE").getCca3());
+
+        // NEW: verify names exist
+        var cze = loaded.get("CZE");
+        assertNotNull(cze.getNames());
+        assertFalse(cze.getNames().isEmpty());
+
+        // Czech Republic should have at least one of these
+        assertTrue(
+                cze.getNames().stream().anyMatch(n -> n.equalsIgnoreCase("Czech Republic")) ||
+                        cze.getNames().stream().anyMatch(n -> n.equalsIgnoreCase("Czechia"))
+        );
     }
 
     @Test
@@ -48,8 +59,7 @@ class BordersJsonGeneratorTest {
         ObjectMapper om = new ObjectMapper();
         InputStream is = getClass().getClassLoader().getResourceAsStream("data/borders.json");
         Map<String, CountryBorderMapper.CountryCompact> borders =
-                om.readValue(is, new TypeReference<>() {
-                });
+                om.readValue(is, new TypeReference<>() {});
 
         assertEquals(original.size(), borders.size());
 
@@ -65,10 +75,10 @@ class BordersJsonGeneratorTest {
             assertEquals(o.getCcn3(), b.getCcn3());
             assertEquals(o.getCca3(), b.getCca3());
             assertEquals(o.getCioc(), b.getCioc());
-            assertEquals(
-                    sorted(o.getBorders()),
-                    sorted(b.getBorders())
-            );
+            assertEquals(sorted(o.getBorders()), sorted(b.getBorders()));
+
+            // NEW: names must match
+            assertEquals(sorted(o.getNames()), sorted(b.getNames()));
         }
     }
 
