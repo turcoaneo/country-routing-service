@@ -1,5 +1,6 @@
 package com.ovidiu.countryrouting.routing;
 
+import com.ovidiu.countryrouting.fuzzymatching.CountryCodeResolver;
 import com.ovidiu.countryrouting.graph.GraphBuilder;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,8 +20,15 @@ class RouteFinderTest {
     @Mock
     private GraphBuilder graphBuilder;
 
+    @Mock
+    private CountryCodeResolver resolver;
+
     @InjectMocks
     private RouteFinder finder;
+
+    // ---------------------------------------------------------
+    // STRICT ROUTING TESTS (unchanged)
+    // ---------------------------------------------------------
 
     @Test
     void testCzeToIta() {
@@ -76,6 +84,53 @@ class RouteFinderTest {
         );
 
         List<String> route = finder.findShortestRoute("USA", "AUS");
+        assertNull(route);
+    }
+
+    // ---------------------------------------------------------
+    // NEW FUZZY ROUTING TESTS
+    // ---------------------------------------------------------
+
+    @Test
+    void testFuzzySpnToIta() {
+        when(resolver.resolve("SPN")).thenReturn("ESP");
+        when(resolver.resolve("ITL")).thenReturn("ITA");
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "ESP", List.of("FRA"),
+                        "FRA", List.of("ITA"),
+                        "ITA", List.of()
+                )
+        );
+
+        List<String> route = finder.findShortestRouteFuzzy("SPN", "ITL");
+        assertNotNull(route);
+        assertEquals(List.of("ESP", "FRA", "ITA"), route);
+    }
+
+    @Test
+    void testFuzzyInvalidCountry() {
+        when(resolver.resolve("XXX")).thenReturn(null);
+
+        assertThrows(IllegalArgumentException.class,
+                () -> finder.findShortestRouteFuzzy("XXX", "ITA"));
+    }
+
+    @Test
+    void testFuzzyNoRoute() {
+        when(resolver.resolve("ESP")).thenReturn("ESP");
+        when(resolver.resolve("USA")).thenReturn("USA");
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "ESP", List.of("FRA"),
+                        "FRA", List.of(),
+                        "USA", List.of()
+                )
+        );
+
+        List<String> route = finder.findShortestRouteFuzzy("ESP", "USA");
         assertNull(route);
     }
 }

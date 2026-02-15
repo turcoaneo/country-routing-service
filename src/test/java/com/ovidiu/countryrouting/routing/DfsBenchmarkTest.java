@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.stream.Stream;
 
 @SpringBootTest
-class DfsParameterizedBenchmarkTest {
+class DfsBenchmarkTest {
 
     @Autowired
     private AllRoutesFinder finder;

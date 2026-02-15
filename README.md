@@ -117,8 +117,10 @@ The project includes:
 
 ## 🧩 Future Enhancements
 
-- Fuzzy matching for mistyped country codes
-- “All possible routes” mode plus benchmark - iterative / recursive ✅
+- Fuzzy matching for mistyped country codes ✅ (/routing/fuzzy/ROM/SPN)
+- “All possible routes” mode plus benchmark - iterative / recursive ✅ (dfs-benchmark.csv)
+  - (/routing/all/iterative/ROU/ESP?maxDepth=10&maxRoutes=10)
+  - (/routing/all/ROU/ESP?maxDepth=10&maxRoutes=10)
 - Caching for repeated queries
 - Dockerfile for containerized deployment
 
