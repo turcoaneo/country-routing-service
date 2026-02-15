@@ -47,7 +47,7 @@ class CountryCodeResolverTest {
 
     @Test
     void testFuzzyMatch() {
-        assertNull(resolver.resolve("SPN"));     // semantic match
+        assertEquals("ESP", resolver.resolve("SPN"));      // semantic match
         assertEquals("GRC", resolver.resolve("GR"));      // good
         assertEquals("ROU", resolver.resolve("ROM"));     // semantic match
         assertEquals("AUT", resolver.resolve("AUSTRIA")); // full name
@@ -55,7 +55,7 @@ class CountryCodeResolverTest {
 
     @Test
     void testUnknown() {
-        assertNull(resolver.resolve("XYZ"));              // garbage NOT rejected
+        assertNull(resolver.resolve("XYZ"));           // garbage NOT rejected
         assertNull(resolver.resolve("12345"));            // numeric garbage NOT rejected
     }
 }

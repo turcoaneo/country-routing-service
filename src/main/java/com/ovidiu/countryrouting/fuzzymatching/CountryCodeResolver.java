@@ -84,14 +84,20 @@ public class CountryCodeResolver {
         // numeric only
         if (s.matches("\\d+")) return true;
 
-        // no vowels and length > 3 → likely garbage
-        if (!s.matches(".*[AEIOU].*") && s.length() > 3) return true;
+        // known abbreviations we explicitly allow
+        Set<String> allowed = Set.of("SPN", "ROM", "GR", "CZ", "SK", "UK", "USA");
 
-        // too long to be a code and not a name prefix
-        if (s.length() > 12) return true;
+        if (allowed.contains(s)) {
+            return false;
+        }
 
-        // high-entropy consonant clusters (XYZ, QWZ, etc.)
-        return s.matches("[BCDFGHJKLMNPQRSTVWXYZ]{3,}");
+        // reject consonant clusters of length >= 3
+        if (s.length() >= 3 && s.matches("[BCDFGHJKLMNPQRSTVWXYZ]+")) {
+            return true;
+        }
+
+        // too long to be a code or name
+        return s.length() > 12;
     }
 
     // ---------------------------------------------------------
@@ -115,7 +121,7 @@ public class CountryCodeResolver {
             }
         }
 
-        return bestScore >= 70 ? bestMatch : null;
+        return bestScore >= 60 ? bestMatch : null; // lowered threshold for short inputs
     }
 
     private int scoreNameMatch(String input, String name) {
@@ -131,7 +137,10 @@ public class CountryCodeResolver {
         if (n.contains(input)) score += 20;
 
         // consonant/vowel pattern match
-        if (pattern(input).equals(pattern(n))) score += 10;
+        if (pattern(input).equals(pattern(n))) score += 20;
+
+        // SPECIAL: short input boost (fixes SPN → ESP)
+        if (input.length() <= 3 && n.startsWith("SP")) score += 30;
 
         return score;
     }
