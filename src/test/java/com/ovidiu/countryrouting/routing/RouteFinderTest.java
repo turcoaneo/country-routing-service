@@ -37,98 +37,67 @@ class RouteFinderTest {
 
     @BeforeEach
     void setup() {
-        // Inject mocked cache + mocked persistence into private fields
         ReflectionTestUtils.setField(finder, "allRoutesCache", allRoutesCache);
         ReflectionTestUtils.setField(finder, "persistence", persistence);
     }
 
-    // ---------------------------------------------------------
     // STRICT ROUTING TESTS
-    // ---------------------------------------------------------
-
     @Test
     void testCzeToIta() {
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "CZE", List.of("AUT"),
-                        "AUT", List.of("ITA"),
-                        "ITA", List.of()
-                )
+                Map.of("CZE", List.of("AUT"), "AUT", List.of("ITA"), "ITA", List.of())
         );
 
         List<String> route = finder.findShortestRoute("CZE", "ITA");
-        assertNotNull(route);
         assertEquals(List.of("CZE", "AUT", "ITA"), route);
     }
 
     @Test
     void testFraToEsp() {
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "FRA", List.of("ESP"),
-                        "ESP", List.of()
-                )
+                Map.of("FRA", List.of("ESP"), "ESP", List.of())
         );
 
         List<String> route = finder.findShortestRoute("FRA", "ESP");
-        assertNotNull(route);
         assertEquals(List.of("FRA", "ESP"), route);
     }
 
     @Test
     void testUsaToCan() {
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "USA", List.of("CAN"),
-                        "CAN", List.of()
-                )
+                Map.of("USA", List.of("CAN"), "CAN", List.of())
         );
 
         List<String> route = finder.findShortestRoute("USA", "CAN");
-        assertNotNull(route);
         assertEquals(List.of("USA", "CAN"), route);
     }
 
     @Test
     void testNoRoute() {
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "USA", List.of("MEX"),
-                        "MEX", List.of(),
-                        "AUS", List.of()
-                )
+                Map.of("USA", List.of("MEX"), "MEX", List.of(), "AUS", List.of())
         );
 
-        List<String> route = finder.findShortestRoute("USA", "AUS");
-        assertNull(route);
+        assertNull(finder.findShortestRoute("USA", "AUS"));
     }
 
-    // ---------------------------------------------------------
     // FUZZY ROUTING TESTS
-    // ---------------------------------------------------------
-
     @Test
     void testFuzzySpnToIta() {
         when(resolver.resolve("SPN")).thenReturn("ESP");
         when(resolver.resolve("ITL")).thenReturn("ITA");
 
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "ESP", List.of("FRA"),
-                        "FRA", List.of("ITA"),
-                        "ITA", List.of()
-                )
+                Map.of("ESP", List.of("FRA"), "FRA", List.of("ITA"), "ITA", List.of())
         );
 
         List<String> route = finder.findShortestRouteFuzzy("SPN", "ITL");
-        assertNotNull(route);
         assertEquals(List.of("ESP", "FRA", "ITA"), route);
     }
 
     @Test
     void testFuzzyInvalidCountry() {
         when(resolver.resolve("XXX")).thenReturn(null);
-
         assertThrows(IllegalArgumentException.class,
                 () -> finder.findShortestRouteFuzzy("XXX", "ITA"));
     }
@@ -139,40 +108,27 @@ class RouteFinderTest {
         when(resolver.resolve("USA")).thenReturn("USA");
 
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "ESP", List.of("FRA"),
-                        "FRA", List.of(),
-                        "USA", List.of()
-                )
+                Map.of("ESP", List.of("FRA"), "FRA", List.of(), "USA", List.of())
         );
 
-        List<String> route = finder.findShortestRouteFuzzy("ESP", "USA");
-        assertNull(route);
+        assertNull(finder.findShortestRouteFuzzy("ESP", "USA"));
     }
 
-    // ---------------------------------------------------------
     // ALL ROUTES (FUZZY) TESTS
-    // ---------------------------------------------------------
-
     @Test
     void testAllRoutesFuzzyBasic() {
         when(resolver.resolve("SPN")).thenReturn("ESP");
         when(resolver.resolve("ITA")).thenReturn("ITA");
 
-        when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "ESP", List.of("FRA"),
-                        "FRA", List.of("ITA"),
-                        "ITA", List.of()
-                )
-        );
-
         when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(null);
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of("ESP", List.of("FRA"), "FRA", List.of("ITA"), "ITA", List.of())
+        );
 
         List<List<String>> routes =
                 finder.findAllRoutesFuzzy("SPN", "ITA", 5, 10);
 
-        assertNotNull(routes);
         assertEquals(1, routes.size());
         assertEquals(List.of("ESP", "FRA", "ITA"), routes.getFirst());
 
@@ -182,7 +138,6 @@ class RouteFinderTest {
     @Test
     void testAllRoutesFuzzyInvalid() {
         when(resolver.resolve("XXX")).thenReturn(null);
-
         assertThrows(IllegalArgumentException.class,
                 () -> finder.findAllRoutesFuzzy("XXX", "ITA", 5, 10));
     }
@@ -192,20 +147,15 @@ class RouteFinderTest {
         when(resolver.resolve("ESP")).thenReturn("ESP");
         when(resolver.resolve("USA")).thenReturn("USA");
 
-        when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "ESP", List.of("FRA"),
-                        "FRA", List.of(),
-                        "USA", List.of()
-                )
-        );
-
         when(allRoutesCache.getIfPresent("ESP->USA")).thenReturn(null);
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of("ESP", List.of("FRA"), "FRA", List.of(), "USA", List.of())
+        );
 
         List<List<String>> routes =
                 finder.findAllRoutesFuzzy("ESP", "USA", 5, 10);
 
-        assertNotNull(routes);
         assertTrue(routes.isEmpty());
     }
 
@@ -231,6 +181,29 @@ class RouteFinderTest {
     }
 
     @Test
+    void testAllRoutesFuzzyUsesReverseCache() {
+        when(resolver.resolve("ESP")).thenReturn("ESP");
+        when(resolver.resolve("ITA")).thenReturn("ITA");
+
+        AllRoutesCacheEntry reverseCached = new AllRoutesCacheEntry(
+                10, 100,
+                List.of(List.of("ITA", "FRA", "ESP"))
+        );
+
+        when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(null);
+        when(allRoutesCache.getIfPresent("ITA->ESP")).thenReturn(reverseCached);
+
+        List<List<String>> routes =
+                finder.findAllRoutesFuzzy("ESP", "ITA", 5, 10);
+
+        assertEquals(1, routes.size());
+        assertEquals(List.of("ESP", "FRA", "ITA"), routes.getFirst());
+
+        verify(graphBuilder, never()).buildGraph();
+        verify(allRoutesCache).put(eq("ESP->ITA"), any());
+    }
+
+    @Test
     void testAllRoutesFuzzyRecomputesWhenLargerMDMR() {
         when(resolver.resolve("SPN")).thenReturn("ESP");
         when(resolver.resolve("ITA")).thenReturn("ITA");
@@ -243,11 +216,7 @@ class RouteFinderTest {
         when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(cached);
 
         when(graphBuilder.buildGraph()).thenReturn(
-                Map.of(
-                        "ESP", List.of("FRA"),
-                        "FRA", List.of("ITA"),
-                        "ITA", List.of()
-                )
+                Map.of("ESP", List.of("FRA"), "FRA", List.of("ITA"), "ITA", List.of())
         );
 
         List<List<String>> routes =

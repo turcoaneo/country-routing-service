@@ -121,7 +121,9 @@ The project includes:
 - “All possible routes” mode plus benchmark - iterative / recursive ✅ (dfs-benchmark.csv)
   - (/routing/all/iterative/ROU/ESP?maxDepth=10&maxRoutes=10)
   - (/routing/all/ROU/ESP?maxDepth=10&maxRoutes=10)
-- Caching for repeated queries ✅ (/routing/fuzzy/all/ESP/ITA?maxDepth=2&maxRoutes=3)
+- Caching for repeated queries ✅
+  - (/routing/fuzzy/all/ESP/ITA?maxDepth=2&maxRoutes=3)
+  - (/routing/fuzzy/all/ITA/ESP?maxDepth=2&maxRoutes=3) - reversed from cache and appended to cache
 - Dockerfile for containerized deployment
 
 ---

@@ -22,10 +22,8 @@ public class RouteFinder {
     private GraphBuilder graphBuilder;
     private CountryCodeResolver resolver;
 
-    // shortest-route cache (optional, simple)
     private final Map<String, List<String>> shortestRouteCache = new ConcurrentHashMap<>();
 
-    // all-routes cache (Caffeine + persistence)
     private final Cache<String, AllRoutesCacheEntry> allRoutesCache =
             Caffeine.newBuilder()
                     .maximumSize(5000)
@@ -48,7 +46,6 @@ public class RouteFinder {
     public void loadCache() {
         Map<String, AllRoutesCacheEntry> loaded = persistence.load();
         allRoutesCache.putAll(loaded);
-
     }
 
     @PreDestroy
@@ -57,7 +54,7 @@ public class RouteFinder {
     }
 
     // ------------------------------------------------------------
-    // STRICT SHORTEST ROUTE (existing)
+    // STRICT SHORTEST ROUTE
     // ------------------------------------------------------------
     public List<String> findShortestRoute(String origin, String destination) {
         String key = origin + "->" + destination;
@@ -74,7 +71,7 @@ public class RouteFinder {
     }
 
     // ------------------------------------------------------------
-    // FUZZY SHORTEST ROUTE (existing)
+    // FUZZY SHORTEST ROUTE
     // ------------------------------------------------------------
     public List<String> findShortestRouteFuzzy(String origin, String destination) {
         Map<String, List<String>> graph = this.graphBuilder.buildGraph();
@@ -94,7 +91,7 @@ public class RouteFinder {
     }
 
     // ------------------------------------------------------------
-    // ALL ROUTES WITH MD / MR + CACHING + FILTERING
+    // ALL ROUTES WITH MD / MR + CACHING + REVERSE LOOKUP
     // ------------------------------------------------------------
     public List<List<String>> findAllRoutesFuzzy(String origin,
                                                  String destination,
@@ -108,19 +105,20 @@ public class RouteFinder {
             throw new IllegalArgumentException("Unknown or invalid country name/code");
         }
 
-        String key = resolvedOrigin + "->" + resolvedDestination;
+        String keyForward = resolvedOrigin + "->" + resolvedDestination;
+        String keyReverse = resolvedDestination + "->" + resolvedOrigin;
 
-        AllRoutesCacheEntry cached = allRoutesCache.getIfPresent(key);
+        AllRoutesCacheEntry cachedForward = allRoutesCache.getIfPresent(keyForward);
+        // 1) Forward cache hit
+        if (isCachedForward(maxDepth, maxRoutes, cachedForward))
+            return filterRoutes(cachedForward.getRoutes(), maxDepth, maxRoutes);
 
-        if (cached != null &&
-                maxDepth <= cached.getMaxDepth() &&
-                maxRoutes <= cached.getMaxRoutes()) {
+        AllRoutesCacheEntry cachedReverse = allRoutesCache.getIfPresent(keyReverse);
+        // 2) Reverse cache hit → reverse routes
+        List<List<String>> reversed = getCachedReversed(maxDepth, maxRoutes, cachedReverse, keyForward);
+        if (reversed != null) return reversed;
 
-            // cache hit with sufficient MD/MR → filter only, no graphBuilder call
-            return filterRoutes(cached.getRoutes(), maxDepth, maxRoutes);
-        }
-
-        // only now do we need the graph
+        // 3) No usable cache → compute
         Map<String, List<String>> graph = this.graphBuilder.buildGraph();
 
         if (!graph.containsKey(resolvedOrigin) || !graph.containsKey(resolvedDestination)) {
@@ -131,10 +129,45 @@ public class RouteFinder {
                 computeAllRoutes(resolvedOrigin, resolvedDestination, maxDepth, maxRoutes, graph);
 
         AllRoutesCacheEntry newEntry = new AllRoutesCacheEntry(maxDepth, maxRoutes, allRoutes);
-        allRoutesCache.put(key, newEntry);
+        allRoutesCache.put(keyForward, newEntry);
         persistence.save(allRoutesCache.asMap());
 
         return allRoutes;
+    }
+
+    private List<List<String>> getCachedReversed(int maxDepth, int maxRoutes, AllRoutesCacheEntry cachedReverse, String keyForward) {
+        if (cachedReverse != null &&
+                maxDepth <= cachedReverse.getMaxDepth() &&
+                maxRoutes <= cachedReverse.getMaxRoutes()) {
+
+            List<List<String>> reversed =
+                    cachedReverse.getRoutes().stream()
+                            .map(route -> {
+                                List<String> copy = new ArrayList<>(route);
+                                Collections.reverse(copy);
+                                return copy;
+                            })
+                            .filter(route -> route.size() - 1 <= maxDepth)
+                            .limit(maxRoutes)
+                            .toList();
+
+            // Store reversed result under forward key
+            allRoutesCache.put(keyForward,
+                    new AllRoutesCacheEntry(
+                            cachedReverse.getMaxDepth(),
+                            cachedReverse.getMaxRoutes(),
+                            reversed
+                    ));
+
+            return reversed;
+        }
+        return null;
+    }
+
+    private boolean isCachedForward(int maxDepth, int maxRoutes, AllRoutesCacheEntry cachedForward) {
+        return cachedForward != null &&
+                maxDepth <= cachedForward.getMaxDepth() &&
+                maxRoutes <= cachedForward.getMaxRoutes();
     }
 
     private List<List<String>> filterRoutes(List<List<String>> routes, int maxDepth, int maxRoutes) {
@@ -144,7 +177,6 @@ public class RouteFinder {
                 .toList();
     }
 
-    // Simple DFS with depth and route limits
     private List<List<String>> computeAllRoutes(String origin,
                                                 String destination,
                                                 int maxDepth,
@@ -202,9 +234,6 @@ public class RouteFinder {
         }
     }
 
-    // ------------------------------------------------------------
-    // BFS (existing shortest path)
-    // ------------------------------------------------------------
     private List<String> bfs(String origin, String destination, Map<String, List<String>> graph) {
         if (origin.equals(destination)) {
             return List.of(origin);
