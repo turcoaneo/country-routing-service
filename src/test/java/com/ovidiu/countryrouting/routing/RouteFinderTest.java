@@ -1,18 +1,21 @@
 package com.ovidiu.countryrouting.routing;
 
+import com.github.benmanes.caffeine.cache.Cache;
 import com.ovidiu.countryrouting.fuzzymatching.CountryCodeResolver;
 import com.ovidiu.countryrouting.graph.GraphBuilder;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class RouteFinderTest {
@@ -23,11 +26,24 @@ class RouteFinderTest {
     @Mock
     private CountryCodeResolver resolver;
 
+    @Mock
+    private Cache<String, AllRoutesCacheEntry> allRoutesCache;
+
+    @Mock
+    private AllRoutesCachePersistence persistence;
+
     @InjectMocks
     private RouteFinder finder;
 
+    @BeforeEach
+    void setup() {
+        // Inject mocked cache + mocked persistence into private fields
+        ReflectionTestUtils.setField(finder, "allRoutesCache", allRoutesCache);
+        ReflectionTestUtils.setField(finder, "persistence", persistence);
+    }
+
     // ---------------------------------------------------------
-    // STRICT ROUTING TESTS (unchanged)
+    // STRICT ROUTING TESTS
     // ---------------------------------------------------------
 
     @Test
@@ -88,7 +104,7 @@ class RouteFinderTest {
     }
 
     // ---------------------------------------------------------
-    // NEW FUZZY ROUTING TESTS
+    // FUZZY ROUTING TESTS
     // ---------------------------------------------------------
 
     @Test
@@ -132,5 +148,115 @@ class RouteFinderTest {
 
         List<String> route = finder.findShortestRouteFuzzy("ESP", "USA");
         assertNull(route);
+    }
+
+    // ---------------------------------------------------------
+    // ALL ROUTES (FUZZY) TESTS
+    // ---------------------------------------------------------
+
+    @Test
+    void testAllRoutesFuzzyBasic() {
+        when(resolver.resolve("SPN")).thenReturn("ESP");
+        when(resolver.resolve("ITA")).thenReturn("ITA");
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "ESP", List.of("FRA"),
+                        "FRA", List.of("ITA"),
+                        "ITA", List.of()
+                )
+        );
+
+        when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(null);
+
+        List<List<String>> routes =
+                finder.findAllRoutesFuzzy("SPN", "ITA", 5, 10);
+
+        assertNotNull(routes);
+        assertEquals(1, routes.size());
+        assertEquals(List.of("ESP", "FRA", "ITA"), routes.getFirst());
+
+        verify(allRoutesCache).put(eq("ESP->ITA"), any());
+    }
+
+    @Test
+    void testAllRoutesFuzzyInvalid() {
+        when(resolver.resolve("XXX")).thenReturn(null);
+
+        assertThrows(IllegalArgumentException.class,
+                () -> finder.findAllRoutesFuzzy("XXX", "ITA", 5, 10));
+    }
+
+    @Test
+    void testAllRoutesFuzzyNoRoute() {
+        when(resolver.resolve("ESP")).thenReturn("ESP");
+        when(resolver.resolve("USA")).thenReturn("USA");
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "ESP", List.of("FRA"),
+                        "FRA", List.of(),
+                        "USA", List.of()
+                )
+        );
+
+        when(allRoutesCache.getIfPresent("ESP->USA")).thenReturn(null);
+
+        List<List<String>> routes =
+                finder.findAllRoutesFuzzy("ESP", "USA", 5, 10);
+
+        assertNotNull(routes);
+        assertTrue(routes.isEmpty());
+    }
+
+    @Test
+    void testAllRoutesFuzzyUsesCacheWhenSmallerMDMR() {
+        when(resolver.resolve("SPN")).thenReturn("ESP");
+        when(resolver.resolve("ITA")).thenReturn("ITA");
+
+        AllRoutesCacheEntry cached = new AllRoutesCacheEntry(
+                10, 100,
+                List.of(List.of("ESP", "FRA", "ITA"))
+        );
+
+        when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(cached);
+
+        List<List<String>> routes =
+                finder.findAllRoutesFuzzy("SPN", "ITA", 5, 1);
+
+        assertEquals(1, routes.size());
+        assertEquals(List.of("ESP", "FRA", "ITA"), routes.getFirst());
+
+        verify(graphBuilder, never()).buildGraph();
+    }
+
+    @Test
+    void testAllRoutesFuzzyRecomputesWhenLargerMDMR() {
+        when(resolver.resolve("SPN")).thenReturn("ESP");
+        when(resolver.resolve("ITA")).thenReturn("ITA");
+
+        AllRoutesCacheEntry cached = new AllRoutesCacheEntry(
+                5, 10,
+                List.of(List.of("ESP", "FRA", "ITA"))
+        );
+
+        when(allRoutesCache.getIfPresent("ESP->ITA")).thenReturn(cached);
+
+        when(graphBuilder.buildGraph()).thenReturn(
+                Map.of(
+                        "ESP", List.of("FRA"),
+                        "FRA", List.of("ITA"),
+                        "ITA", List.of()
+                )
+        );
+
+        List<List<String>> routes =
+                finder.findAllRoutesFuzzy("SPN", "ITA", 10, 50);
+
+        assertEquals(1, routes.size());
+        assertEquals(List.of("ESP", "FRA", "ITA"), routes.getFirst());
+
+        verify(graphBuilder).buildGraph();
+        verify(allRoutesCache).put(eq("ESP->ITA"), any());
     }
 }
