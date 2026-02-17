@@ -125,6 +125,8 @@ The project includes:
   - (/routing/fuzzy/all/ESP/ITA?maxDepth=2&maxRoutes=3)
   - (/routing/fuzzy/all/ITA/ESP?maxDepth=2&maxRoutes=3) - reversed from cache and appended to cache
 - Dockerfile for containerized deployment
+  - docker build -t country-routing-service .
+  - docker run -p 8080:8080 country-routing-service
 
 ---
 
