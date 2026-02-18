@@ -130,7 +130,7 @@ resource "aws_lb_target_group" "this" {
   target_type = "ip"
 
   health_check {
-    path = "/actuator/health"
+    path = "/hello"
   }
 
   lifecycle {
