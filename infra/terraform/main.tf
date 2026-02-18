@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 # -------------------------
-# VPC
+# VPC (public-only, no NAT)
 # -------------------------
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
@@ -23,11 +23,11 @@ module "vpc" {
   name = "country-routing-vpc"
   cidr = "10.0.0.0/16"
 
-  azs             = ["${var.aws_region}a", "${var.aws_region}b"]
-  public_subnets  = ["10.0.1.0/24", "10.0.2.0/24"]
-  private_subnets = ["10.0.3.0/24", "10.0.4.0/24"]
+  azs            = ["${var.aws_region}a"]
+  public_subnets = ["10.0.1.0/24"]
 
-  enable_nat_gateway = true
+  enable_nat_gateway = false
+  enable_vpn_gateway = false
 }
 
 # -------------------------
@@ -72,26 +72,6 @@ resource "aws_ecs_task_definition" "this" {
 # -------------------------
 # Security Groups
 # -------------------------
-resource "aws_security_group" "ecs_service" {
-  name        = "ecs-service-sg"
-  description = "Allow ALB to reach ECS"
-  vpc_id      = module.vpc.vpc_id
-
-  ingress {
-    from_port   = 8080
-    to_port     = 8080
-    protocol    = "tcp"
-    security_groups = [aws_security_group.alb.id]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
-
 resource "aws_security_group" "alb" {
   name        = "alb-sg"
   description = "Allow HTTP inbound"
@@ -102,6 +82,26 @@ resource "aws_security_group" "alb" {
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_security_group" "ecs_service" {
+  name        = "ecs-service-sg"
+  description = "Allow ALB to reach ECS"
+  vpc_id      = module.vpc.vpc_id
+
+  ingress {
+    from_port       = 8080
+    to_port         = 8080
+    protocol        = "tcp"
+    security_groups = [aws_security_group.alb.id]
   }
 
   egress {
@@ -123,18 +123,14 @@ resource "aws_lb" "this" {
 }
 
 resource "aws_lb_target_group" "this" {
-  name     = "tg-country-routing"
-  port     = 8080
-  protocol = "HTTP"
-  vpc_id   = module.vpc.vpc_id
+  name        = "tg-country-routing"
+  port        = 8080
+  protocol    = "HTTP"
+  vpc_id      = module.vpc.vpc_id
   target_type = "ip"
 
   health_check {
     path = "/hello"
-  }
-
-  lifecycle {
-    create_before_destroy = true
   }
 }
 
@@ -160,8 +156,9 @@ resource "aws_ecs_service" "this" {
   launch_type     = "FARGATE"
 
   network_configuration {
-    subnets         = module.vpc.private_subnets
+    subnets         = module.vpc.public_subnets
     security_groups = [aws_security_group.ecs_service.id]
+    assign_public_ip = true
   }
 
   load_balancer {
@@ -171,4 +168,48 @@ resource "aws_ecs_service" "this" {
   }
 
   depends_on = [aws_lb_listener.http]
+}
+
+# -------------------------
+# Outputs
+# -------------------------
+
+output "vpc_id" {
+  description = "The ID of the VPC"
+  value       = module.vpc.vpc_id
+}
+
+output "public_subnets" {
+  description = "Public subnet IDs"
+  value       = module.vpc.public_subnets
+}
+
+output "alb_dns_name" {
+  description = "DNS name of the ALB"
+  value       = aws_lb.this.dns_name
+}
+
+output "alb_arn" {
+  description = "ARN of the ALB"
+  value       = aws_lb.this.arn
+}
+
+output "target_group_arn" {
+  description = "ARN of the target group"
+  value       = aws_lb_target_group.this.arn
+}
+
+output "ecs_cluster_name" {
+  description = "ECS cluster name"
+  value       = aws_ecs_cluster.this.name
+}
+
+output "ecs_service_name" {
+  description = "ECS service name"
+  value       = aws_ecs_service.this.name
+}
+
+output "task_definition_arn" {
+  description = "Task definition ARN"
+  value       = aws_ecs_task_definition.this.arn
 }
