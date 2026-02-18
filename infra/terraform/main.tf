@@ -23,8 +23,8 @@ module "vpc" {
   name = "country-routing-vpc"
   cidr = "10.0.0.0/16"
 
-  azs            = ["${var.aws_region}a"]
-  public_subnets = ["10.0.1.0/24"]
+  azs            = ["${var.aws_region}a", "${var.aws_region}b"]
+  public_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
 
   enable_nat_gateway = false
   enable_vpn_gateway = false
@@ -212,4 +212,14 @@ output "ecs_service_name" {
 output "task_definition_arn" {
   description = "Task definition ARN"
   value       = aws_ecs_task_definition.this.arn
+}
+
+terraform {
+  backend "s3" {
+    bucket         = "country-routing-tf-state"
+    key            = "terraform.tf-state"
+    region         = "eu-north-1"
+    dynamodb_table = "country-routing-tf-locks"
+    encrypt        = true
+  }
 }
