@@ -127,6 +127,7 @@ The project includes:
 - Dockerfile for containerized deployment
   - docker build -t country-routing-service .
   - docker run -p 8080:8080 country-routing-service
+- GitHub Actions + Terraform
 
 ---
 
