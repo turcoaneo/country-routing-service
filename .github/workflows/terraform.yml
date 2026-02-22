@@ -25,6 +25,9 @@ jobs:
       TF_VAR_HOSTED_ZONE_ID: ${{ secrets.HOSTED_ZONE_ID }}
 
     steps:
+      - name: Debug env
+        run: env | sort
+
       - name: Checkout code
         uses: actions/checkout@v4
 
