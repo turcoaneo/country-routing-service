@@ -129,6 +129,24 @@ The project includes:
   - docker run -p 8080:8080 country-routing-service
 - GitHub Actions + Terraform
 
+### Run Terraform from local CLI
+
+```shell
+terraform init
+terraform validate
+terraform plan -var-file="dev.tfvars"
+terraform apply -var-file="dev.tfvars" -auto-approve
+
+terraform destroy -var-file="dev.tfvars" -auto-approve
+```
+
+### Run actions from GitHub Actions
+https://github.com/turcoaneo/country-routing-service/actions
+
+CI-CD - build Docker container in GHCR
+Deploy to ECS - upload container from GHCR to AWS
+Terraform infrastructure - create / apply infrastructure or destroy it
+
 ---
 
 ## 👨‍💻 Author

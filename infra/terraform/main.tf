@@ -45,6 +45,14 @@ data "aws_iam_role" "ecs_task_execution_role" {
 }
 
 # -------------------------
+# Task Definition Logs
+# -------------------------
+resource "aws_cloudwatch_log_group" "country_routing" {
+  name              = "/ecs/country-routing"
+  retention_in_days = 7
+}
+
+# -------------------------
 # Task Definition
 # -------------------------
 resource "aws_ecs_task_definition" "this" {
@@ -61,10 +69,20 @@ resource "aws_ecs_task_definition" "this" {
       name      = "country-routing-service"
       image     = "ghcr.io/turcoaneo/country-routing-service:latest"
       essential = true
+
       portMappings = [{
         containerPort = 8080
         protocol      = "tcp"
       }]
+
+      logConfiguration = {
+        logDriver = "awslogs"
+        options = {
+          awslogs-group         = "/ecs/country-routing"
+          awslogs-region        = var.aws_region
+          awslogs-stream-prefix = "ecs"
+        }
+      }
     }
   ])
 }
@@ -74,12 +92,19 @@ resource "aws_ecs_task_definition" "this" {
 # -------------------------
 resource "aws_security_group" "alb" {
   name        = "alb-sg"
-  description = "Allow HTTP inbound"
+  description = "Allow HTTP and HTTPS inbound"
   vpc_id      = module.vpc.vpc_id
 
   ingress {
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -134,14 +159,32 @@ resource "aws_lb_target_group" "this" {
   }
 }
 
+resource "aws_lb_listener" "https" {
+  load_balancer_arn = aws_lb.this.arn
+  port              = 443
+  protocol          = "HTTPS"
+  ssl_policy        = "ELBSecurityPolicy-2016-08"
+  certificate_arn   = var.acm_certificate_arn
+
+  default_action {
+    type = "forward"
+    target_group_arn = aws_lb_target_group.this.arn
+  }
+}
+
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.this.arn
   port              = 80
   protocol          = "HTTP"
 
   default_action {
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.this.arn
+    type = "redirect"
+
+    redirect {
+      port        = "443"
+      protocol    = "HTTPS"
+      status_code = "HTTP_301"
+    }
   }
 }
 
@@ -171,6 +214,21 @@ resource "aws_ecs_service" "this" {
 }
 
 # -------------------------
+# Route53 ALIAS (NEW)
+# -------------------------
+resource "aws_route53_record" "alb_alias" {
+  zone_id = var.hosted_zone_id
+  name    = "country-routing"
+  type    = "A"
+
+  alias {
+    name                   = aws_lb.this.dns_name
+    zone_id                = aws_lb.this.zone_id
+    evaluate_target_health = true
+  }
+}
+
+# -------------------------
 # Outputs
 # -------------------------
 
@@ -187,6 +245,11 @@ output "public_subnets" {
 output "alb_dns_name" {
   description = "DNS name of the ALB"
   value       = aws_lb.this.dns_name
+}
+
+output "alb_friendly_dns" {
+  description = "Friendly DNS name via Route53 ALIAS"
+  value       = aws_route53_record.alb_alias.fqdn
 }
 
 output "alb_arn" {
