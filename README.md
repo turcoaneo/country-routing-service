@@ -124,10 +124,10 @@ The project includes:
 - Caching for repeated queries ✅
   - (/routing/fuzzy/all/ESP/ITA?maxDepth=2&maxRoutes=3)
   - (/routing/fuzzy/all/ITA/ESP?maxDepth=2&maxRoutes=3) - reversed from cache and appended to cache
-- Dockerfile for containerized deployment
+- Dockerfile for containerized deployment ✅
   - docker build -t country-routing-service .
   - docker run -p 8080:8080 country-routing-service
-- GitHub Actions + Terraform
+- GitHub Actions + Terraform ✅
 
 ### Run Terraform from local CLI
 
@@ -139,6 +139,40 @@ terraform apply -var-file="dev.tfvars" -auto-approve
 
 terraform destroy -var-file="dev.tfvars" -auto-approve
 ```
+
+### Create GitHub actions Terraform lockers
+
+S3 -> Create bucket -> country-routing-tf-state
+- Region:
+  Same region where Terraform deploys (e.g., eu-north-1)
+- Disable public access (default)
+- Enable versioning (recommended)
+- Create bucket
+
+
+#### Using CLI
+aws s3api create-bucket \
+--bucket country-routing-tf-state \
+--region eu-north-1 \
+--create-bucket-configuration LocationConstraint=eu-north-1
+
+aws s3api put-bucket-versioning \
+--bucket country-routing-tf-state \
+--versioning-configuration Status=Enabled
+
+
+DynamoDB -> Create table -> country-routing-tf-locks
+- Partition key:
+  LockID (String)
+- Billing mode: On‑demand
+- Create table
+
+#### Using CLI
+aws dynamodb create-table \
+--table-name country-routing-tf-locks \
+--attribute-definitions AttributeName=LockID,AttributeType=S \
+--key-schema AttributeName=LockID,KeyType=HASH \
+--billing-mode PAY_PER_REQUEST
 
 ### Run actions from GitHub Actions
 https://github.com/turcoaneo/country-routing-service/actions
